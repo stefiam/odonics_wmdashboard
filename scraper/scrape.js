@@ -42,7 +42,7 @@ async function run() {
   await page.fill('#kennung', USER);
   await page.fill('#passwort', PASS);
   await page.click('[type="submit"]');
-  await page.waitForURL(/kicktipp\.de\/(info\/profil|[^/]+)/, { timeout: 10000 });
+  await page.waitForLoadState('networkidle', { timeout: 30000 });
 
   const title = await page.title();
   if (title.toLowerCase().includes('login') || title.toLowerCase().includes('anmelden')) {

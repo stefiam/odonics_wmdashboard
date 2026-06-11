@@ -42,6 +42,10 @@ async function run() {
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({
     userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120 Safari/537.36',
+    // Kicktipp rendert Anstoßzeiten in der Browser-Zeitzone → auf Wien setzen,
+    // damit die Uhrzeiten mit dem übereinstimmen, was die Teilnehmer auf kicktipp sehen.
+    timezoneId: 'Europe/Vienna',
+    locale: 'de-AT',
   });
   const page = await context.newPage();
 
@@ -228,8 +232,16 @@ async function run() {
   let spielplanMatches = [];
   try {
     await page.goto(`${BASE}/spielplan`, { waitUntil: 'networkidle', timeout: 20000 });
-    spielplanMatches = await page.evaluate(() => {
+    const spielplanResult = await page.evaluate(() => {
       const out = [];
+      const dbg = [];
+      const allTables = Array.from(document.querySelectorAll('table'));
+      dbg.push(`Tabellen auf /spielplan: ${allTables.length}`);
+      allTables.forEach((t, i) => {
+        const hRow = t.querySelector('thead tr') || t.rows[0];
+        const hdrs = Array.from(hRow?.cells || []).map(c => c.textContent.trim().replace(/\s+/g, ' ').slice(0, 20));
+        dbg.push(`  Tabelle ${i}: ${t.rows.length} Zeilen, Header=[${hdrs.join(', ')}]`);
+      });
       for (const table of document.querySelectorAll('table')) {
         const rows = Array.from(table.rows);
         if (rows.length < 2) continue;
@@ -277,8 +289,10 @@ async function run() {
         }
         if (out.length > 0) break;
       }
-      return out;
+      return { out, dbg };
     });
+    spielplanResult.dbg.forEach(l => console.log('  ' + l));
+    spielplanMatches = spielplanResult.out;
     console.log(`  → ${spielplanMatches.length} Spiele aus Spielplan`);
   } catch (e) {
     console.log('  Spielplan Fehler:', e.message);

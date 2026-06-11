@@ -55,46 +55,70 @@ async function run() {
   console.log('📊 Lade Tabelle...');
   await page.goto(`${BASE}/tabelle`, { waitUntil: 'networkidle' });
 
+  // Debug-Screenshot immer speichern
+  await page.screenshot({ path: 'tabelle-debug.png', fullPage: true });
+
+  // HTML-Struktur ausgeben um Selektoren zu debuggen
+  const pageInfo = await page.evaluate(() => {
+    const allTables = Array.from(document.querySelectorAll('table'));
+    const tableInfo = allTables.map(t => ({
+      id: t.id,
+      classes: t.className,
+      rows: t.querySelectorAll('tr').length,
+      firstRow: t.querySelector('tr')?.textContent?.trim().substring(0, 100),
+    }));
+    return {
+      url: window.location.href,
+      title: document.title,
+      tables: tableInfo,
+      bodySnippet: document.body.innerHTML.substring(0, 500),
+    };
+  });
+  console.log('📄 Seiten-Info:', JSON.stringify(pageInfo, null, 2));
+
   const standings = await page.evaluate(() => {
-    const rows = Array.from(document.querySelectorAll('table.tabelle tr, table.ranking tr, #ranking tr, .tabelle tbody tr'));
-    return rows.map(row => {
+    // Alle Tabellen-Zeilen versuchen
+    const allRows = Array.from(document.querySelectorAll('table tr'));
+    const results = [];
+
+    for (const row of allRows) {
       const cells = Array.from(row.querySelectorAll('td'));
-      if (cells.length < 4) return null;
+      if (cells.length < 3) continue;
+      const text = cells.map(c => c.textContent.trim().replace(/\s+/g, ' '));
 
-      // Kicktipp-Tabellenstruktur: Pos | +/- | Name | P | B | S | G
-      const text = cells.map(c => c.textContent.trim());
-      const nameCell = cells[2] || cells[1];
-      const name = nameCell ? nameCell.textContent.trim() : '';
+      // Erste Spalte muss eine Zahl (Rang) sein
+      const pos = parseInt(text[0]);
+      if (!pos || pos > 100) continue;
 
-      // +/- Spalte: positiv/negativ Icon oder Zahl
-      const trendCell = cells[1];
-      let trend = 0;
-      if (trendCell) {
-        const trendText = trendCell.textContent.trim();
-        if (trendText.match(/^\d+$/)) trend = parseInt(trendText);
-        else if (trendCell.querySelector('.arrow-up, .positiv')) trend = 1;
-        else if (trendCell.querySelector('.arrow-down, .negativ')) trend = -1;
+      // Name-Spalte: nimm die längste nicht-numerische Zelle
+      let name = '';
+      let nameIdx = -1;
+      for (let i = 1; i < cells.length; i++) {
+        const t = text[i];
+        if (t && isNaN(t) && t.length > name.length && t.length < 40 && !t.includes('\n')) {
+          name = t;
+          nameIdx = i;
+        }
       }
+      if (!name) continue;
 
-      return {
-        pos: parseInt(text[0]) || 0,
-        trend,
+      // Zahlen nach dem Namen = Statistiken
+      const nums = text.slice(nameIdx + 1).map(t => parseInt(t)).filter(n => !isNaN(n));
+
+      results.push({
+        pos,
+        trend: 0,
         name,
-        points: parseInt(text[3]) || parseInt(text[text.length - 1]) || 0,
-        exact: parseInt(text[4]) || 0,
-        tendency: parseInt(text[5]) || 0,
-        wrong: parseInt(text[6]) || 0,
-      };
-    }).filter(r => r && r.name && r.pos > 0);
+        points: nums[nums.length - 1] || 0,
+        exact: nums[0] || 0,
+        tendency: nums[1] || 0,
+        wrong: nums[2] || 0,
+      });
+    }
+    return results;
   });
 
   console.log(`  → ${standings.length} Teilnehmer gefunden`);
-
-  if (standings.length === 0) {
-    await page.screenshot({ path: 'tabelle-debug.png' });
-    console.warn('⚠️  Keine Tabellendaten gefunden – Screenshot: tabelle-debug.png');
-    console.warn('   Bitte CSS-Selektoren in scrape.js anpassen.');
-  }
 
   // ── Matches + Tipp-Details ──────────────────────────────────────────────
   console.log('🎯 Lade Tipp-Übersicht...');

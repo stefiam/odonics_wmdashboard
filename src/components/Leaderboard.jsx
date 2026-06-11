@@ -174,7 +174,7 @@ export default function Leaderboard({ standings }) {
               <AccuracyBar exact={p.exact} tendency={p.tendency} wrong={p.wrong} />
             </div>
             <div className="w-8 text-right">
-              <TrendIcon trend={p.pos < p.posPrev ? p.posPrev - p.pos : p.posPrev > p.pos ? -(p.pos - p.posPrev) : 0} />
+              <TrendIcon trend={p.posPrev - p.pos} />
             </div>
             <div className="w-10 text-right text-xs text-emerald-600 font-medium">{p.exact}</div>
             <div className="w-10 text-right text-xs text-[#f7b32b] font-medium">{p.tendency}</div>

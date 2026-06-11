@@ -51,9 +51,27 @@ async function run() {
   }
   console.log('✅ Login erfolgreich');
 
-  // ── Standings (Tabelle) ──────────────────────────────────────────────────
-  console.log('📊 Lade Tabelle...');
-  await page.goto(`${BASE}/tabelle`, { waitUntil: 'networkidle' });
+  // ── Navigation: richtige Tabellen-URL finden ────────────────────────────
+  console.log('🔍 Suche Tabellen-URL...');
+  await page.goto(BASE, { waitUntil: 'networkidle' });
+
+  // Alle Links auf der Startseite ausgeben um die Tabellen-URL zu finden
+  const navLinks = await page.evaluate(() => {
+    return Array.from(document.querySelectorAll('a[href]'))
+      .map(a => ({ text: a.textContent.trim(), href: a.href }))
+      .filter(l => l.href.includes('kicktipp.de') && l.text.length < 50)
+      .slice(0, 30);
+  });
+  console.log('🔗 Navigation-Links:', JSON.stringify(navLinks, null, 2));
+
+  // Tabellen-Link suchen
+  const tabLink = navLinks.find(l =>
+    /tabelle|rangliste|wertung|standing|ranking/i.test(l.text) ||
+    /tabelle|rangliste|gesamtwertung/i.test(l.href)
+  );
+  const tabUrl = tabLink ? tabLink.href : `${BASE}/tabelle`;
+  console.log('📊 Lade Tabelle:', tabUrl);
+  await page.goto(tabUrl, { waitUntil: 'networkidle' });
 
   // Debug-Screenshot immer speichern
   await page.screenshot({ path: 'tabelle-debug.png', fullPage: true });

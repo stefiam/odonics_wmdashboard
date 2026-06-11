@@ -5,6 +5,8 @@ on:
     # 8:00 und 20:00 UTC täglich (= 10:00 und 22:00 CEST)
     - cron: '0 8,20 * * *'
   workflow_dispatch: # manueller Start möglich
+  push:
+    branches: [main]
 
 permissions:
   contents: write

@@ -129,12 +129,12 @@ export default function App() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4">
-          <nav className="flex gap-1 -mb-px">
+          <nav className="flex gap-1 -mb-px overflow-x-auto no-scrollbar">
             {tabs.map(t => (
               <button
                 key={t.id}
                 onClick={() => setActiveTab(t.id)}
-                className={`px-4 py-2.5 text-sm font-medium border-b-2 transition-colors ${
+                className={`px-3 sm:px-4 py-2.5 text-sm font-medium border-b-2 transition-colors whitespace-nowrap flex-shrink-0 ${
                   activeTab === t.id
                     ? 'border-[#f7b32b] text-[#f7b32b]'
                     : 'border-transparent text-[#2d6460] hover:text-[#1e4745]'

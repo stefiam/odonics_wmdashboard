@@ -14,7 +14,12 @@ body {
   color: #1e4745;
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
+
+/* Scrollbar in Tab-Leiste ausblenden (mobil horizontal scrollbar) */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
 #root {
   min-height: 100svh;

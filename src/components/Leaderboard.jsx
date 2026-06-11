@@ -152,9 +152,9 @@ export default function Leaderboard({ standings }) {
         <div className="grid grid-cols-[auto_1fr_auto_auto_auto_auto] gap-0 text-xs text-[#7aadaa] uppercase tracking-wider px-4 py-2 border-b border-[#e5f0ef] bg-[#f6fbfb]">
           <span className="w-8">Pos</span>
           <span>Name</span>
-          <span className="w-8 text-right">Tr.</span>
-          <span className="w-10 text-right">P</span>
-          <span className="w-10 text-right">B</span>
+          <span className="w-8 text-right" title="Trend: Plätze seit letztem Update">+/−</span>
+          <span className="w-10 text-right" title="Exakte Treffer">P</span>
+          <span className="w-10 text-right" title="Tendenz richtig">B</span>
           <span className="w-12 text-right">Pkt</span>
         </div>
 
@@ -183,10 +183,11 @@ export default function Leaderboard({ standings }) {
         ))}
       </div>
 
-      <div className="flex gap-4 mt-3 text-xs text-[#7aadaa]">
-        <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" /> P = Exakt</span>
-        <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-[#f7b32b] inline-block" /> B = Tendenz</span>
-        <span>Pkt = Gesamt · Klick für Profil</span>
+      <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-xs text-[#7aadaa]">
+        <span><span className="text-emerald-600 font-bold">+/−</span> = Plätze seit letztem Update</span>
+        <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" /> P = Exakt getippt</span>
+        <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-[#f7b32b] inline-block" /> B = Tendenz richtig</span>
+        <span>Pkt = Gesamt · Klick auf Zeile = Profil</span>
       </div>
     </div>
   );

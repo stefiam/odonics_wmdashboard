@@ -1,7 +1,308 @@
 {
-  "lastUpdated": "2026-06-11T18:36:40.557Z",
+  "lastUpdated": "2026-06-11T19:04:53.695Z",
   "communityName": "wm-2026-odonics",
-  "standings": [],
+  "standings": [
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "WAC",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "Michel",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "Bella",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "TippJungle",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": true
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "Raphi",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "ZaM",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "Panu",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "Jacky",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "AlexPraskac",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "MaWa44",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "Phips",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "Säulenmann",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "Sigi",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "Robi",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "Kiki",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "Andy",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "Schneckerl",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "DOl",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "OnkelAlex",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    },
+    {
+      "pos": 1,
+      "trend": 0,
+      "name": "Peppolini",
+      "points": 0,
+      "exact": 0,
+      "tendency": 0,
+      "wrong": 0,
+      "predictions": {},
+      "posPrev": 1,
+      "pointsHistory": [
+        0
+      ],
+      "isHighlighted": false
+    }
+  ],
   "matches": [
     {
       "id": "match_2",

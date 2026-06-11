@@ -217,10 +217,101 @@ async function run() {
     return { standings, matches };
   });
 
-  console.log(`  → ${result.standings.length} Teilnehmer, ${result.matches.length} Spiele`);
+  console.log(`  → ${result.standings.length} Teilnehmer, ${result.matches.length} Spiele (aus tippuebersicht)`);
 
   if (result.standings.length === 0) {
     console.log('⚠️  Keine Daten gefunden! Prüfe tabelle-debug.png Screenshot.');
+  }
+
+  // ── Spielplan laden für echte Spieldaten mit Datum/Uhrzeit ───────────────
+  console.log('📅 Lade spielplan...');
+  let spielplanMatches = [];
+  try {
+    await page.goto(`${BASE}/spielplan`, { waitUntil: 'networkidle', timeout: 20000 });
+
+    spielplanMatches = await page.evaluate(() => {
+      const matches = [];
+      const tables = Array.from(document.querySelectorAll('table'));
+
+      for (const table of tables) {
+        const rows = Array.from(table.rows);
+        if (rows.length < 3) continue;
+
+        // Header-Zeile finden
+        const hRow = table.querySelector('thead tr') || rows[0];
+        const headers = Array.from(hRow.cells).map(c =>
+          c.textContent.trim().toLowerCase().replace(/\s+/g, '')
+        );
+
+        // Spielplan-Tabelle hat Heim + Gast Spalten
+        const hasHeim = headers.some(h => /^(heim|home)$/.test(h));
+        const hasGast = headers.some(h => /^(gast|away)$/.test(h));
+        if (!hasHeim && !hasGast) continue;
+
+        let heimIdx = headers.findIndex(h => /^(heim|home)$/.test(h));
+        let gastIdx = headers.findIndex(h => /^(gast|away)$/.test(h));
+        let ergIdx  = headers.findIndex(h => /^(ergebnis|result|erg)$/.test(h));
+        let datumIdx = headers.findIndex(h => /^(datum|date|anpfiff|termin)$/.test(h));
+        let zeitIdx  = headers.findIndex(h => /^(uhrzeit|zeit|time)$/.test(h));
+        let gruppeIdx = headers.findIndex(h => /^(gruppe|group)$/.test(h));
+
+        if (heimIdx === -1) heimIdx = 1;
+        if (gastIdx === -1) gastIdx = 2;
+
+        const bodyRows = Array.from(table.tBodies[0]?.rows || rows.slice(1));
+        for (const row of bodyRows) {
+          const cells = Array.from(row.cells);
+          if (cells.length < 2) continue;
+
+          const heim = cells[heimIdx]?.textContent.trim();
+          const gast = cells[gastIdx]?.textContent.trim();
+          if (!heim || !gast) continue;
+          if (/^(heim|home|gast|away)$/i.test(heim)) continue; // Überspringe Header-Zeilen
+
+          const ergebnis = ergIdx >= 0 ? cells[ergIdx]?.textContent.trim() : '';
+          const datum = datumIdx >= 0 ? cells[datumIdx]?.textContent.trim() : '';
+          const zeit  = zeitIdx  >= 0 ? cells[zeitIdx]?.textContent.trim()  : '';
+          const gruppe = gruppeIdx >= 0 ? cells[gruppeIdx]?.textContent.trim() : '';
+          const played = ergebnis && ergebnis !== '-:-' && /\d.*:.*\d/.test(ergebnis);
+
+          // Datum parsen: "11.06.26" oder "11.06.2026"
+          let isoDate = null;
+          const datumText = datum || '';
+          const zeitText = zeit || '';
+          const match = datumText.match(/(\d{1,2})\.(\d{1,2})\.(\d{2,4})/);
+          if (match) {
+            const [, d, mo, y] = match;
+            const year = y.length === 2 ? `20${y}` : y;
+            const timeMatch = zeitText.match(/(\d{1,2}):(\d{2})/);
+            const h = timeMatch ? timeMatch[1].padStart(2, '0') : '00';
+            const mi = timeMatch ? timeMatch[2] : '00';
+            isoDate = `${year}-${mo.padStart(2, '0')}-${d.padStart(2, '0')}T${h}:${mi}:00`;
+          }
+
+          const id = `${heim}_${gast}`.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
+          matches.push({
+            id,
+            label: `${heim} – ${gast}`,
+            homeTeam: heim,
+            awayTeam: gast,
+            group: gruppe || null,
+            result: played ? ergebnis : null,
+            played: !!played,
+            date: isoDate,
+          });
+        }
+
+        if (matches.length > 0) {
+          console.log(`Spielplan: ${matches.length} Spiele gefunden`);
+          break;
+        }
+      }
+      return matches;
+    });
+
+    console.log(`  → ${spielplanMatches.length} Spiele aus Spielplan`);
+  } catch (e) {
+    console.log('  Spielplan Fehler:', e.message);
   }
 
   // ── Merge mit vorherigem JSON (Punkteverlauf erhalten) ───────────────────
@@ -247,7 +338,7 @@ async function run() {
     lastUpdated: new Date().toISOString(),
     communityName: COMMUNITY,
     standings: mergedStandings,
-    matches: result.matches.length > 0 ? result.matches : (prev.matches || []),
+    matches: spielplanMatches.length > 0 ? spielplanMatches : result.matches.length > 0 ? result.matches : (prev.matches || []),
   };
 
   fs.mkdirSync(path.dirname(OUT_PATH), { recursive: true });

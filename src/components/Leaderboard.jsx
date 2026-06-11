@@ -26,34 +26,31 @@ function AccuracyBar({ exact, tendency, wrong }) {
 
 export default function Leaderboard({ standings }) {
   const top3 = standings.slice(0, 3);
-  const rest = standings.slice(3);
 
   return (
     <div>
       {/* Podium */}
-      <div className="grid grid-cols-3 gap-3 mb-6">
+      <div className="grid grid-cols-3 gap-3 mb-6 items-end">
         {[top3[1], top3[0], top3[2]].map((p, i) => {
           if (!p) return <div key={i} />;
           const visualPos = [2, 1, 3][i];
-          const height = ['h-24', 'h-32', 'h-20'][i];
+          const minH = ['min-h-24', 'min-h-32', 'min-h-20'][i];
           return (
             <div
               key={p.name}
-              className={`relative flex flex-col items-center justify-end pb-3 rounded-xl border ${
+              className={`relative flex flex-col items-center justify-center py-4 px-2 rounded-xl border ${minH} ${
                 p.isHighlighted
                   ? 'bg-[#fff8e6] border-[#f7b32b]/60 shadow-sm'
                   : 'bg-white border-[#d9e8e5] shadow-sm'
-              } ${height}`}
+              }`}
             >
               {visualPos === 1 && (
                 <span className="absolute -top-3 text-xl">👑</span>
               )}
               <div className="text-2xl font-bold text-[#1e4745]">{p.points}</div>
               <div className="text-xs text-[#7aadaa] mb-1">Punkte</div>
-              <div className={`text-sm font-semibold ${p.isHighlighted ? 'text-[#1e4745]' : 'text-[#1e4745]'}`}>
-                {p.name}
-              </div>
-              <div className="text-xs text-[#7aadaa]">#{visualPos}</div>
+              <div className="text-sm font-semibold text-[#1e4745] text-center leading-tight">{p.name}</div>
+              <div className="text-xs text-[#7aadaa] mt-0.5">#{visualPos}</div>
             </div>
           );
         })}
@@ -82,9 +79,8 @@ export default function Leaderboard({ standings }) {
             </div>
 
             <div className="flex flex-col min-w-0">
-              <span className={`font-semibold text-sm truncate ${p.isHighlighted ? 'text-[#1e4745] font-bold' : 'text-[#1e4745]'}`}>
+              <span className={`font-semibold text-sm truncate text-[#1e4745] ${p.isHighlighted ? 'font-bold' : ''}`}>
                 {p.name}
-                {p.isHighlighted && <span className="ml-1.5 text-[10px] bg-[#f7b32b] text-white px-1.5 py-0.5 rounded-full font-normal align-middle">Du</span>}
               </span>
               <AccuracyBar exact={p.exact} tendency={p.tendency} wrong={p.wrong} />
             </div>
@@ -95,9 +91,7 @@ export default function Leaderboard({ standings }) {
 
             <div className="w-10 text-right text-xs text-emerald-600 font-medium">{p.exact}</div>
             <div className="w-10 text-right text-xs text-[#f7b32b] font-medium">{p.tendency}</div>
-            <div className={`w-12 text-right font-bold text-sm ${p.isHighlighted ? 'text-[#1e4745]' : 'text-[#1e4745]'}`}>
-              {p.points}
-            </div>
+            <div className="w-12 text-right font-bold text-sm text-[#1e4745]">{p.points}</div>
           </div>
         ))}
       </div>

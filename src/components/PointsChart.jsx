@@ -70,18 +70,19 @@ export default function PointsChart({ standings }) {
             />
             <YAxis tick={{ fill: '#7aadaa', fontSize: 11 }} stroke="#d9e8e5" />
             <Tooltip content={<CustomTooltip />} />
-            {standings.map((p, i) => (
-              <Line
-                key={p.name}
-                type="monotone"
-                dataKey={p.name}
-                stroke={COLORS[i % COLORS.length]}
-                strokeWidth={p.isHighlighted ? 3 : 1.5}
-                dot={false}
-                activeDot={{ r: 4 }}
-                opacity={hiddenLines.has(p.name) ? 0 : 1}
-              />
-            ))}
+            {standings.map((p, i) =>
+              hiddenLines.has(p.name) ? null : (
+                <Line
+                  key={p.name}
+                  type="monotone"
+                  dataKey={p.name}
+                  stroke={COLORS[i % COLORS.length]}
+                  strokeWidth={p.isHighlighted ? 3 : 1.5}
+                  dot={false}
+                  activeDot={{ r: 4 }}
+                />
+              )
+            )}
           </LineChart>
         </ResponsiveContainer>
       </div>

@@ -14,9 +14,17 @@ function formatDate(isoString) {
   });
 }
 
+function formatMatchTime(dateStr) {
+  if (!dateStr) return null;
+  try {
+    const d = new Date(dateStr);
+    if (isNaN(d)) return null;
+    return d.toLocaleString('de-AT', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+  } catch { return null; }
+}
+
 function Countdown({ targetDate }) {
   const [timeLeft, setTimeLeft] = useState('');
-
   useEffect(() => {
     const update = () => {
       const diff = new Date(targetDate) - new Date();
@@ -31,8 +39,45 @@ function Countdown({ targetDate }) {
     const id = setInterval(update, 1000);
     return () => clearInterval(id);
   }, [targetDate]);
-
   return <span className="font-mono text-[#f7b32b] font-bold">{timeLeft}</span>;
+}
+
+function NextMatch({ matches }) {
+  if (!matches?.length) return null;
+
+  // Filtere echte Spiele (keine Spaltenheader-Artefakte)
+  const invalidLabels = new Set(['gast', 'gruppe', 'ergebnis', 'heim', 'datum', 'termin']);
+  const real = matches.filter(m => m.label && !invalidLabels.has(m.label.toLowerCase()));
+  if (!real.length) return null;
+
+  // Läuft gerade ein Spiel?
+  const now = new Date();
+  const live = real.find(m => {
+    if (!m.date || !m.played) return false;
+    const start = new Date(m.date);
+    const end = new Date(start.getTime() + 110 * 60000);
+    return now >= start && now <= end;
+  });
+  if (live) {
+    return (
+      <div className="text-right text-sm">
+        <div className="text-[#2d6460] text-xs mb-0.5">Läuft gerade</div>
+        <span className="font-semibold text-[#1e4745]">{live.label}</span>
+        {live.result && <span className="ml-2 text-[#f7b32b] font-bold font-mono">{live.result}</span>}
+      </div>
+    );
+  }
+
+  const next = real.find(m => !m.played);
+  if (!next) return null;
+  const timeStr = formatMatchTime(next.date);
+  return (
+    <div className="text-right text-sm">
+      <div className="text-[#2d6460] text-xs mb-0.5">Nächstes Spiel</div>
+      <span className="font-semibold text-[#1e4745]">{next.label}</span>
+      {timeStr && <span className="ml-2 text-xs text-[#7aadaa]">{timeStr}</span>}
+    </div>
+  );
 }
 
 export default function App() {
@@ -56,7 +101,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#f6fbfb]">
-      {/* Header */}
       <header className="bg-white shadow-sm border-b border-[#d9e8e5]">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <div className="flex items-center gap-4">
@@ -71,13 +115,15 @@ export default function App() {
               <p className="text-xs text-[#2d6460]">Odonics · FIFA World Cup · USA / Kanada / Mexiko</p>
             </div>
           </div>
-          <div className="text-right text-sm">
-            <div className="text-[#2d6460] text-xs mb-0.5">Finale in</div>
-            <Countdown targetDate="2026-07-19T21:00:00Z" />
+          <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
+            {data && <NextMatch matches={data.matches} />}
+            <div className="text-right text-sm">
+              <div className="text-[#2d6460] text-xs mb-0.5">Finale in</div>
+              <Countdown targetDate="2026-07-19T21:00:00Z" />
+            </div>
           </div>
         </div>
 
-        {/* Tabs */}
         <div className="max-w-7xl mx-auto px-4">
           <nav className="flex gap-1 -mb-px">
             {tabs.map(t => (
@@ -97,20 +143,17 @@ export default function App() {
         </div>
       </header>
 
-      {/* Content */}
       <main className="max-w-7xl mx-auto px-4 py-6">
         {error && (
           <div className="bg-red-50 border border-red-200 text-red-700 rounded-lg p-4 mb-6 text-sm">
             ⚠️ Daten konnten nicht geladen werden: {error}
           </div>
         )}
-
         {!data && !error && (
           <div className="flex items-center justify-center h-48 text-[#5a9490]">
             <span className="animate-pulse">Lade Daten…</span>
           </div>
         )}
-
         {data && (
           <>
             {activeTab === 'tabelle' && <Leaderboard standings={data.standings} />}
@@ -121,7 +164,6 @@ export default function App() {
         )}
       </main>
 
-      {/* Footer */}
       <footer className="border-t border-[#d9e8e5] mt-8 py-4 px-4 text-center text-xs text-[#7aadaa]">
         {data && <>Zuletzt aktualisiert: {formatDate(data.lastUpdated)} · </>}
         Daten via Kicktipp.de

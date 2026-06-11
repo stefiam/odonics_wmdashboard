@@ -3,6 +3,8 @@ import Leaderboard from './components/Leaderboard';
 import PointsChart from './components/PointsChart';
 import RecentForm from './components/RecentForm';
 import MatchBreakdown from './components/MatchBreakdown';
+import HeadToHead from './components/HeadToHead';
+import WhatIf from './components/WhatIf';
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -97,6 +99,8 @@ export default function App() {
     { id: 'verlauf', label: '📈 Verlauf' },
     { id: 'form', label: '🔥 Form' },
     { id: 'spiele', label: '⚽ Spiele' },
+    { id: 'h2h', label: '⚔️ H2H' },
+    { id: 'whatif', label: '🔮 Wenn…?' },
   ];
 
   return (
@@ -160,6 +164,8 @@ export default function App() {
             {activeTab === 'verlauf' && <PointsChart standings={data.standings} />}
             {activeTab === 'form' && <RecentForm standings={data.standings} matches={data.matches} />}
             {activeTab === 'spiele' && <MatchBreakdown matches={data.matches} standings={data.standings} />}
+            {activeTab === 'h2h' && <HeadToHead standings={data.standings} matches={data.matches} />}
+            {activeTab === 'whatif' && <WhatIf standings={data.standings} matches={data.matches} />}
           </>
         )}
       </main>

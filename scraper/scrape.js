@@ -2,15 +2,10 @@
 /**
  * Kicktipp Scraper für WM 2026 Dashboard
  *
- * Umgebungsvariablen (required):
- *   KICKTIPP_USER      - Kicktipp E-Mail/Username
+ * Umgebungsvariablen:
+ *   KICKTIPP_USER      - Kicktipp E-Mail
  *   KICKTIPP_PASS      - Kicktipp Passwort
- *   KICKTIPP_COMMUNITY - Community-Name in der URL (z.B. "mein-tippspiel")
- *
- * Output: ../public/data/kicktipp.json
- *
- * Usage:
- *   KICKTIPP_USER=x KICKTIPP_PASS=y KICKTIPP_COMMUNITY=z node scrape.js
+ *   KICKTIPP_COMMUNITY - z.B. "wm-2026-odonics"
  */
 
 const { chromium } = require('playwright');
@@ -29,6 +24,159 @@ if (!USER || !PASS || !COMMUNITY) {
 
 const BASE = `https://www.kicktipp.de/${COMMUNITY}`;
 
+// ── HTML-Analyse-Helfer ──────────────────────────────────────────────────────
+function dumpTables(document) {
+  const tables = Array.from(document.querySelectorAll('table'));
+  return {
+    title: document.title,
+    url: location.href,
+    tableCount: tables.length,
+    tables: tables.map((t, i) => ({
+      index: i,
+      id: t.id,
+      classes: t.className,
+      rowCount: t.rows.length,
+      colCount: t.rows[0] ? t.rows[0].cells.length : 0,
+      headerRow: Array.from((t.querySelector('thead tr') || t.rows[0])?.cells || [])
+        .map(c => c.textContent.trim().replace(/\s+/g, ' ').substring(0, 30)),
+      row1: Array.from(t.rows[1]?.cells || [])
+        .map(c => c.textContent.trim().replace(/\s+/g, ' ').substring(0, 25)),
+      row2: Array.from(t.rows[2]?.cells || [])
+        .map(c => c.textContent.trim().replace(/\s+/g, ' ').substring(0, 25)),
+    })),
+  };
+}
+
+// ── Standings aus Ranglisten-Tabelle ────────────────────────────────────────
+function parseStandingsTable(table) {
+  const standings = [];
+  const rows = Array.from(table.rows);
+  const headerRow = table.querySelector('thead tr') || rows[0];
+  const headers = Array.from(headerRow.cells).map(c => c.textContent.trim().toLowerCase().replace(/\s+/g, ''));
+
+  let posIdx = headers.findIndex(h => /^(pos|rang|#|platz)$/.test(h));
+  let nameIdx = headers.findIndex(h => /^(name|teilnehmer|spieler)$/.test(h));
+  let ptsIdx = headers.findIndex(h => /^(g|gesamt|pkt|punkte)$/.test(h));
+  let exactIdx = headers.findIndex(h => /^(p|exakt|richtig)$/.test(h));
+  let tendIdx = headers.findIndex(h => /^(b|tendenz|bonus)$/.test(h));
+  let wrongIdx = headers.findIndex(h => /^(s|falsch|schlecht)$/.test(h));
+
+  if (posIdx === -1) posIdx = 0;
+  if (nameIdx === -1) nameIdx = 2;
+  if (ptsIdx === -1) ptsIdx = headers.length - 1;
+
+  const bodyRows = Array.from(table.tBodies[0]?.rows || rows.slice(1));
+  for (const row of bodyRows) {
+    const cells = Array.from(row.cells);
+    if (cells.length < 3) continue;
+
+    const posText = cells[posIdx]?.textContent.trim().replace(/\D/g, '');
+    const pos = parseInt(posText);
+    if (!pos || pos > 200) continue;
+
+    const name = cells[nameIdx]?.textContent.trim().split('\n')[0].trim();
+    if (!name || name.length < 1 || name.length > 50) continue;
+
+    const pts = parseInt(cells[ptsIdx]?.textContent.trim()) || 0;
+    const exact = exactIdx >= 0 ? (parseInt(cells[exactIdx]?.textContent.trim()) || 0) : 0;
+    const tendency = tendIdx >= 0 ? (parseInt(cells[tendIdx]?.textContent.trim()) || 0) : 0;
+    const wrong = wrongIdx >= 0 ? (parseInt(cells[wrongIdx]?.textContent.trim()) || 0) : 0;
+
+    let trend = 0;
+    const trendCell = cells[posIdx + 1];
+    if (trendCell) {
+      const cls = (trendCell.className || '') + ' ' + (trendCell.innerHTML || '');
+      if (/up|plus|positiv|steig|arrow-up/i.test(cls)) trend = 1;
+      else if (/down|minus|negativ|fall|arrow-down/i.test(cls)) trend = -1;
+    }
+
+    standings.push({ pos, trend, name, points: pts, exact, tendency, wrong });
+  }
+  return standings;
+}
+
+// ── Predictions aus Tipp-Übersicht-Tabelle (Spiele als Zeilen) ─────────────
+function parseTippuebersichtTable(table) {
+  const matches = [];
+  const predictions = {};
+  const rows = Array.from(table.rows);
+
+  // Headerzeile analysieren
+  const headerRow = table.querySelector('thead tr') || rows[0];
+  const headers = Array.from(headerRow.cells).map(c =>
+    c.textContent.trim().replace(/\s+/g, ' ')
+  );
+
+  // Finde Spalten für: Heim, Gast, Gruppe, Ergebnis
+  let heimIdx = headers.findIndex(h => /^(heim|home)$/i.test(h));
+  let gastIdx = headers.findIndex(h => /^(gast|away)$/i.test(h));
+  let gruppeIdx = headers.findIndex(h => /^(gruppe|group)$/i.test(h));
+  let ergebnisIdx = headers.findIndex(h => /^(ergebnis|result|erg)$/i.test(h));
+  let datumIdx = headers.findIndex(h => /^(datum|date|zeit|time)$/i.test(h));
+
+  if (gastIdx === -1) gastIdx = 1;
+  if (ergebnisIdx === -1) ergebnisIdx = 3;
+
+  // Spieler-Spalten = alles nach den Match-Infospalten
+  const fixedCols = new Set([heimIdx, gastIdx, gruppeIdx, ergebnisIdx, datumIdx, 0].filter(i => i >= 0));
+  const playerCols = [];
+  for (let i = 0; i < headers.length; i++) {
+    if (!fixedCols.has(i) && headers[i]) {
+      playerCols.push({ idx: i, name: headers[i] });
+    }
+  }
+
+  // Spieler-Namen initialisieren
+  playerCols.forEach(pc => { predictions[pc.name] = []; });
+
+  // Spielzeilen parsen
+  const bodyRows = Array.from(table.tBodies[0]?.rows || rows.slice(1));
+  for (const row of bodyRows) {
+    const cells = Array.from(row.cells);
+    if (cells.length < 3) continue;
+
+    const heimText = cells[heimIdx >= 0 ? heimIdx : 0]?.textContent.trim();
+    const gastText = cells[gastIdx]?.textContent.trim();
+    if (!heimText && !gastText) continue;
+    if (heimText.toLowerCase() === 'heim') continue;
+
+    const ergebnis = cells[ergebnisIdx >= 0 ? ergebnisIdx : ergebnisIdx]?.textContent.trim();
+    const datum = datumIdx >= 0 ? cells[datumIdx]?.textContent.trim() : null;
+    const played = ergebnis && ergebnis !== '-:-' && ergebnis !== '' && /\d/.test(ergebnis);
+
+    const matchId = `${heimText}_${gastText}`.replace(/\s+/g, '').toLowerCase();
+    const matchLabel = heimText && gastText ? `${heimText} – ${gastText}` : (heimText || gastText);
+
+    if (matchLabel) {
+      matches.push({
+        id: matchId,
+        label: matchLabel,
+        homeTeam: heimText,
+        awayTeam: gastText,
+        result: played ? ergebnis : null,
+        played: !!played,
+        date: datum,
+      });
+
+      for (const pc of playerCols) {
+        const cell = cells[pc.idx];
+        if (!cell) continue;
+        const tip = cell.textContent.trim();
+        const tipClean = tip.replace(/\s+/g, '');
+        if (!predictions[pc.name]) predictions[pc.name] = [];
+        predictions[pc.name].push({
+          matchId,
+          tip: tipClean || null,
+          correct: cell.className.includes('correct') || cell.className.includes('richtig'),
+          exact: cell.className.includes('exact') || cell.className.includes('exakt'),
+        });
+      }
+    }
+  }
+
+  return { matches, predictions, playerNames: playerCols.map(pc => pc.name) };
+}
+
 async function run() {
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({
@@ -44,185 +192,245 @@ async function run() {
   await page.click('[type="submit"]');
   await page.waitForLoadState('networkidle', { timeout: 30000 });
 
-  const title = await page.title();
-  if (title.toLowerCase().includes('login') || title.toLowerCase().includes('anmelden')) {
+  const loginTitle = await page.title();
+  console.log('  Page title after login:', loginTitle);
+  if (loginTitle.toLowerCase().includes('login') || loginTitle.toLowerCase().includes('anmeld')) {
     await page.screenshot({ path: 'login-failed.png' });
-    throw new Error('Login fehlgeschlagen – Screenshot: login-failed.png');
+    throw new Error('Login fehlgeschlagen – falsches Passwort?');
   }
   console.log('✅ Login erfolgreich');
 
-  // ── Navigation: richtige Tabellen-URL finden ────────────────────────────
-  console.log('🔍 Suche Tabellen-URL...');
-  await page.goto(BASE, { waitUntil: 'networkidle' });
-
-  // Alle Links auf der Startseite ausgeben um die Tabellen-URL zu finden
-  const navLinks = await page.evaluate(() => {
-    return Array.from(document.querySelectorAll('a[href]'))
-      .map(a => ({ text: a.textContent.trim(), href: a.href }))
-      .filter(l => l.href.includes('kicktipp.de') && l.text.length < 50)
-      .slice(0, 30);
-  });
-  console.log('🔗 Navigation-Links:', JSON.stringify(navLinks, null, 2));
-
-  // Tabellen-Link suchen
-  const tabLink = navLinks.find(l =>
-    /tabelle|rangliste|wertung|standing|ranking/i.test(l.text) ||
-    /tabelle|rangliste|gesamtwertung/i.test(l.href)
-  );
-  const tabUrl = tabLink ? tabLink.href : `${BASE}/tabelle`;
-  console.log('📊 Lade Tabelle:', tabUrl);
-  await page.goto(tabUrl, { waitUntil: 'networkidle' });
-
-  // Debug-Screenshot immer speichern
+  // ── Tipp-Übersicht laden ─────────────────────────────────────────────────
+  console.log('📊 Lade tippuebersicht...');
+  await page.goto(`${BASE}/tippuebersicht`, { waitUntil: 'networkidle' });
   await page.screenshot({ path: 'tabelle-debug.png', fullPage: true });
 
-  // HTML-Struktur ausgeben um Selektoren zu debuggen
-  const pageInfo = await page.evaluate(() => {
-    const allTables = Array.from(document.querySelectorAll('table'));
-    const tableInfo = allTables.map(t => ({
-      id: t.id,
-      classes: t.className,
-      rows: t.querySelectorAll('tr').length,
-      firstRow: t.querySelector('tr')?.textContent?.trim().substring(0, 100),
-    }));
-    return {
-      url: window.location.href,
-      title: document.title,
-      tables: tableInfo,
-      bodySnippet: document.body.innerHTML.substring(0, 500),
-    };
-  });
-  console.log('📄 Seiten-Info:', JSON.stringify(pageInfo, null, 2));
+  const tippStructure = await page.evaluate(dumpTables);
+  console.log('📄 tippuebersicht Struktur:', JSON.stringify(tippStructure, null, 2));
 
-  const standings = await page.evaluate(() => {
-    // Alle Tabellen-Zeilen versuchen
-    const allRows = Array.from(document.querySelectorAll('table tr'));
-    const results = [];
+  // Finde die beste Tabelle für Tipps und für Standings
+  const tippResult = await page.evaluate(() => {
+    const tables = Array.from(document.querySelectorAll('table'));
+    const result = { matches: [], predictions: {}, playerNames: [], standings: [] };
 
-    for (const row of allRows) {
-      const cells = Array.from(row.querySelectorAll('td'));
-      if (cells.length < 3) continue;
-      const text = cells.map(c => c.textContent.trim().replace(/\s+/g, ' '));
+    for (const table of tables) {
+      const rows = Array.from(table.rows);
+      if (rows.length < 3) continue;
+      const hRow = table.querySelector('thead tr') || rows[0];
+      const headers = Array.from(hRow.cells).map(c => c.textContent.trim().toLowerCase().replace(/\s+/g, ''));
 
-      // Erste Spalte muss eine Zahl (Rang) sein
-      const pos = parseInt(text[0]);
-      if (!pos || pos > 100) continue;
+      // ── Ranglisten-Tabelle: hat pos + name + punkte ──────────────────────
+      const hasPos = headers.some(h => /^(pos|rang|platz|#)$/.test(h));
+      const hasPts = headers.some(h => /^(g|gesamt|pkt|punkte)$/.test(h));
+      const hasName = headers.some(h => /^(name|teilnehmer|spieler)$/.test(h));
+      if (hasPos && hasPts) {
+        console.log('Standings-Tabelle gefunden:', table.id, table.className, 'Headers:', headers.join('|'));
+        let posIdx = headers.findIndex(h => /^(pos|rang|platz|#)$/.test(h));
+        let nameIdx = headers.findIndex(h => /^(name|teilnehmer|spieler)$/.test(h));
+        let ptsIdx = headers.findIndex(h => /^(g|gesamt|pkt|punkte)$/.test(h));
+        let exactIdx = headers.findIndex(h => /^(p|exakt)$/.test(h));
+        let tendIdx = headers.findIndex(h => /^(b|tendenz|bonus)$/.test(h));
+        let wrongIdx = headers.findIndex(h => /^(s|falsch|schlecht)$/.test(h));
 
-      // Name-Spalte: nimm die längste nicht-numerische Zelle
-      let name = '';
-      let nameIdx = -1;
-      for (let i = 1; i < cells.length; i++) {
-        const t = text[i];
-        if (t && isNaN(t) && t.length > name.length && t.length < 40 && !t.includes('\n')) {
-          name = t;
-          nameIdx = i;
+        if (posIdx === -1) posIdx = 0;
+        if (nameIdx === -1) nameIdx = 2;
+
+        const bodyRows = Array.from(table.tBodies[0]?.rows || rows.slice(1));
+        for (const row of bodyRows) {
+          const cells = Array.from(row.cells);
+          if (cells.length < 3) continue;
+          const posText = cells[posIdx]?.textContent.trim().replace(/\D/g, '');
+          const pos = parseInt(posText);
+          if (!pos || pos > 200) continue;
+          const name = cells[nameIdx]?.textContent.trim().split('\n')[0].trim();
+          if (!name || name.length > 60) continue;
+          const pts = parseInt(cells[ptsIdx >= 0 ? ptsIdx : cells.length - 1]?.textContent.trim()) || 0;
+          const exact = exactIdx >= 0 ? parseInt(cells[exactIdx]?.textContent.trim()) || 0 : 0;
+          const tendency = tendIdx >= 0 ? parseInt(cells[tendIdx]?.textContent.trim()) || 0 : 0;
+          const wrong = wrongIdx >= 0 ? parseInt(cells[wrongIdx]?.textContent.trim()) || 0 : 0;
+          let trend = 0;
+          const tc = cells[posIdx + 1];
+          if (tc) {
+            const cls = (tc.className || '') + ' ' + (tc.innerHTML || '');
+            if (/up|plus|positiv|steig|arrow-up/i.test(cls)) trend = 1;
+            else if (/down|minus|negativ|fall|arrow-down/i.test(cls)) trend = -1;
+          }
+          result.standings.push({ pos, trend, name, points: pts, exact, tendency, wrong });
         }
+        if (result.standings.length > 0) console.log('  → ', result.standings.length, 'Standings gefunden');
       }
-      if (!name) continue;
 
-      // Zahlen nach dem Namen = Statistiken
-      const nums = text.slice(nameIdx + 1).map(t => parseInt(t)).filter(n => !isNaN(n));
+      // ── Tipp-Übersicht-Tabelle: hat Heim + Gast + Ergebnis ──────────────
+      const hasGast = headers.some(h => /^(gast|away)$/.test(h));
+      const hasErg = headers.some(h => /^(ergebnis|result|erg)$/.test(h));
+      if (hasGast && hasErg && rows.length >= 3) {
+        console.log('Tipp-Tabelle gefunden:', table.id, table.className, 'Headers:', headers.join('|'));
+        let heimIdx = headers.findIndex(h => /^(heim|home)$/.test(h));
+        let gastIdx = headers.findIndex(h => /^(gast|away)$/.test(h));
+        let ergIdx = headers.findIndex(h => /^(ergebnis|result|erg)$/.test(h));
+        let gruppeIdx = headers.findIndex(h => /^(gruppe|group)$/.test(h));
+        let datumIdx = headers.findIndex(h => /^(datum|date|zeit|time)$/.test(h));
+        if (heimIdx === -1) heimIdx = 0;
+        if (gastIdx === -1) gastIdx = 1;
+        if (ergIdx === -1) ergIdx = 3;
 
-      results.push({
-        pos,
-        trend: 0,
-        name,
-        points: nums[nums.length - 1] || 0,
-        exact: nums[0] || 0,
-        tendency: nums[1] || 0,
-        wrong: nums[2] || 0,
-      });
-    }
-    return results;
-  });
+        const fixedCols = new Set([heimIdx, gastIdx, ergIdx, gruppeIdx, datumIdx].filter(i => i >= 0));
+        // Vollständige Header (nicht lowercase) für Spielernamen
+        const fullHeaders = Array.from(hRow.cells).map(c => c.textContent.trim().replace(/\s+/g, ' '));
+        const playerCols = [];
+        for (let i = 0; i < fullHeaders.length; i++) {
+          if (!fixedCols.has(i) && fullHeaders[i] && fullHeaders[i].length > 0 && fullHeaders[i].length < 60) {
+            playerCols.push({ idx: i, name: fullHeaders[i] });
+          }
+        }
 
-  console.log(`  → ${standings.length} Teilnehmer gefunden`);
+        result.playerNames = playerCols.map(pc => pc.name);
+        console.log('  Spieler aus Tipptabelle:', result.playerNames.join(', '));
 
-  // ── Matches + Tipp-Details ──────────────────────────────────────────────
-  console.log('🎯 Lade Tipp-Übersicht...');
-  await page.goto(`${BASE}/tippuebersicht`, { waitUntil: 'networkidle' });
+        const bodyRows2 = Array.from(table.tBodies[0]?.rows || rows.slice(1));
+        for (const row of bodyRows2) {
+          const cells2 = Array.from(row.cells);
+          if (cells2.length < 3) continue;
+          const heimText = cells2[heimIdx]?.textContent.trim();
+          const gastText = cells2[gastIdx]?.textContent.trim();
+          if (!heimText && !gastText) continue;
+          const ergebnis = cells2[ergIdx]?.textContent.trim();
+          const datum = datumIdx >= 0 ? cells2[datumIdx]?.textContent.trim() : null;
+          const played = ergebnis && ergebnis !== '-:-' && ergebnis !== '' && /\d.*:.*\d/.test(ergebnis);
+          const matchId = `${heimText}_${gastText}`.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
+          const matchLabel = [heimText, gastText].filter(Boolean).join(' – ');
+          if (!matchLabel) continue;
 
-  const { matches, predictions } = await page.evaluate(() => {
-    const matches = [];
-    const predictions = {}; // { matchId: { playerName: { tip, points } } }
-
-    // Spieltage-Tabs oder direkte Tabelle
-    const matchHeaders = document.querySelectorAll('.spiel, .spieltag-spiel, [data-matchid], .tippuebersicht-spiel');
-    const tableRows = document.querySelectorAll('.tippuebersicht table tr, table.tippTabelle tr');
-
-    // Approach: Kopfzeilen extrahieren (Spiele), dann Tipps pro Spieler
-    const headerRow = document.querySelector('.tippuebersicht thead tr, table thead tr');
-    if (headerRow) {
-      const cols = Array.from(headerRow.querySelectorAll('th'));
-      // erste Spalten sind Spieler-Infos, dann kommen Spiele
-      cols.forEach((col, i) => {
-        const text = col.textContent.trim();
-        const tooltip = col.title || col.getAttribute('data-title') || text;
-        if (i > 1 && text && !text.match(/^(Name|Pos|Pkt|G)$/i)) {
-          matches.push({
-            id: `match_${i}`,
-            label: tooltip || text,
-            colIndex: i,
+          result.matches.push({
+            id: matchId,
+            label: matchLabel,
+            homeTeam: heimText || '',
+            awayTeam: gastText || '',
+            result: played ? ergebnis : null,
+            played: !!played,
+            date: datum || null,
           });
+
+          for (const pc of playerCols) {
+            const cell = cells2[pc.idx];
+            if (!cell) continue;
+            if (!result.predictions[pc.name]) result.predictions[pc.name] = [];
+            const tip = cell.textContent.trim().replace(/\s+/g, '');
+            const cls = cell.className || '';
+            result.predictions[pc.name].push({
+              matchId,
+              tip: tip || null,
+              exact: /exakt|correct.*exact|tiprichtig.*exakt/i.test(cls),
+              correct: /richtig|correct|tendenz/i.test(cls) && !/falsch|wrong/i.test(cls),
+            });
+          }
         }
-      });
+        if (result.matches.length > 0) console.log('  → ', result.matches.length, 'Spiele aus Tipptabelle');
+      }
     }
-
-    // Tipp-Zeilen
-    const bodyRows = document.querySelectorAll('.tippuebersicht tbody tr, table.tippTabelle tbody tr');
-    bodyRows.forEach(row => {
-      const cells = Array.from(row.querySelectorAll('td'));
-      if (cells.length < 3) return;
-      const playerName = (cells[1] || cells[0]).textContent.trim();
-      if (!playerName) return;
-
-      predictions[playerName] = {};
-      matches.forEach(m => {
-        const cell = cells[m.colIndex];
-        if (!cell) return;
-        const tip = cell.textContent.trim();
-        const points = parseInt(cell.getAttribute('data-points') || cell.title || '0') || 0;
-        if (tip && tip !== '-:-' && tip !== '---') {
-          predictions[playerName][m.id] = { tip, points };
-        }
-      });
-    });
-
-    return {
-      matches: matches.map(({ id, label }) => ({
-        id,
-        label,
-        played: false,
-        result: null,
-        date: null,
-      })),
-      predictions,
-    };
+    return result;
   });
 
-  console.log(`  → ${matches.length} Spiele, ${Object.keys(predictions).length} Tipp-Sets`);
+  console.log(`  tippuebersicht: ${tippResult.standings.length} Standings, ${tippResult.matches.length} Spiele, ${tippResult.playerNames.length} Spieler`);
 
-  // ── Merge mit vorherigem JSON (Punkteverlauf erhalten) ───────────────────
-  let prev = { standings: [], matches: [], lastUpdated: null };
-  if (fs.existsSync(OUT_PATH)) {
-    try { prev = JSON.parse(fs.readFileSync(OUT_PATH, 'utf8')); }
-    catch (_) { /* ignore */ }
+  // ── Rangliste laden (falls Standings noch fehlen) ────────────────────────
+  let rangliste = [];
+  if (tippResult.standings.length === 0) {
+    console.log('📋 Lade rangliste...');
+    try {
+      const resp = await page.goto(`${BASE}/rangliste`, { waitUntil: 'networkidle', timeout: 15000 });
+      if (resp && resp.ok()) {
+        await page.screenshot({ path: 'rangliste-debug.png', fullPage: true });
+        const ranglisteStructure = await page.evaluate(dumpTables);
+        console.log('📄 rangliste Struktur:', JSON.stringify(ranglisteStructure, null, 2));
+
+        rangliste = await page.evaluate(() => {
+          const tables = Array.from(document.querySelectorAll('table'));
+          for (const table of tables) {
+            const rows = Array.from(table.rows);
+            if (rows.length < 3) continue;
+            const hRow = table.querySelector('thead tr') || rows[0];
+            const headers = Array.from(hRow.cells).map(c => c.textContent.trim().toLowerCase().replace(/\s+/g, ''));
+            const hasPos = headers.some(h => /^(pos|rang|#|platz)$/.test(h));
+            if (!hasPos) continue;
+
+            const standings = [];
+            let posIdx = headers.findIndex(h => /^(pos|rang|platz|#)$/.test(h));
+            let nameIdx = headers.findIndex(h => /^(name|teilnehmer|spieler)$/.test(h));
+            let ptsIdx = headers.findIndex(h => /^(g|gesamt|pkt|punkte)$/.test(h));
+            let exactIdx = headers.findIndex(h => /^(p|exakt)$/.test(h));
+            let tendIdx = headers.findIndex(h => /^(b|tendenz|bonus)$/.test(h));
+            let wrongIdx = headers.findIndex(h => /^(s|falsch|schlecht)$/.test(h));
+
+            if (posIdx === -1) posIdx = 0;
+            if (nameIdx === -1) nameIdx = 2;
+            if (ptsIdx === -1) ptsIdx = rows[0].cells.length - 1;
+
+            const bodyRows = Array.from(table.tBodies[0]?.rows || rows.slice(1));
+            for (const row of bodyRows) {
+              const cells = Array.from(row.cells);
+              if (cells.length < 3) continue;
+              const pos = parseInt(cells[posIdx]?.textContent.trim().replace(/\D/g, ''));
+              if (!pos || pos > 200) continue;
+              const name = cells[nameIdx]?.textContent.trim().split('\n')[0].trim();
+              if (!name || name.length > 60) continue;
+              const pts = parseInt(cells[ptsIdx]?.textContent.trim()) || 0;
+              const exact = exactIdx >= 0 ? parseInt(cells[exactIdx]?.textContent.trim()) || 0 : 0;
+              const tendency = tendIdx >= 0 ? parseInt(cells[tendIdx]?.textContent.trim()) || 0 : 0;
+              const wrong = wrongIdx >= 0 ? parseInt(cells[wrongIdx]?.textContent.trim()) || 0 : 0;
+              let trend = 0;
+              const tc = cells[posIdx + 1];
+              if (tc) {
+                const cls = (tc.className || '') + tc.innerHTML;
+                if (/up|plus|positiv|steig/i.test(cls)) trend = 1;
+                else if (/down|minus|negativ|fall/i.test(cls)) trend = -1;
+              }
+              standings.push({ pos, trend, name, points: pts, exact, tendency, wrong });
+            }
+            if (standings.length > 0) return standings;
+          }
+          return [];
+        });
+        console.log(`  rangliste: ${rangliste.length} Teilnehmer`);
+      } else {
+        console.log('  /rangliste nicht gefunden (kein 200), OK.');
+      }
+    } catch (e) {
+      console.log('  /rangliste Fehler:', e.message);
+    }
   }
 
+  // ── Daten zusammenführen ─────────────────────────────────────────────────
+  let finalStandings = tippResult.standings.length > 0 ? tippResult.standings : rangliste;
+
+  // Falls noch immer keine Standings: Spielernamen aus Tipptabelle + leere Stats
+  if (finalStandings.length === 0 && tippResult.playerNames.length > 0) {
+    console.log('⚠️  Keine Standings gefunden, baue aus Spielernamen auf...');
+    finalStandings = tippResult.playerNames.map((name, i) => ({
+      pos: i + 1, trend: 0, name, points: 0, exact: 0, tendency: 0, wrong: 0,
+    }));
+  }
+
+  console.log(`  → ${finalStandings.length} Teilnehmer, ${tippResult.matches.length} Spiele`);
+
+  // ── Merge mit vorherigem JSON (Punkteverlauf erhalten) ───────────────────
+  let prev = { standings: [], matches: [] };
+  if (fs.existsSync(OUT_PATH)) {
+    try { prev = JSON.parse(fs.readFileSync(OUT_PATH, 'utf8')); }
+    catch (_) {}
+  }
   const prevMap = Object.fromEntries((prev.standings || []).map(s => [s.name, s]));
 
-  const mergedStandings = standings.map(s => {
+  const mergedStandings = finalStandings.map(s => {
     const old = prevMap[s.name] || {};
-    const history = old.pointsHistory || [];
-    // Neuen Punkt nur anhängen wenn er sich geändert hat
-    const lastPts = history[history.length - 1];
-    if (lastPts !== s.points) history.push(s.points);
+    const history = [...(old.pointsHistory || [])];
+    if (history[history.length - 1] !== s.points) history.push(s.points);
     return {
       ...s,
       posPrev: old.pos ?? s.pos,
       pointsHistory: history,
       isHighlighted: s.name === 'TippJungle',
-      predictions: predictions[s.name] || old.predictions || {},
+      predictions: tippResult.predictions[s.name] || old.predictions || [],
     };
   });
 
@@ -230,18 +438,17 @@ async function run() {
     lastUpdated: new Date().toISOString(),
     communityName: COMMUNITY,
     standings: mergedStandings,
-    matches: matches.length > 0 ? matches : (prev.matches || []),
+    matches: tippResult.matches.length > 0 ? tippResult.matches : (prev.matches || []),
   };
 
   fs.mkdirSync(path.dirname(OUT_PATH), { recursive: true });
   fs.writeFileSync(OUT_PATH, JSON.stringify(output, null, 2));
-  console.log(`✅ Daten gespeichert: ${OUT_PATH}`);
-  console.log(`   ${mergedStandings.length} Teilnehmer, ${output.matches.length} Spiele`);
+  console.log(`✅ Gespeichert: ${mergedStandings.length} Teilnehmer, ${output.matches.length} Spiele → ${OUT_PATH}`);
 
   await browser.close();
 }
 
 run().catch(err => {
-  console.error('❌ Scraper Fehler:', err.message);
+  console.error('❌ Fehler:', err.message, err.stack);
   process.exit(1);
 });

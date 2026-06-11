@@ -1,0 +1,28 @@
+{
+  "lastUpdated": "2026-06-11T18:21:53.578Z",
+  "communityName": "wm-2026-odonics",
+  "standings": [],
+  "matches": [
+    {
+      "id": "match_2",
+      "label": "Gast",
+      "played": false,
+      "result": null,
+      "date": null
+    },
+    {
+      "id": "match_3",
+      "label": "Gruppe",
+      "played": false,
+      "result": null,
+      "date": null
+    },
+    {
+      "id": "match_4",
+      "label": "Ergebnis",
+      "played": false,
+      "result": null,
+      "date": null
+    }
+  ]
+}

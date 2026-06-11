@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T20:56:21.645Z",
+  "lastUpdated": "2026-06-11T21:55:24.280Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -71,15 +71,13 @@
     {
       "pos": 1,
       "trend": 0,
-      "name": "AlexPraskac",
+      "name": "AlexP",
       "points": 4,
       "exact": 1,
       "tendency": 0,
       "wrong": 0,
       "posPrev": 1,
       "pointsHistory": [
-        0,
-        2,
         4
       ],
       "isHighlighted": false,
@@ -517,6 +515,656 @@
       "result": null,
       "played": false,
       "date": "2026-06-14T06:00:00"
+    },
+    {
+      "id": "deutschland_cura_ao",
+      "label": "Deutschland – Curaçao",
+      "homeTeam": "Deutschland",
+      "awayTeam": "Curaçao",
+      "group": "Gruppe E",
+      "result": null,
+      "played": false,
+      "date": "2026-06-14T19:00:00"
+    },
+    {
+      "id": "niederlande_japan",
+      "label": "Niederlande – Japan",
+      "homeTeam": "Niederlande",
+      "awayTeam": "Japan",
+      "group": "Gruppe F",
+      "result": null,
+      "played": false,
+      "date": "2026-06-14T22:00:00"
+    },
+    {
+      "id": "elfenbeink_ste_ecuador",
+      "label": "Elfenbeinküste – Ecuador",
+      "homeTeam": "Elfenbeinküste",
+      "awayTeam": "Ecuador",
+      "group": "Gruppe E",
+      "result": null,
+      "played": false,
+      "date": "2026-06-15T01:00:00"
+    },
+    {
+      "id": "schweden_tunesien",
+      "label": "Schweden – Tunesien",
+      "homeTeam": "Schweden",
+      "awayTeam": "Tunesien",
+      "group": "Gruppe F",
+      "result": null,
+      "played": false,
+      "date": "2026-06-15T04:00:00"
+    },
+    {
+      "id": "spanien_kap_verde",
+      "label": "Spanien – Kap Verde",
+      "homeTeam": "Spanien",
+      "awayTeam": "Kap Verde",
+      "group": "Gruppe H",
+      "result": null,
+      "played": false,
+      "date": "2026-06-15T18:00:00"
+    },
+    {
+      "id": "belgien__gypten",
+      "label": "Belgien – Ägypten",
+      "homeTeam": "Belgien",
+      "awayTeam": "Ägypten",
+      "group": "Gruppe G",
+      "result": null,
+      "played": false,
+      "date": "2026-06-15T21:00:00"
+    },
+    {
+      "id": "saudi_arabien_uruguay",
+      "label": "Saudi-Arabien – Uruguay",
+      "homeTeam": "Saudi-Arabien",
+      "awayTeam": "Uruguay",
+      "group": "Gruppe H",
+      "result": null,
+      "played": false,
+      "date": "2026-06-16T00:00:00"
+    },
+    {
+      "id": "iran_neuseeland",
+      "label": "Iran – Neuseeland",
+      "homeTeam": "Iran",
+      "awayTeam": "Neuseeland",
+      "group": "Gruppe G",
+      "result": null,
+      "played": false,
+      "date": "2026-06-16T03:00:00"
+    },
+    {
+      "id": "frankreich_senegal",
+      "label": "Frankreich – Senegal",
+      "homeTeam": "Frankreich",
+      "awayTeam": "Senegal",
+      "group": "Gruppe I",
+      "result": null,
+      "played": false,
+      "date": "2026-06-16T21:00:00"
+    },
+    {
+      "id": "irak_norwegen",
+      "label": "Irak – Norwegen",
+      "homeTeam": "Irak",
+      "awayTeam": "Norwegen",
+      "group": "Gruppe I",
+      "result": null,
+      "played": false,
+      "date": "2026-06-17T00:00:00"
+    },
+    {
+      "id": "argentinien_algerien",
+      "label": "Argentinien – Algerien",
+      "homeTeam": "Argentinien",
+      "awayTeam": "Algerien",
+      "group": "Gruppe J",
+      "result": null,
+      "played": false,
+      "date": "2026-06-17T03:00:00"
+    },
+    {
+      "id": "_sterreich_jordanien",
+      "label": "Österreich – Jordanien",
+      "homeTeam": "Österreich",
+      "awayTeam": "Jordanien",
+      "group": "Gruppe J",
+      "result": null,
+      "played": false,
+      "date": "2026-06-17T06:00:00"
+    },
+    {
+      "id": "portugal_dr_kongo",
+      "label": "Portugal – DR Kongo",
+      "homeTeam": "Portugal",
+      "awayTeam": "DR Kongo",
+      "group": "Gruppe K",
+      "result": null,
+      "played": false,
+      "date": "2026-06-17T19:00:00"
+    },
+    {
+      "id": "england_kroatien",
+      "label": "England – Kroatien",
+      "homeTeam": "England",
+      "awayTeam": "Kroatien",
+      "group": "Gruppe L",
+      "result": null,
+      "played": false,
+      "date": "2026-06-17T22:00:00"
+    },
+    {
+      "id": "ghana_panama",
+      "label": "Ghana – Panama",
+      "homeTeam": "Ghana",
+      "awayTeam": "Panama",
+      "group": "Gruppe L",
+      "result": null,
+      "played": false,
+      "date": "2026-06-18T01:00:00"
+    },
+    {
+      "id": "usbekistan_kolumbien",
+      "label": "Usbekistan – Kolumbien",
+      "homeTeam": "Usbekistan",
+      "awayTeam": "Kolumbien",
+      "group": "Gruppe K",
+      "result": null,
+      "played": false,
+      "date": "2026-06-18T04:00:00"
+    },
+    {
+      "id": "tschechien_s_dafrika",
+      "label": "Tschechien – Südafrika",
+      "homeTeam": "Tschechien",
+      "awayTeam": "Südafrika",
+      "group": "Gruppe A",
+      "result": null,
+      "played": false,
+      "date": "2026-06-18T18:00:00"
+    },
+    {
+      "id": "schweiz_bosnien_herzegowina",
+      "label": "Schweiz – Bosnien-Herzegowina",
+      "homeTeam": "Schweiz",
+      "awayTeam": "Bosnien-Herzegowina",
+      "group": "Gruppe B",
+      "result": null,
+      "played": false,
+      "date": "2026-06-18T21:00:00"
+    },
+    {
+      "id": "kanada_katar",
+      "label": "Kanada – Katar",
+      "homeTeam": "Kanada",
+      "awayTeam": "Katar",
+      "group": "Gruppe B",
+      "result": null,
+      "played": false,
+      "date": "2026-06-19T00:00:00"
+    },
+    {
+      "id": "mexiko_s_dkorea",
+      "label": "Mexiko – Südkorea",
+      "homeTeam": "Mexiko",
+      "awayTeam": "Südkorea",
+      "group": "Gruppe A",
+      "result": null,
+      "played": false,
+      "date": "2026-06-19T03:00:00"
+    },
+    {
+      "id": "usa_australien",
+      "label": "USA – Australien",
+      "homeTeam": "USA",
+      "awayTeam": "Australien",
+      "group": "Gruppe D",
+      "result": null,
+      "played": false,
+      "date": "2026-06-19T21:00:00"
+    },
+    {
+      "id": "schottland_marokko",
+      "label": "Schottland – Marokko",
+      "homeTeam": "Schottland",
+      "awayTeam": "Marokko",
+      "group": "Gruppe C",
+      "result": null,
+      "played": false,
+      "date": "2026-06-20T00:00:00"
+    },
+    {
+      "id": "brasilien_haiti",
+      "label": "Brasilien – Haiti",
+      "homeTeam": "Brasilien",
+      "awayTeam": "Haiti",
+      "group": "Gruppe C",
+      "result": null,
+      "played": false,
+      "date": "2026-06-20T02:30:00"
+    },
+    {
+      "id": "t_rkei_paraguay",
+      "label": "Türkei – Paraguay",
+      "homeTeam": "Türkei",
+      "awayTeam": "Paraguay",
+      "group": "Gruppe D",
+      "result": null,
+      "played": false,
+      "date": "2026-06-20T05:00:00"
+    },
+    {
+      "id": "niederlande_schweden",
+      "label": "Niederlande – Schweden",
+      "homeTeam": "Niederlande",
+      "awayTeam": "Schweden",
+      "group": "Gruppe F",
+      "result": null,
+      "played": false,
+      "date": "2026-06-20T19:00:00"
+    },
+    {
+      "id": "deutschland_elfenbeink_ste",
+      "label": "Deutschland – Elfenbeinküste",
+      "homeTeam": "Deutschland",
+      "awayTeam": "Elfenbeinküste",
+      "group": "Gruppe E",
+      "result": null,
+      "played": false,
+      "date": "2026-06-20T22:00:00"
+    },
+    {
+      "id": "ecuador_cura_ao",
+      "label": "Ecuador – Curaçao",
+      "homeTeam": "Ecuador",
+      "awayTeam": "Curaçao",
+      "group": "Gruppe E",
+      "result": null,
+      "played": false,
+      "date": "2026-06-21T02:00:00"
+    },
+    {
+      "id": "tunesien_japan",
+      "label": "Tunesien – Japan",
+      "homeTeam": "Tunesien",
+      "awayTeam": "Japan",
+      "group": "Gruppe F",
+      "result": null,
+      "played": false,
+      "date": "2026-06-21T06:00:00"
+    },
+    {
+      "id": "spanien_saudi_arabien",
+      "label": "Spanien – Saudi-Arabien",
+      "homeTeam": "Spanien",
+      "awayTeam": "Saudi-Arabien",
+      "group": "Gruppe H",
+      "result": null,
+      "played": false,
+      "date": "2026-06-21T18:00:00"
+    },
+    {
+      "id": "belgien_iran",
+      "label": "Belgien – Iran",
+      "homeTeam": "Belgien",
+      "awayTeam": "Iran",
+      "group": "Gruppe G",
+      "result": null,
+      "played": false,
+      "date": "2026-06-21T21:00:00"
+    },
+    {
+      "id": "uruguay_kap_verde",
+      "label": "Uruguay – Kap Verde",
+      "homeTeam": "Uruguay",
+      "awayTeam": "Kap Verde",
+      "group": "Gruppe H",
+      "result": null,
+      "played": false,
+      "date": "2026-06-22T00:00:00"
+    },
+    {
+      "id": "neuseeland__gypten",
+      "label": "Neuseeland – Ägypten",
+      "homeTeam": "Neuseeland",
+      "awayTeam": "Ägypten",
+      "group": "Gruppe G",
+      "result": null,
+      "played": false,
+      "date": "2026-06-22T03:00:00"
+    },
+    {
+      "id": "argentinien__sterreich",
+      "label": "Argentinien – Österreich",
+      "homeTeam": "Argentinien",
+      "awayTeam": "Österreich",
+      "group": "Gruppe J",
+      "result": null,
+      "played": false,
+      "date": "2026-06-22T19:00:00"
+    },
+    {
+      "id": "frankreich_irak",
+      "label": "Frankreich – Irak",
+      "homeTeam": "Frankreich",
+      "awayTeam": "Irak",
+      "group": "Gruppe I",
+      "result": null,
+      "played": false,
+      "date": "2026-06-22T23:00:00"
+    },
+    {
+      "id": "norwegen_senegal",
+      "label": "Norwegen – Senegal",
+      "homeTeam": "Norwegen",
+      "awayTeam": "Senegal",
+      "group": "Gruppe I",
+      "result": null,
+      "played": false,
+      "date": "2026-06-23T02:00:00"
+    },
+    {
+      "id": "jordanien_algerien",
+      "label": "Jordanien – Algerien",
+      "homeTeam": "Jordanien",
+      "awayTeam": "Algerien",
+      "group": "Gruppe J",
+      "result": null,
+      "played": false,
+      "date": "2026-06-23T05:00:00"
+    },
+    {
+      "id": "portugal_usbekistan",
+      "label": "Portugal – Usbekistan",
+      "homeTeam": "Portugal",
+      "awayTeam": "Usbekistan",
+      "group": "Gruppe K",
+      "result": null,
+      "played": false,
+      "date": "2026-06-23T19:00:00"
+    },
+    {
+      "id": "england_ghana",
+      "label": "England – Ghana",
+      "homeTeam": "England",
+      "awayTeam": "Ghana",
+      "group": "Gruppe L",
+      "result": null,
+      "played": false,
+      "date": "2026-06-23T22:00:00"
+    },
+    {
+      "id": "panama_kroatien",
+      "label": "Panama – Kroatien",
+      "homeTeam": "Panama",
+      "awayTeam": "Kroatien",
+      "group": "Gruppe L",
+      "result": null,
+      "played": false,
+      "date": "2026-06-24T01:00:00"
+    },
+    {
+      "id": "kolumbien_dr_kongo",
+      "label": "Kolumbien – DR Kongo",
+      "homeTeam": "Kolumbien",
+      "awayTeam": "DR Kongo",
+      "group": "Gruppe K",
+      "result": null,
+      "played": false,
+      "date": "2026-06-24T04:00:00"
+    },
+    {
+      "id": "bosnien_herzegowina_katar",
+      "label": "Bosnien-Herzegowina – Katar",
+      "homeTeam": "Bosnien-Herzegowina",
+      "awayTeam": "Katar",
+      "group": "Gruppe B",
+      "result": null,
+      "played": false,
+      "date": "2026-06-24T21:00:00"
+    },
+    {
+      "id": "schweiz_kanada",
+      "label": "Schweiz – Kanada",
+      "homeTeam": "Schweiz",
+      "awayTeam": "Kanada",
+      "group": "Gruppe B",
+      "result": null,
+      "played": false,
+      "date": "2026-06-24T21:00:00"
+    },
+    {
+      "id": "marokko_haiti",
+      "label": "Marokko – Haiti",
+      "homeTeam": "Marokko",
+      "awayTeam": "Haiti",
+      "group": "Gruppe C",
+      "result": null,
+      "played": false,
+      "date": "2026-06-25T00:00:00"
+    },
+    {
+      "id": "schottland_brasilien",
+      "label": "Schottland – Brasilien",
+      "homeTeam": "Schottland",
+      "awayTeam": "Brasilien",
+      "group": "Gruppe C",
+      "result": null,
+      "played": false,
+      "date": "2026-06-25T00:00:00"
+    },
+    {
+      "id": "s_dafrika_s_dkorea",
+      "label": "Südafrika – Südkorea",
+      "homeTeam": "Südafrika",
+      "awayTeam": "Südkorea",
+      "group": "Gruppe A",
+      "result": null,
+      "played": false,
+      "date": "2026-06-25T03:00:00"
+    },
+    {
+      "id": "tschechien_mexiko",
+      "label": "Tschechien – Mexiko",
+      "homeTeam": "Tschechien",
+      "awayTeam": "Mexiko",
+      "group": "Gruppe A",
+      "result": null,
+      "played": false,
+      "date": "2026-06-25T03:00:00"
+    },
+    {
+      "id": "cura_ao_elfenbeink_ste",
+      "label": "Curaçao – Elfenbeinküste",
+      "homeTeam": "Curaçao",
+      "awayTeam": "Elfenbeinküste",
+      "group": "Gruppe E",
+      "result": null,
+      "played": false,
+      "date": "2026-06-25T22:00:00"
+    },
+    {
+      "id": "ecuador_deutschland",
+      "label": "Ecuador – Deutschland",
+      "homeTeam": "Ecuador",
+      "awayTeam": "Deutschland",
+      "group": "Gruppe E",
+      "result": null,
+      "played": false,
+      "date": "2026-06-25T22:00:00"
+    },
+    {
+      "id": "japan_schweden",
+      "label": "Japan – Schweden",
+      "homeTeam": "Japan",
+      "awayTeam": "Schweden",
+      "group": "Gruppe F",
+      "result": null,
+      "played": false,
+      "date": "2026-06-26T01:00:00"
+    },
+    {
+      "id": "tunesien_niederlande",
+      "label": "Tunesien – Niederlande",
+      "homeTeam": "Tunesien",
+      "awayTeam": "Niederlande",
+      "group": "Gruppe F",
+      "result": null,
+      "played": false,
+      "date": "2026-06-26T01:00:00"
+    },
+    {
+      "id": "paraguay_australien",
+      "label": "Paraguay – Australien",
+      "homeTeam": "Paraguay",
+      "awayTeam": "Australien",
+      "group": "Gruppe D",
+      "result": null,
+      "played": false,
+      "date": "2026-06-26T04:00:00"
+    },
+    {
+      "id": "t_rkei_usa",
+      "label": "Türkei – USA",
+      "homeTeam": "Türkei",
+      "awayTeam": "USA",
+      "group": "Gruppe D",
+      "result": null,
+      "played": false,
+      "date": "2026-06-26T04:00:00"
+    },
+    {
+      "id": "norwegen_frankreich",
+      "label": "Norwegen – Frankreich",
+      "homeTeam": "Norwegen",
+      "awayTeam": "Frankreich",
+      "group": "Gruppe I",
+      "result": null,
+      "played": false,
+      "date": "2026-06-26T21:00:00"
+    },
+    {
+      "id": "senegal_irak",
+      "label": "Senegal – Irak",
+      "homeTeam": "Senegal",
+      "awayTeam": "Irak",
+      "group": "Gruppe I",
+      "result": null,
+      "played": false,
+      "date": "2026-06-26T21:00:00"
+    },
+    {
+      "id": "uruguay_spanien",
+      "label": "Uruguay – Spanien",
+      "homeTeam": "Uruguay",
+      "awayTeam": "Spanien",
+      "group": "Gruppe H",
+      "result": null,
+      "played": false,
+      "date": "2026-06-27T02:00:00"
+    },
+    {
+      "id": "kap_verde_saudi_arabien",
+      "label": "Kap Verde – Saudi-Arabien",
+      "homeTeam": "Kap Verde",
+      "awayTeam": "Saudi-Arabien",
+      "group": "Gruppe H",
+      "result": null,
+      "played": false,
+      "date": "2026-06-27T02:00:00"
+    },
+    {
+      "id": "neuseeland_belgien",
+      "label": "Neuseeland – Belgien",
+      "homeTeam": "Neuseeland",
+      "awayTeam": "Belgien",
+      "group": "Gruppe G",
+      "result": null,
+      "played": false,
+      "date": "2026-06-27T05:00:00"
+    },
+    {
+      "id": "_gypten_iran",
+      "label": "Ägypten – Iran",
+      "homeTeam": "Ägypten",
+      "awayTeam": "Iran",
+      "group": "Gruppe G",
+      "result": null,
+      "played": false,
+      "date": "2026-06-27T05:00:00"
+    },
+    {
+      "id": "kroatien_ghana",
+      "label": "Kroatien – Ghana",
+      "homeTeam": "Kroatien",
+      "awayTeam": "Ghana",
+      "group": "Gruppe L",
+      "result": null,
+      "played": false,
+      "date": "2026-06-27T23:00:00"
+    },
+    {
+      "id": "panama_england",
+      "label": "Panama – England",
+      "homeTeam": "Panama",
+      "awayTeam": "England",
+      "group": "Gruppe L",
+      "result": null,
+      "played": false,
+      "date": "2026-06-27T23:00:00"
+    },
+    {
+      "id": "dr_kongo_usbekistan",
+      "label": "DR Kongo – Usbekistan",
+      "homeTeam": "DR Kongo",
+      "awayTeam": "Usbekistan",
+      "group": "Gruppe K",
+      "result": null,
+      "played": false,
+      "date": "2026-06-28T01:30:00"
+    },
+    {
+      "id": "kolumbien_portugal",
+      "label": "Kolumbien – Portugal",
+      "homeTeam": "Kolumbien",
+      "awayTeam": "Portugal",
+      "group": "Gruppe K",
+      "result": null,
+      "played": false,
+      "date": "2026-06-28T01:30:00"
+    },
+    {
+      "id": "algerien__sterreich",
+      "label": "Algerien – Österreich",
+      "homeTeam": "Algerien",
+      "awayTeam": "Österreich",
+      "group": "Gruppe J",
+      "result": null,
+      "played": false,
+      "date": "2026-06-28T04:00:00"
+    },
+    {
+      "id": "jordanien_argentinien",
+      "label": "Jordanien – Argentinien",
+      "homeTeam": "Jordanien",
+      "awayTeam": "Argentinien",
+      "group": "Gruppe J",
+      "result": null,
+      "played": false,
+      "date": "2026-06-28T04:00:00"
+    },
+    {
+      "id": "unbekannt_unbekannt",
+      "label": "unbekannt – unbekannt",
+      "homeTeam": "unbekannt",
+      "awayTeam": "unbekannt",
+      "group": null,
+      "result": null,
+      "played": false,
+      "date": "2026-06-28T21:00:00"
     }
   ]
 }

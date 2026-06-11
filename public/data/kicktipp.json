@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T19:57:29.743Z",
+  "lastUpdated": "2026-06-11T20:23:39.374Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -7,288 +7,378 @@
       "trend": 0,
       "name": "Michel",
       "points": 4,
-      "exact": 4,
+      "exact": 1,
       "tendency": 0,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 1,
       "pointsHistory": [
         0,
         4
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "1:0",
+          "points": 4
+        }
+      }
     },
     {
       "pos": 1,
       "trend": 0,
       "name": "MaWa44",
       "points": 4,
-      "exact": 4,
+      "exact": 1,
       "tendency": 0,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 1,
       "pointsHistory": [
         0,
         4
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "1:0",
+          "points": 4
+        }
+      }
     },
     {
       "pos": 1,
       "trend": 0,
       "name": "Sigi",
       "points": 4,
-      "exact": 4,
+      "exact": 1,
       "tendency": 0,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 1,
       "pointsHistory": [
         0,
         4
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "1:0",
+          "points": 4
+        }
+      }
     },
     {
       "pos": 4,
       "trend": 0,
       "name": "Jacky",
       "points": 3,
-      "exact": 3,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 4,
       "pointsHistory": [
         0,
         3
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:1",
+          "points": 3
+        }
+      }
     },
     {
       "pos": 4,
       "trend": 0,
       "name": "Phips",
       "points": 3,
-      "exact": 3,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 4,
       "pointsHistory": [
         0,
         3
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:1",
+          "points": 3
+        }
+      }
     },
     {
       "pos": 4,
       "trend": 0,
       "name": "Robi",
       "points": 3,
-      "exact": 3,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 4,
       "pointsHistory": [
         0,
         3
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:1",
+          "points": 3
+        }
+      }
     },
     {
       "pos": 4,
       "trend": 0,
       "name": "Schneckerl",
       "points": 3,
-      "exact": 3,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 4,
       "pointsHistory": [
         0,
         3
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:1",
+          "points": 3
+        }
+      }
     },
     {
       "pos": 4,
       "trend": 0,
       "name": "OnkelAlex",
       "points": 3,
-      "exact": 3,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 4,
       "pointsHistory": [
         0,
         3
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:1",
+          "points": 3
+        }
+      }
     },
     {
       "pos": 9,
       "trend": 0,
       "name": "WAC",
       "points": 2,
-      "exact": 2,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 9,
       "pointsHistory": [
         0,
         2
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:0",
+          "points": 2
+        }
+      }
     },
     {
       "pos": 9,
       "trend": 0,
       "name": "TippJungle",
       "points": 2,
-      "exact": 2,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 9,
       "pointsHistory": [
         0,
         2
       ],
-      "isHighlighted": true
+      "isHighlighted": true,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:0",
+          "points": 2
+        }
+      }
     },
     {
       "pos": 9,
       "trend": 0,
       "name": "Raphi",
       "points": 2,
-      "exact": 2,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 9,
       "pointsHistory": [
         0,
         2
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "3:1",
+          "points": 2
+        }
+      }
     },
     {
       "pos": 9,
       "trend": 0,
       "name": "ZaM",
       "points": 2,
-      "exact": 2,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 9,
       "pointsHistory": [
         0,
         2
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "3:1",
+          "points": 2
+        }
+      }
     },
     {
       "pos": 9,
       "trend": 0,
       "name": "Panu",
       "points": 2,
-      "exact": 2,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 9,
       "pointsHistory": [
         0,
         2
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:0",
+          "points": 2
+        }
+      }
     },
     {
       "pos": 9,
       "trend": 0,
       "name": "AlexPraskac",
       "points": 2,
-      "exact": 2,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 9,
       "pointsHistory": [
         0,
         2
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:0",
+          "points": 2
+        }
+      }
     },
     {
       "pos": 9,
       "trend": 0,
       "name": "Kiki",
       "points": 2,
-      "exact": 2,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 9,
       "pointsHistory": [
         0,
         2
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:0",
+          "points": 2
+        }
+      }
     },
     {
       "pos": 9,
       "trend": 0,
       "name": "Andy",
       "points": 2,
-      "exact": 2,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 9,
       "pointsHistory": [
         0,
         2
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "3:0",
+          "points": 2
+        }
+      }
     },
     {
       "pos": 9,
       "trend": 0,
       "name": "DOl",
       "points": 2,
-      "exact": 2,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 9,
       "pointsHistory": [
         0,
         2
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:0",
+          "points": 2
+        }
+      }
     },
     {
       "pos": 9,
       "trend": 0,
       "name": "Peppolini",
       "points": 2,
-      "exact": 2,
-      "tendency": 0,
+      "exact": 0,
+      "tendency": 1,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 9,
       "pointsHistory": [
         0,
         2
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "3:0",
+          "points": 2
+        }
+      }
     },
     {
       "pos": 19,
@@ -298,12 +388,17 @@
       "exact": 0,
       "tendency": 0,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 19,
       "pointsHistory": [
         0
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "0:1",
+          "points": null
+        }
+      }
     },
     {
       "pos": 19,
@@ -313,35 +408,99 @@
       "exact": 0,
       "tendency": 0,
       "wrong": 0,
-      "predictions": {},
       "posPrev": 19,
       "pointsHistory": [
         0
       ],
-      "isHighlighted": false
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "1:1",
+          "points": null
+        }
+      }
     }
   ],
   "matches": [
     {
-      "id": "match_2",
-      "label": "Gast",
-      "played": false,
-      "result": null,
-      "date": null
+      "id": "mexiko_s_dafrika",
+      "label": "Mexiko – Südafrika",
+      "homeTeam": "Mexiko",
+      "awayTeam": "Südafrika",
+      "group": "Gruppe A",
+      "result": "1:0",
+      "played": true,
+      "date": "2026-06-11T19:00:00"
     },
     {
-      "id": "match_3",
-      "label": "Gruppe",
-      "played": false,
+      "id": "s_dkorea_tschechien",
+      "label": "Südkorea – Tschechien",
+      "homeTeam": "Südkorea",
+      "awayTeam": "Tschechien",
+      "group": "Gruppe A",
       "result": null,
-      "date": null
+      "played": false,
+      "date": "2026-06-12T02:00:00"
     },
     {
-      "id": "match_4",
-      "label": "Ergebnis",
-      "played": false,
+      "id": "kanada_bosnien_herzegowina",
+      "label": "Kanada – Bosnien-Herzegowina",
+      "homeTeam": "Kanada",
+      "awayTeam": "Bosnien-Herzegowina",
+      "group": "Gruppe B",
       "result": null,
-      "date": null
+      "played": false,
+      "date": "2026-06-12T19:00:00"
+    },
+    {
+      "id": "usa_paraguay",
+      "label": "USA – Paraguay",
+      "homeTeam": "USA",
+      "awayTeam": "Paraguay",
+      "group": "Gruppe D",
+      "result": null,
+      "played": false,
+      "date": "2026-06-13T01:00:00"
+    },
+    {
+      "id": "katar_schweiz",
+      "label": "Katar – Schweiz",
+      "homeTeam": "Katar",
+      "awayTeam": "Schweiz",
+      "group": "Gruppe B",
+      "result": null,
+      "played": false,
+      "date": "2026-06-13T19:00:00"
+    },
+    {
+      "id": "brasilien_marokko",
+      "label": "Brasilien – Marokko",
+      "homeTeam": "Brasilien",
+      "awayTeam": "Marokko",
+      "group": "Gruppe C",
+      "result": null,
+      "played": false,
+      "date": "2026-06-13T22:00:00"
+    },
+    {
+      "id": "haiti_schottland",
+      "label": "Haiti – Schottland",
+      "homeTeam": "Haiti",
+      "awayTeam": "Schottland",
+      "group": "Gruppe C",
+      "result": null,
+      "played": false,
+      "date": "2026-06-14T01:00:00"
+    },
+    {
+      "id": "australien_t_rkei",
+      "label": "Australien – Türkei",
+      "homeTeam": "Australien",
+      "awayTeam": "Türkei",
+      "group": "Gruppe D",
+      "result": null,
+      "played": false,
+      "date": "2026-06-14T04:00:00"
     }
   ]
 }

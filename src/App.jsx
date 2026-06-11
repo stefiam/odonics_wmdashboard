@@ -32,7 +32,7 @@ function Countdown({ targetDate }) {
     return () => clearInterval(id);
   }, [targetDate]);
 
-  return <span className="font-mono text-[#d9e8e5]">{timeLeft}</span>;
+  return <span className="font-mono text-[#f7b32b] font-bold">{timeLeft}</span>;
 }
 
 export default function App() {
@@ -55,19 +55,24 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#1e4745]">
+    <div className="min-h-screen bg-[#f6fbfb]">
       {/* Header */}
-      <header className="border-b border-[#2d6460] bg-[#183d3b]">
+      <header className="bg-white shadow-sm border-b border-[#d9e8e5]">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <span className="text-3xl">⚽</span>
+          <div className="flex items-center gap-4">
+            <img
+              src={`${BASE}logo.png`}
+              alt="WM 2026 Tippspiel"
+              className="h-16 w-16 object-contain"
+              onError={e => { e.target.style.display = 'none'; }}
+            />
             <div>
-              <h1 className="text-xl font-bold text-white leading-tight">WM 2026 Tippspiel</h1>
-              <p className="text-xs text-gray-500">FIFA World Cup • USA / Kanada / Mexiko</p>
+              <h1 className="text-xl font-bold text-[#1e4745] leading-tight">WM 2026 Tippspiel</h1>
+              <p className="text-xs text-[#2d6460]">Odonics · FIFA World Cup · USA / Kanada / Mexiko</p>
             </div>
           </div>
           <div className="text-right text-sm">
-            <div className="text-gray-500 text-xs mb-0.5">Finale in</div>
+            <div className="text-[#2d6460] text-xs mb-0.5">Finale in</div>
             <Countdown targetDate="2026-07-19T21:00:00Z" />
           </div>
         </div>
@@ -81,8 +86,8 @@ export default function App() {
                 onClick={() => setActiveTab(t.id)}
                 className={`px-4 py-2.5 text-sm font-medium border-b-2 transition-colors ${
                   activeTab === t.id
-                    ? 'border-[#d9e8e5] text-[#d9e8e5]'
-                    : 'border-transparent text-[#7fb5b1] hover:text-[#d9e8e5]'
+                    ? 'border-[#f7b32b] text-[#f7b32b]'
+                    : 'border-transparent text-[#2d6460] hover:text-[#1e4745]'
                 }`}
               >
                 {t.label}
@@ -95,13 +100,13 @@ export default function App() {
       {/* Content */}
       <main className="max-w-7xl mx-auto px-4 py-6">
         {error && (
-          <div className="bg-red-900/40 border border-red-700 text-red-300 rounded-lg p-4 mb-6 text-sm">
+          <div className="bg-red-50 border border-red-200 text-red-700 rounded-lg p-4 mb-6 text-sm">
             ⚠️ Daten konnten nicht geladen werden: {error}
           </div>
         )}
 
         {!data && !error && (
-          <div className="flex items-center justify-center h-48 text-gray-500">
+          <div className="flex items-center justify-center h-48 text-[#5a9490]">
             <span className="animate-pulse">Lade Daten…</span>
           </div>
         )}
@@ -117,7 +122,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-[#2d6460] mt-8 py-4 px-4 text-center text-xs text-[#5a9490]">
+      <footer className="border-t border-[#d9e8e5] mt-8 py-4 px-4 text-center text-xs text-[#7aadaa]">
         {data && <>Zuletzt aktualisiert: {formatDate(data.lastUpdated)} · </>}
         Daten via Kicktipp.de
       </footer>

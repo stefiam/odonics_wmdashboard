@@ -1,19 +1,19 @@
 import { useState } from 'react';
 
 function TipBadge({ tip, points, result }) {
-  if (!tip) return <span className="text-gray-700 text-xs">–</span>;
+  if (!tip) return <span className="text-gray-300 text-xs">–</span>;
 
-  let bg = 'bg-gray-800 text-gray-400';
+  let style = 'bg-[#f0f8f7] text-[#5a8a86] border border-[#d9e8e5]';
   if (result) {
-    if (points >= 3) bg = 'bg-emerald-900/60 text-emerald-300 ring-1 ring-emerald-500/50';
-    else if (points >= 1) bg = 'bg-[#255552] text-[#d9e8e5] ring-1 ring-[#d9e8e5]/40';
-    else bg = 'bg-red-900/40 text-red-400';
+    if (points >= 3) style = 'bg-emerald-50 text-emerald-700 border border-emerald-200';
+    else if (points >= 1) style = 'bg-[#fff8e6] text-[#c8890a] border border-[#f7b32b]/50';
+    else style = 'bg-red-50 text-red-500 border border-red-100';
   }
 
   return (
-    <span className={`inline-flex items-center px-1.5 py-0.5 rounded text-xs font-mono font-bold ${bg}`}>
+    <span className={`inline-flex items-center px-1.5 py-0.5 rounded text-xs font-mono font-bold ${style}`}>
       {tip}
-      {points > 0 && <span className="ml-1 opacity-70 font-normal">+{points}</span>}
+      {points > 0 && <span className="ml-1 opacity-60 font-normal">+{points}</span>}
     </span>
   );
 }
@@ -39,11 +39,11 @@ function TipDistribution({ match, standings }) {
         <div key={outcome} className="flex items-center gap-1">
           <div
             className={`h-1.5 rounded-full ${
-              outcome === 'Heim' ? 'bg-blue-400' : outcome === 'Auswärts' ? 'bg-red-400' : 'bg-gray-500'
+              outcome === 'Heim' ? 'bg-blue-400' : outcome === 'Auswärts' ? 'bg-red-400' : 'bg-gray-300'
             }`}
             style={{ width: `${Math.max(12, (count / total) * 60)}px` }}
           />
-          <span className="text-gray-500">{outcome}: <span className="text-gray-300">{count}</span></span>
+          <span className="text-[#7aadaa]">{outcome}: <span className="text-[#1e4745] font-medium">{count}</span></span>
         </div>
       ))}
     </div>
@@ -59,43 +59,50 @@ export default function MatchBreakdown({ matches, standings }) {
   const MatchCard = ({ match }) => {
     const isOpen = expanded === match.id;
     return (
-      <div className={`border border-[#2d6460] rounded-xl overflow-hidden transition-all ${
-        match.played ? 'bg-[#255552]' : 'bg-[#183d3b] opacity-80'
+      <div className={`border rounded-xl overflow-hidden transition-all shadow-sm ${
+        match.played ? 'bg-white border-[#d9e8e5]' : 'bg-[#f6fbfb] border-[#e5f0ef] opacity-80'
       }`}>
         <button
-          className="w-full px-4 py-3 flex items-center justify-between hover:bg-white/5 transition-colors"
+          className="w-full px-4 py-3 flex items-center justify-between hover:bg-[#f6fbfb] transition-colors"
           onClick={() => setExpanded(isOpen ? null : match.id)}
         >
           <div className="flex items-center gap-3">
-            <span className={`text-xs px-2 py-0.5 rounded-full ${match.played ? 'bg-emerald-900/40 text-emerald-400' : 'bg-gray-800 text-gray-500'}`}>
+            <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${
+              match.played
+                ? 'bg-emerald-50 text-emerald-600 border border-emerald-100'
+                : 'bg-[#e5f0ef] text-[#7aadaa]'
+            }`}>
               {match.played ? 'Abgepfiffen' : 'Ausstehend'}
             </span>
-            <span className="font-semibold text-gray-200 text-sm">{match.label}</span>
+            <span className="font-semibold text-[#1e4745] text-sm">{match.label}</span>
             {match.result && (
-              <span className="text-[#d9e8e5] font-bold font-mono text-sm">{match.result}</span>
+              <span className="text-[#f7b32b] font-bold font-mono text-sm bg-[#fff8e6] px-2 py-0.5 rounded">
+                {match.result}
+              </span>
             )}
           </div>
-          <div className="flex items-center gap-2 text-gray-500">
+          <div className="flex items-center gap-2 text-[#a8d0cc]">
             {match.date && <span className="text-xs">{new Date(match.date).toLocaleDateString('de-AT', { day: '2-digit', month: '2-digit' })}</span>}
             <span className="text-xs">{isOpen ? '▲' : '▼'}</span>
           </div>
         </button>
 
         {isOpen && (
-          <div className="border-t border-[#2d6460] px-4 pb-4 pt-3">
+          <div className="border-t border-[#e5f0ef] px-4 pb-4 pt-3">
             <TipDistribution match={match} standings={standings} />
-
             <div className="mt-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
               {standings.map(p => {
                 const pred = p.predictions?.[match.id];
                 return (
                   <div
                     key={p.name}
-                    className={`flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-[#1e4745] border border-[#2d6460] ${
-                      p.isHighlighted ? 'ring-1 ring-[#d9e8e5]/40' : ''
+                    className={`flex items-center justify-between px-2.5 py-1.5 rounded-lg border transition-colors ${
+                      p.isHighlighted
+                        ? 'bg-[#fff8e6] border-[#f7b32b]/40'
+                        : 'bg-[#f6fbfb] border-[#e5f0ef]'
                     }`}
                   >
-                    <span className={`text-xs truncate mr-2 ${p.isHighlighted ? 'text-[#d9e8e5]' : 'text-gray-300'}`}>
+                    <span className={`text-xs truncate mr-2 ${p.isHighlighted ? 'text-[#1e4745] font-bold' : 'text-[#1e4745]'}`}>
                       {p.name}
                     </span>
                     <TipBadge tip={pred?.tip} points={pred?.points || 0} result={match.result} />
@@ -113,7 +120,7 @@ export default function MatchBreakdown({ matches, standings }) {
     <div className="space-y-6">
       {played.length > 0 && (
         <div>
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
+          <h2 className="text-sm font-semibold text-[#5a8a86] uppercase tracking-wider mb-3">
             ⚽ Gespielte Partien ({played.length})
           </h2>
           <div className="space-y-2">
@@ -124,7 +131,7 @@ export default function MatchBreakdown({ matches, standings }) {
 
       {upcoming.length > 0 && (
         <div>
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
+          <h2 className="text-sm font-semibold text-[#5a8a86] uppercase tracking-wider mb-3">
             🕐 Nächste Partien ({upcoming.length})
           </h2>
           <div className="space-y-2">
@@ -134,7 +141,7 @@ export default function MatchBreakdown({ matches, standings }) {
       )}
 
       {matches.length === 0 && (
-        <div className="text-center text-gray-500 py-12">
+        <div className="text-center text-[#a8d0cc] py-12">
           Noch keine Spieldaten vorhanden.
         </div>
       )}

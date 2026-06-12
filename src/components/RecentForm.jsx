@@ -138,19 +138,25 @@ export default function RecentForm({ standings, matches }) {
 
       {/* Highlight-Karten */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-        {[
-          { label: 'Heißeste Form', icon: '🔥', pick: standings.reduce((a, b) => streakOf(b) > streakOf(a) ? b : a, standings[0]) },
-          { label: 'Losing Streak', icon: '❄️', pick: standings.reduce((a, b) => losingStreakOf(b) > losingStreakOf(a) ? b : a, standings[0]) },
-          { label: 'Meiste Exakttreffer', icon: '🎯', pick: standings.reduce((a, b) => (b.exact || 0) > (a.exact || 0) ? b : a, standings[0]) },
-          { label: 'Führender', icon: '🏆', pick: standings[0] },
-        ].map(({ label, icon, pick }) => (
-          <div key={label} className={`border rounded-xl p-4 shadow-sm ${pick?.isHighlighted ? 'bg-[#fff8e6] border-[#f7b32b]/50' : 'bg-white border-[#d9e8e5]'}`}>
-            <div className="text-2xl mb-1">{icon}</div>
-            <div className="text-xs text-[#7aadaa]">{label}</div>
-            <div className="text-base font-bold mt-1 text-[#1e4745]">{pick?.name}</div>
-            <div className="text-xs text-[#7aadaa]">{pick?.points} Punkte</div>
-          </div>
-        ))}
+        {(() => {
+          const hotPick  = standings.reduce((a, b) => streakOf(b) > streakOf(a) ? b : a, standings[0]);
+          const coldPick = standings.reduce((a, b) => losingStreakOf(b) > losingStreakOf(a) ? b : a, standings[0]);
+          const hotStreak  = streakOf(hotPick);
+          const coldStreak = losingStreakOf(coldPick);
+          return [
+            { label: 'Heißeste Form',     icon: '🔥', name: hotStreak  > 1 ? hotPick.name  : '–', sub: hotStreak  > 1 ? `${hotStreak} in Folge`  : 'Noch keine Streak', highlighted: hotStreak  > 1 && hotPick.isHighlighted },
+            { label: 'Losing Streak',     icon: '❄️', name: coldStreak > 1 ? coldPick.name : '–', sub: coldStreak > 1 ? `${coldStreak} in Folge` : 'Noch keine Streak', highlighted: coldStreak > 1 && coldPick.isHighlighted },
+            { label: 'Meiste Exakttreffer', icon: '🎯', name: standings.reduce((a, b) => (b.exact||0) > (a.exact||0) ? b : a, standings[0]).name, sub: `${standings.reduce((a, b) => (b.exact||0) > (a.exact||0) ? b : a, standings[0]).exact} Exakt`, highlighted: standings.reduce((a, b) => (b.exact||0) > (a.exact||0) ? b : a, standings[0]).isHighlighted },
+            { label: 'Führender',         icon: '🏆', name: standings[0].name, sub: `${standings[0].points} Punkte`, highlighted: standings[0].isHighlighted },
+          ].map(({ label, icon, name, sub, highlighted }) => (
+            <div key={label} className={`border rounded-xl p-4 shadow-sm ${highlighted ? 'bg-[#fff8e6] border-[#f7b32b]/50' : 'bg-white border-[#d9e8e5]'}`}>
+              <div className="text-2xl mb-1">{icon}</div>
+              <div className="text-xs text-[#7aadaa]">{label}</div>
+              <div className="text-base font-bold mt-1 text-[#1e4745]">{name}</div>
+              <div className="text-xs text-[#7aadaa]">{sub}</div>
+            </div>
+          ));
+        })()}
       </div>
     </div>
   );

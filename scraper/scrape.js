@@ -286,12 +286,16 @@ async function run() {
     });
 
     const history = [...(old.pointsHistory || [])];
-    if (history[history.length - 1] !== s.points) history.push(s.points);
+    const pointsChanged = history[history.length - 1] !== s.points;
+    if (pointsChanged) history.push(s.points);
+
+    // posPrev nur updaten wenn sich Punkte geändert haben — sonst bleibt der alte Wert
+    const posPrev = pointsChanged ? (old.pos ?? s.pos) : (old.posPrev ?? old.pos ?? s.pos);
 
     return {
       pos: s.pos, trend: s.trend, name: s.name, points: s.points,
       exact, diff, tendency, wrong,
-      posPrev: old.pos ?? s.pos,
+      posPrev,
       pointsHistory: history,
       isHighlighted: s.name === HIGHLIGHT_NAME,
       predictions,

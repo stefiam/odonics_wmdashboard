@@ -28,10 +28,11 @@ jobs:
             try {
               const d = JSON.parse(fs.readFileSync('public/data/kicktipp.json', 'utf8'));
               const now = Date.now();
+              const CEST = 2 * 60 * 60 * 1000; // Dates in JSON sind CEST, Actions läuft UTC
               const live = (d.matches || []).some(m => {
                 if (!m.date) return false;
-                const start = new Date(m.date).getTime();
-                return now >= start && now <= start + 115 * 60 * 1000;
+                const start = new Date(m.date).getTime() - CEST;
+                return now >= start && now <= start + 140 * 60 * 1000;
               });
               console.log(live ? 'true' : 'false');
             } catch(e) { console.log('false'); }

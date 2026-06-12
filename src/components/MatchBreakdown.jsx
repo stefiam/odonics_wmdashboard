@@ -54,7 +54,7 @@ function isMatchLive(match) {
   if (!match.date) return false;
   const start = new Date(match.date).getTime();
   const now = Date.now();
-  return now >= start && now <= start + 115 * 60 * 1000;
+  return now >= start && now <= start + 140 * 60 * 1000;
 }
 
 export default function MatchBreakdown({ matches, standings }) {

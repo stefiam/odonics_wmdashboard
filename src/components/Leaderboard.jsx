@@ -119,28 +119,9 @@ function PlayerModal({ player, onClose }) {
 
 const PRIZES = { 1: 220, 2: 140, 3: 90, 4: 50, 5: 30 };
 
-// Bei Gleichstand: betroffene Preise aufaddieren und gleichmäßig aufteilen
-function computePrizes(standings) {
-  const groups = {};
-  standings.forEach(p => {
-    if (!groups[p.pos]) groups[p.pos] = [];
-    groups[p.pos].push(p.name);
-  });
-  const result = {};
-  Object.entries(groups).forEach(([pos, names]) => {
-    const p = parseInt(pos);
-    let total = 0;
-    for (let i = 0; i < names.length; i++) total += (PRIZES[p + i] ?? 0);
-    const split = names.length > 0 ? Math.round(total / names.length) : 0;
-    names.forEach(name => { result[name] = split; });
-  });
-  return result;
-}
-
 export default function Leaderboard({ standings }) {
   const [selectedPlayer, setSelectedPlayer] = useState(null);
   const top3 = standings.slice(0, 3);
-  const prizes = computePrizes(standings);
 
   return (
     <div>
@@ -184,7 +165,7 @@ export default function Leaderboard({ standings }) {
         </div>
 
         {standings.map((p) => {
-          const prize = prizes[p.name] ?? 0;
+          const prize = PRIZES[p.pos] ?? 0;
           return (
             <div
               key={p.name}

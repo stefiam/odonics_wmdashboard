@@ -45,7 +45,7 @@ function parseDate(termin, zeit) {
   const tm = (zeit || text).match(/(\d{1,2}):(\d{2})/);
   const hh = tm ? tm[1].padStart(2, '0') : '00';
   const mi = tm ? tm[2] : '00';
-  return `${year}-${mo.padStart(2, '0')}-${d.padStart(2, '0')}T${hh}:${mi}:00`;
+  return `${year}-${mo.padStart(2, '0')}-${d.padStart(2, '0')}T${hh}:${mi}:00+02:00`;
 }
 
 // Eine Spieltags-Ansicht im Browser parsen

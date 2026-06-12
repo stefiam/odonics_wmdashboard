@@ -19,12 +19,18 @@ export default function useLiveMatch() {
         const data = await res.json();
         const m = data.matches?.[0];
         if (!m) { setLiveMatch(null); return; }
+        // Minute aus API, sonst aus Anstoßzeit berechnen
+        let minute = m.minute ?? null;
+        if (minute === null && m.status === 'IN_PLAY' && m.utcDate) {
+          const elapsed = Math.floor((Date.now() - new Date(m.utcDate)) / 60000);
+          minute = Math.max(1, Math.min(elapsed, 90));
+        }
         setLiveMatch({
           homeTeam:  m.homeTeam.shortName || m.homeTeam.name,
           awayTeam:  m.awayTeam.shortName || m.awayTeam.name,
           homeScore: m.score.fullTime.home ?? m.score.halfTime.home ?? 0,
           awayScore: m.score.fullTime.away ?? m.score.halfTime.away ?? 0,
-          minute:    m.minute ?? null,
+          minute,
           status:    m.status,
         });
       } catch {

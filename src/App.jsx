@@ -57,9 +57,8 @@ function useTick(intervalMs) {
 function liveMinuteLabel(startDate, now) {
   const elapsed = Math.floor((now - new Date(startDate)) / 60000);
   if (elapsed <= 45) return `${Math.max(1, elapsed)}'`;
-  if (elapsed <= 60) return 'HZ';
-  const second = elapsed - 15;
-  return `${Math.min(second, 90)}'`;
+  if (elapsed <= 62) return 'HZ';
+  return '2. HZ';
 }
 
 function NextMatch({ matches }) {

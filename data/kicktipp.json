@@ -1,9 +1,62 @@
 {
-  "lastUpdated": "2026-06-11T22:15:11.131Z",
+  "lastUpdated": "2026-06-12T09:01:06.917Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
       "pos": 1,
+      "trend": 0,
+      "name": "Peppolini",
+      "points": 6,
+      "exact": 1,
+      "tendency": 1,
+      "wrong": 0,
+      "posPrev": 9,
+      "pointsHistory": [
+        0,
+        2,
+        6
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "3:0",
+          "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "2:1",
+          "points": 4
+        }
+      }
+    },
+    {
+      "pos": 2,
+      "trend": 0,
+      "name": "Schneckerl",
+      "points": 5,
+      "exact": 0,
+      "tendency": 2,
+      "wrong": 0,
+      "posPrev": 9,
+      "pointsHistory": [
+        0,
+        3,
+        2,
+        5
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:0",
+          "points": 3
+        }
+      }
+    },
+    {
+      "pos": 3,
       "trend": 0,
       "name": "WAC",
       "points": 4,
@@ -21,11 +74,40 @@
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
         }
       }
     },
     {
-      "pos": 1,
+      "pos": 3,
+      "trend": 0,
+      "name": "Bella",
+      "points": 4,
+      "exact": 1,
+      "tendency": 0,
+      "wrong": 0,
+      "posPrev": 19,
+      "pointsHistory": [
+        0,
+        4
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "0:1",
+          "points": null
+        },
+        "s_dkorea_tschechien": {
+          "tip": "2:1",
+          "points": 4
+        }
+      }
+    },
+    {
+      "pos": 3,
       "trend": 0,
       "name": "TippJungle",
       "points": 4,
@@ -43,11 +125,15 @@
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
         }
       }
     },
     {
-      "pos": 1,
+      "pos": 3,
       "trend": 0,
       "name": "Panu",
       "points": 4,
@@ -65,11 +151,15 @@
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
         }
       }
     },
     {
-      "pos": 1,
+      "pos": 3,
       "trend": 0,
       "name": "AlexP",
       "points": 4,
@@ -85,11 +175,15 @@
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
         }
       }
     },
     {
-      "pos": 1,
+      "pos": 3,
       "trend": 0,
       "name": "Kiki",
       "points": 4,
@@ -107,11 +201,15 @@
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:2",
+          "points": null
         }
       }
     },
     {
-      "pos": 1,
+      "pos": 3,
       "trend": 0,
       "name": "DOl",
       "points": 4,
@@ -129,11 +227,15 @@
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
         }
       }
     },
     {
-      "pos": 7,
+      "pos": 10,
       "trend": 0,
       "name": "Raphi",
       "points": 3,
@@ -151,11 +253,15 @@
         "mexiko_s_dafrika": {
           "tip": "3:1",
           "points": 3
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
         }
       }
     },
     {
-      "pos": 7,
+      "pos": 10,
       "trend": 0,
       "name": "ZaM",
       "points": 3,
@@ -173,11 +279,15 @@
         "mexiko_s_dafrika": {
           "tip": "3:1",
           "points": 3
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
         }
       }
     },
     {
-      "pos": 9,
+      "pos": 12,
       "trend": 0,
       "name": "Michel",
       "points": 2,
@@ -195,11 +305,15 @@
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:2",
+          "points": null
         }
       }
     },
     {
-      "pos": 9,
+      "pos": 12,
       "trend": 0,
       "name": "Jacky",
       "points": 2,
@@ -217,11 +331,15 @@
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "0:2",
+          "points": null
         }
       }
     },
     {
-      "pos": 9,
+      "pos": 12,
       "trend": 0,
       "name": "MaWa44",
       "points": 2,
@@ -239,11 +357,15 @@
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
         }
       }
     },
     {
-      "pos": 9,
+      "pos": 12,
       "trend": 0,
       "name": "Phips",
       "points": 2,
@@ -261,11 +383,15 @@
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "0:2",
+          "points": null
         }
       }
     },
     {
-      "pos": 9,
+      "pos": 12,
       "trend": 0,
       "name": "Sigi",
       "points": 2,
@@ -283,11 +409,15 @@
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "0:1",
+          "points": null
         }
       }
     },
     {
-      "pos": 9,
+      "pos": 12,
       "trend": 0,
       "name": "Robi",
       "points": 2,
@@ -305,11 +435,15 @@
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "0:2",
+          "points": null
         }
       }
     },
     {
-      "pos": 9,
+      "pos": 12,
       "trend": 0,
       "name": "Andy",
       "points": 2,
@@ -326,33 +460,15 @@
         "mexiko_s_dafrika": {
           "tip": "3:0",
           "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:2",
+          "points": null
         }
       }
     },
     {
-      "pos": 9,
-      "trend": 0,
-      "name": "Schneckerl",
-      "points": 2,
-      "exact": 0,
-      "tendency": 1,
-      "wrong": 0,
-      "posPrev": 9,
-      "pointsHistory": [
-        0,
-        3,
-        2
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "mexiko_s_dafrika": {
-          "tip": "2:1",
-          "points": 2
-        }
-      }
-    },
-    {
-      "pos": 9,
+      "pos": 12,
       "trend": 0,
       "name": "OnkelAlex",
       "points": 2,
@@ -370,52 +486,15 @@
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
-        }
-      }
-    },
-    {
-      "pos": 9,
-      "trend": 0,
-      "name": "Peppolini",
-      "points": 2,
-      "exact": 0,
-      "tendency": 1,
-      "wrong": 0,
-      "posPrev": 9,
-      "pointsHistory": [
-        0,
-        2
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "mexiko_s_dafrika": {
-          "tip": "3:0",
-          "points": 2
-        }
-      }
-    },
-    {
-      "pos": 19,
-      "trend": 0,
-      "name": "Bella",
-      "points": 0,
-      "exact": 0,
-      "tendency": 0,
-      "wrong": 0,
-      "posPrev": 19,
-      "pointsHistory": [
-        0
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "mexiko_s_dafrika": {
+        },
+        "s_dkorea_tschechien": {
           "tip": "0:1",
           "points": null
         }
       }
     },
     {
-      "pos": 19,
+      "pos": 20,
       "trend": 0,
       "name": "Säulenmann",
       "points": 0,
@@ -430,6 +509,10 @@
       "predictions": {
         "mexiko_s_dafrika": {
           "tip": "1:1",
+          "points": null
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:2",
           "points": null
         }
       }
@@ -452,8 +535,8 @@
       "homeTeam": "Südkorea",
       "awayTeam": "Tschechien",
       "group": "Gruppe A",
-      "result": null,
-      "played": false,
+      "result": "2:1",
+      "played": true,
       "date": "2026-06-12T04:00:00"
     },
     {

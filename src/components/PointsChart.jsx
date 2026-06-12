@@ -77,7 +77,7 @@ export default function PointsChart({ standings }) {
                   type="monotone"
                   dataKey={p.name}
                   stroke={COLORS[i % COLORS.length]}
-                  strokeWidth={p.isHighlighted ? 3 : 1.5}
+                  strokeWidth={1.5}
                   dot={false}
                   activeDot={{ r: 4 }}
                 />
@@ -95,9 +95,9 @@ export default function PointsChart({ standings }) {
             <button
               key={p.name}
               onClick={() => toggleLine(p.name)}
-              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border transition-opacity ${
+              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border transition-opacity border-[#d9e8e5] bg-[#f6fbfb] ${
                 hiddenLines.has(p.name) ? 'opacity-30' : 'opacity-100'
-              } ${p.isHighlighted ? 'border-[#f7b32b]/60 bg-[#fff8e6]' : 'border-[#d9e8e5] bg-[#f6fbfb]'}`}
+              }`}
               style={{ color: COLORS[i % COLORS.length] }}
             >
               <span

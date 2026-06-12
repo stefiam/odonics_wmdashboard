@@ -23,7 +23,6 @@ const COMMUNITY = process.env.KICKTIPP_COMMUNITY;
 const OUT_PATH = path.join(__dirname, '..', 'public', 'data', 'kicktipp.json');
 
 const EXACT_POINTS = 4;           // Kicktipp WM: exakter Treffer = 4 Punkte
-const HIGHLIGHT_NAME = 'TippJungle';
 const MAX_SPIELTAGE = 20;         // Obergrenze für den Durchlauf
 
 if (!USER || !PASS || !COMMUNITY) {
@@ -297,7 +296,7 @@ async function run() {
       exact, diff, tendency, wrong,
       posPrev,
       pointsHistory: history,
-      isHighlighted: s.name === HIGHLIGHT_NAME,
+      isHighlighted: false,
       predictions,
     };
   });

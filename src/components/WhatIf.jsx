@@ -75,11 +75,11 @@ export default function WhatIf({ standings, matches }) {
           return (
             <div
               key={p.name}
-              className={`px-4 py-3 border-b border-[#e5f0ef] last:border-0 ${p.isHighlighted ? 'bg-[#fff8e6]' : ''}`}
+              className="px-4 py-3 border-b border-[#e5f0ef] last:border-0"
             >
               <div className="grid grid-cols-[auto_1fr_auto_auto] gap-2 items-center mb-1.5">
                 <span className="w-6 text-xs text-[#7aadaa] font-mono">{idx + 1}.</span>
-                <span className={`text-sm text-[#1e4745] truncate ${p.isHighlighted ? 'font-bold' : 'font-semibold'}`}>
+                <span className="text-sm text-[#1e4745] truncate font-semibold">
                   {p.name}
                   {p.canWin && (
                     <span className="ml-1.5 text-[10px] text-emerald-600 font-normal">kann noch gewinnen</span>

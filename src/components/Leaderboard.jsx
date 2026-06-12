@@ -144,11 +144,7 @@ export default function Leaderboard({ standings }) {
             <button
               key={p.name}
               onClick={() => setSelectedPlayer(p)}
-              className={`relative flex flex-col items-center justify-center py-4 px-2 rounded-xl border-2 ${minH} w-full transition-shadow hover:shadow-md cursor-pointer ${
-                p.isHighlighted
-                  ? 'bg-[#fff8e6] border-[#f7b32b] shadow-sm'
-                  : 'bg-white border-[#2d6b68] shadow-sm'
-              }`}
+              className={`relative flex flex-col items-center justify-center py-4 px-2 rounded-xl border-2 ${minH} w-full transition-shadow hover:shadow-md cursor-pointer bg-white border-[#2d6b68] shadow-sm`}
             >
               {visualPos === 1 && <span className="absolute -top-3 text-xl">👑</span>}
               <div className="text-2xl font-bold text-[#1e4745]">{p.points}</div>
@@ -178,13 +174,11 @@ export default function Leaderboard({ standings }) {
             <div
               key={p.name}
               onClick={() => setSelectedPlayer(p)}
-              className={`grid grid-cols-[auto_1fr_auto_auto_auto_auto_auto] items-center gap-0 px-4 py-2.5 border-b border-[#e5f0ef] last:border-0 transition-colors hover:bg-[#f6fbfb] cursor-pointer ${
-                p.isHighlighted ? 'bg-[#fff8e6]' : ''
-              }`}
+              className="grid grid-cols-[auto_1fr_auto_auto_auto_auto_auto] items-center gap-0 px-4 py-2.5 border-b border-[#e5f0ef] last:border-0 transition-colors hover:bg-[#f6fbfb] cursor-pointer"
             >
               <div className="w-8 flex items-center"><PodiumBadge pos={p.pos} /></div>
               <div className="flex flex-col min-w-0">
-                <span className={`font-semibold text-sm truncate text-[#1e4745] ${p.isHighlighted ? 'font-bold' : ''}`}>
+                <span className="font-semibold text-sm truncate text-[#1e4745]">
                   {p.name}
                 </span>
                 <AccuracyBar exact={p.exact} diff={p.diff} tendency={p.tendency} wrong={p.wrong} />

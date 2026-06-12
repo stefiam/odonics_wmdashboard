@@ -96,13 +96,9 @@ export default function MatchBreakdown({ matches, standings }) {
                 return (
                   <div
                     key={p.name}
-                    className={`flex items-center justify-between px-2.5 py-1.5 rounded-lg border transition-colors ${
-                      p.isHighlighted
-                        ? 'bg-[#fff8e6] border-[#f7b32b]/40'
-                        : 'bg-[#f6fbfb] border-[#e5f0ef]'
-                    }`}
+                    className="flex items-center justify-between px-2.5 py-1.5 rounded-lg border transition-colors bg-[#f6fbfb] border-[#e5f0ef]"
                   >
-                    <span className={`text-xs truncate mr-2 ${p.isHighlighted ? 'text-[#1e4745] font-bold' : 'text-[#1e4745]'}`}>
+                    <span className="text-xs truncate mr-2 text-[#1e4745]">
                       {p.name}
                     </span>
                     <TipBadge tip={pred?.tip} points={pred?.points || 0} result={match.result} />

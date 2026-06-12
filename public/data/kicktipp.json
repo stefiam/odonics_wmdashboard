@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T09:01:06.917Z",
+  "lastUpdated": "2026-06-12T09:30:03.267Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -10,7 +10,7 @@
       "exact": 1,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 9,
+      "posPrev": 1,
       "pointsHistory": [
         0,
         2,
@@ -36,7 +36,7 @@
       "exact": 0,
       "tendency": 2,
       "wrong": 0,
-      "posPrev": 9,
+      "posPrev": 2,
       "pointsHistory": [
         0,
         3,
@@ -63,7 +63,7 @@
       "exact": 1,
       "tendency": 0,
       "wrong": 0,
-      "posPrev": 1,
+      "posPrev": 3,
       "pointsHistory": [
         0,
         2,
@@ -89,7 +89,7 @@
       "exact": 1,
       "tendency": 0,
       "wrong": 0,
-      "posPrev": 19,
+      "posPrev": 3,
       "pointsHistory": [
         0,
         4
@@ -114,7 +114,7 @@
       "exact": 1,
       "tendency": 0,
       "wrong": 0,
-      "posPrev": 1,
+      "posPrev": 3,
       "pointsHistory": [
         0,
         2,
@@ -140,7 +140,7 @@
       "exact": 1,
       "tendency": 0,
       "wrong": 0,
-      "posPrev": 1,
+      "posPrev": 3,
       "pointsHistory": [
         0,
         2,
@@ -166,7 +166,7 @@
       "exact": 1,
       "tendency": 0,
       "wrong": 0,
-      "posPrev": 1,
+      "posPrev": 3,
       "pointsHistory": [
         4
       ],
@@ -190,7 +190,7 @@
       "exact": 1,
       "tendency": 0,
       "wrong": 0,
-      "posPrev": 1,
+      "posPrev": 3,
       "pointsHistory": [
         0,
         2,
@@ -216,7 +216,7 @@
       "exact": 1,
       "tendency": 0,
       "wrong": 0,
-      "posPrev": 1,
+      "posPrev": 3,
       "pointsHistory": [
         0,
         2,
@@ -242,7 +242,7 @@
       "exact": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 7,
+      "posPrev": 10,
       "pointsHistory": [
         0,
         2,
@@ -268,7 +268,7 @@
       "exact": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 7,
+      "posPrev": 10,
       "pointsHistory": [
         0,
         2,
@@ -294,7 +294,7 @@
       "exact": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 9,
+      "posPrev": 12,
       "pointsHistory": [
         0,
         4,
@@ -320,7 +320,7 @@
       "exact": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 9,
+      "posPrev": 12,
       "pointsHistory": [
         0,
         3,
@@ -346,7 +346,7 @@
       "exact": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 9,
+      "posPrev": 12,
       "pointsHistory": [
         0,
         4,
@@ -372,7 +372,7 @@
       "exact": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 9,
+      "posPrev": 12,
       "pointsHistory": [
         0,
         3,
@@ -398,7 +398,7 @@
       "exact": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 9,
+      "posPrev": 12,
       "pointsHistory": [
         0,
         4,
@@ -424,7 +424,7 @@
       "exact": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 9,
+      "posPrev": 12,
       "pointsHistory": [
         0,
         3,
@@ -450,7 +450,7 @@
       "exact": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 9,
+      "posPrev": 12,
       "pointsHistory": [
         0,
         2
@@ -475,7 +475,7 @@
       "exact": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 9,
+      "posPrev": 12,
       "pointsHistory": [
         0,
         3,
@@ -501,7 +501,7 @@
       "exact": 0,
       "tendency": 0,
       "wrong": 0,
-      "posPrev": 19,
+      "posPrev": 20,
       "pointsHistory": [
         0
       ],

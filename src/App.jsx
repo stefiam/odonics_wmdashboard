@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import useLiveMatch from './hooks/useLiveMatch';
 import Leaderboard from './components/Leaderboard';
 import PointsChart from './components/PointsChart';
 import RecentForm from './components/RecentForm';
@@ -45,43 +44,54 @@ function Countdown({ targetDate }) {
   return <span className="font-mono text-[#f7b32b] font-bold">{timeLeft}</span>;
 }
 
-function LiveTicker({ match }) {
-  const label = match.status === 'PAUSED' ? 'Pause' : `${match.minute ?? '–'}'`;
-  return (
-    <div className="border-2 border-red-400 rounded-xl px-3 py-2 text-sm">
-      <div className="flex items-center gap-1.5 text-xs text-red-500 mb-0.5 font-semibold">
-        <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse inline-block" />
-        LIVE · {label}
-      </div>
-      <div className="font-bold text-[#1e4745]">
-        {match.homeTeam} <span className="text-[#f7b32b] font-mono">{match.homeScore} : {match.awayScore}</span> {match.awayTeam}
-      </div>
-    </div>
-  );
+
+function useTick(intervalMs) {
+  const [now, setNow] = useState(() => new Date());
+  useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), intervalMs);
+    return () => clearInterval(id);
+  }, [intervalMs]);
+  return now;
+}
+
+function liveMinuteLabel(startDate, now) {
+  const elapsed = Math.floor((now - new Date(startDate)) / 60000);
+  if (elapsed <= 45) return `${Math.max(1, elapsed)}'`;
+  if (elapsed <= 60) return 'HZ';
+  const second = elapsed - 15;
+  return `${Math.min(second, 90)}'`;
 }
 
 function NextMatch({ matches }) {
+  const now = useTick(30000);
+
   if (!matches?.length) return null;
 
-  // Filtere echte Spiele (keine Spaltenheader-Artefakte)
   const invalidLabels = new Set(['gast', 'gruppe', 'ergebnis', 'heim', 'datum', 'termin']);
   const real = matches.filter(m => m.label && !invalidLabels.has(m.label.toLowerCase()));
   if (!real.length) return null;
 
-  // Läuft gerade ein Spiel?
-  const now = new Date();
   const live = real.find(m => {
-    if (!m.date || !m.played) return false;
-    const start = new Date(m.date);
-    const end = new Date(start.getTime() + 110 * 60000);
-    return now >= start && now <= end;
+    if (!m.date) return false;
+    const start = new Date(m.date).getTime();
+    return now >= start && now <= start + 115 * 60000;
   });
+
   if (live) {
+    const minuteLabel = liveMinuteLabel(live.date, now);
+    // Zeige result wenn vorhanden — kommt vom 5-min Scraper
+    const score = live.result || null;
     return (
       <div className="text-right text-sm">
-        <div className="text-[#2d6460] text-xs mb-0.5">Läuft gerade</div>
+        <div className="flex items-center justify-end gap-1.5 text-xs text-red-500 mb-0.5 font-semibold">
+          <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse inline-block" />
+          LIVE · {minuteLabel}
+        </div>
         <span className="font-semibold text-[#1e4745]">{live.label}</span>
-        {live.result && <span className="ml-2 text-[#f7b32b] font-bold font-mono">{live.result}</span>}
+        {score
+          ? <span className="ml-2 text-[#f7b32b] font-bold font-mono">{score}</span>
+          : <span className="ml-1 text-xs text-[#a8d0cc]">– : –</span>
+        }
       </div>
     );
   }
@@ -102,13 +112,36 @@ export default function App() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState('tabelle');
-  const liveMatch = useLiveMatch();
 
   useEffect(() => {
-    fetch(`${BASE}data/kicktipp.json`)
-      .then(r => { if (!r.ok) throw new Error(r.statusText); return r.json(); })
-      .then(setData)
-      .catch(e => setError(e.message));
+    let intervalId = null;
+
+    function isMatchLive(d) {
+      const now = Date.now();
+      return (d.matches || []).some(m => {
+        if (!m.date) return false;
+        const start = new Date(m.date).getTime();
+        return now >= start && now <= start + 115 * 60 * 1000;
+      });
+    }
+
+    function load() {
+      fetch(`${BASE}data/kicktipp.json`)
+        .then(r => { if (!r.ok) throw new Error(r.statusText); return r.json(); })
+        .then(d => {
+          setData(d);
+          if (isMatchLive(d) && !intervalId) {
+            intervalId = setInterval(load, 3 * 60 * 1000);
+          } else if (!isMatchLive(d) && intervalId) {
+            clearInterval(intervalId);
+            intervalId = null;
+          }
+        })
+        .catch(e => setError(e.message));
+    }
+
+    load();
+    return () => { if (intervalId) clearInterval(intervalId); };
   }, []);
 
   const tabs = [
@@ -136,19 +169,11 @@ export default function App() {
               <p className="text-xs text-[#2d6460]">Odonics · FIFA World Cup · USA / Kanada / Mexiko</p>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
-            {liveMatch ? (
-              <LiveTicker match={liveMatch} />
-            ) : data && (
-              <div className="border-2 border-[#2d6b68] rounded-xl px-3 py-2">
-                <NextMatch matches={data.matches} />
-              </div>
-            )}
-            <div className="border-2 border-[#2d6b68] rounded-xl px-3 py-2 text-right text-sm">
-              <div className="text-[#2d6460] text-xs mb-0.5">Finale in</div>
-              <Countdown targetDate="2026-07-19T21:00:00Z" />
+          {data && (
+            <div className="border-2 border-[#2d6b68] rounded-xl px-3 py-2">
+              <NextMatch matches={data.matches} />
             </div>
-          </div>
+          )}
         </div>
 
         <div className="max-w-7xl mx-auto px-4">
@@ -196,6 +221,8 @@ export default function App() {
       <footer className="border-t border-[#d9e8e5] mt-8 py-4 px-4 text-center text-xs text-[#7aadaa]">
         {data && <>Zuletzt aktualisiert: {formatDate(data.lastUpdated)} · </>}
         Daten via Kicktipp.de
+        <span className="mx-2">·</span>
+        Finale in <Countdown targetDate="2026-07-19T21:00:00Z" />
       </footer>
     </div>
   );

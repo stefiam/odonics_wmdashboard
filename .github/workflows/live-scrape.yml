@@ -2,8 +2,12 @@ name: Live Match Updater
 
 on:
   schedule:
-    - cron: '*/5 * * * *'   # alle 5 Minuten
+    - cron: '*/5 * * 6,7 *'   # alle 5 Minuten, nur Juni + Juli (WM-Zeitraum)
   workflow_dispatch:
+
+concurrency:
+  group: wm-deploy   # verhindert parallele Läufe mit scrape.yml-Deploys
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -28,10 +32,9 @@ jobs:
             try {
               const d = JSON.parse(fs.readFileSync('public/data/kicktipp.json', 'utf8'));
               const now = Date.now();
-              const CEST = 2 * 60 * 60 * 1000; // Dates in JSON sind CEST, Actions läuft UTC
               const live = (d.matches || []).some(m => {
                 if (!m.date) return false;
-                const start = new Date(m.date).getTime() - CEST;
+                const start = new Date(m.date).getTime(); // +02:00 ist im String enthalten
                 return now >= start && now <= start + 120 * 60 * 1000;
               });
               console.log(live ? 'true' : 'false');
@@ -81,6 +84,7 @@ jobs:
           git config user.email "bot@wm2026-dashboard"
           git add public/data/kicktipp.json
           git diff --staged --quiet || git commit -m "chore: live update [$(date -u '+%H:%M UTC')]"
+          git pull --rebase --autostash origin main
           git push
 
       - name: Build dashboard

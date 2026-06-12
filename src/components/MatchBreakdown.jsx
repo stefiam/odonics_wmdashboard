@@ -50,17 +50,26 @@ function TipDistribution({ match, standings }) {
   );
 }
 
+function isMatchLive(match) {
+  if (!match.date) return false;
+  const start = new Date(match.date).getTime();
+  const now = Date.now();
+  return now >= start && now <= start + 115 * 60 * 1000;
+}
+
 export default function MatchBreakdown({ matches, standings }) {
   const [expanded, setExpanded] = useState(null);
 
-  const played = matches.filter(m => m.played);
-  const upcoming = matches.filter(m => !m.played);
+  const live    = matches.filter(m => isMatchLive(m));
+  const played  = matches.filter(m => m.played && !isMatchLive(m));
+  const upcoming = matches.filter(m => !m.played && !isMatchLive(m));
 
   const MatchCard = ({ match }) => {
     const isOpen = expanded === match.id;
+    const live = isMatchLive(match);
     return (
       <div className={`border rounded-xl overflow-hidden transition-all shadow-sm ${
-        match.played ? 'bg-white border-[#d9e8e5]' : 'bg-[#f6fbfb] border-[#e5f0ef] opacity-80'
+        live ? 'bg-white border-red-200' : match.played ? 'bg-white border-[#d9e8e5]' : 'bg-[#f6fbfb] border-[#e5f0ef] opacity-80'
       }`}>
         <button
           className="w-full px-4 py-3 flex items-center justify-between hover:bg-[#f6fbfb] transition-colors"
@@ -68,11 +77,16 @@ export default function MatchBreakdown({ matches, standings }) {
         >
           <div className="flex items-center gap-3">
             <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${
-              match.played
-                ? 'bg-emerald-50 text-emerald-600 border border-emerald-100'
-                : 'bg-[#e5f0ef] text-[#7aadaa]'
+              live
+                ? 'bg-red-50 text-red-500 border border-red-200'
+                : match.played
+                  ? 'bg-emerald-50 text-emerald-600 border border-emerald-100'
+                  : 'bg-[#e5f0ef] text-[#7aadaa]'
             }`}>
-              {match.played ? 'Abgepfiffen' : 'Ausstehend'}
+              {live
+                ? <span className="flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse inline-block" />Live</span>
+                : match.played ? 'Abgepfiffen' : 'Ausstehend'
+              }
             </span>
             <span className="font-semibold text-[#1e4745] text-sm">{match.label}</span>
             {match.result && (
@@ -114,6 +128,18 @@ export default function MatchBreakdown({ matches, standings }) {
 
   return (
     <div className="space-y-6">
+      {live.length > 0 && (
+        <div>
+          <h2 className="text-sm font-semibold text-red-500 uppercase tracking-wider mb-3 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse inline-block" />
+            Live ({live.length})
+          </h2>
+          <div className="space-y-2">
+            {live.map(m => <MatchCard key={m.id} match={m} />)}
+          </div>
+        </div>
+      )}
+
       {played.length > 0 && (
         <div>
           <h2 className="text-sm font-semibold text-[#5a8a86] uppercase tracking-wider mb-3">

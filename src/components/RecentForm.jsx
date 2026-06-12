@@ -3,7 +3,7 @@ const EXACT_POINTS = 4;
 function FormDot({ type, title }) {
   const styles = {
     exact:    'bg-emerald-500 ring-1 ring-emerald-400',
-    diff:     'bg-emerald-300 ring-1 ring-emerald-200',
+    diff:     'bg-sky-400 ring-1 ring-emerald-200',
     tendency: 'bg-[#f7b32b] ring-1 ring-[#f7b32b]/70',
     wrong:    'bg-red-400 ring-1 ring-red-300',
     pending:  'bg-[#d9e8e5] ring-1 ring-[#c5dbd9]',
@@ -62,7 +62,7 @@ export default function RecentForm({ standings, matches }) {
           <p className="text-xs text-[#7aadaa] mt-0.5">
             Letzte {playedMatches.length} Spiele —
             {' '}<span className="text-emerald-500">■</span> Exakt (4P)
-            {' · '}<span className="text-emerald-300">■</span> +Tordiff. (3P)
+            {' · '}<span className="text-sky-400">■</span> +Tordiff. (3P)
             {' · '}<span className="text-[#f7b32b]">■</span> Tendenz (2P)
             {' · '}<span className="text-red-400">■</span> Falsch
           </p>

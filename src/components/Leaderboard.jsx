@@ -22,7 +22,7 @@ function AccuracyBar({ exact, diff = 0, tendency, wrong }) {
   return (
     <div className="h-1.5 rounded-full overflow-hidden bg-[#e5f0ef] w-20 flex">
       <div className="bg-emerald-500 h-full" style={{ width: `${exactPct}%` }} title={`Exakt (4P): ${exact}`} />
-      <div className="bg-emerald-300 h-full" style={{ width: `${diffPct}%` }}  title={`+Tordiff. (3P): ${diff}`} />
+      <div className="bg-sky-400 h-full" style={{ width: `${diffPct}%` }}  title={`+Tordiff. (3P): ${diff}`} />
       <div className="bg-[#f7b32b] h-full" style={{ width: `${tendPct}%` }}   title={`Tendenz (2P): ${tendency}`} />
     </div>
   );
@@ -77,13 +77,13 @@ function PlayerModal({ player, onClose }) {
             <div className="text-xs text-[#7aadaa] mb-2">Trefferquote ({total} Spiele)</div>
             <div className="flex gap-1 h-4 rounded-full overflow-hidden">
               {exactPct > 0 && <div className="bg-emerald-500 flex items-center justify-center text-[10px] text-white font-bold" style={{ width: `${exactPct}%` }}>{exactPct}%</div>}
-              {diffPct  > 0 && <div className="bg-emerald-300 flex items-center justify-center text-[10px] text-white font-bold" style={{ width: `${diffPct}%`  }}>{diffPct}%</div>}
+              {diffPct  > 0 && <div className="bg-sky-400 flex items-center justify-center text-[10px] text-white font-bold" style={{ width: `${diffPct}%`  }}>{diffPct}%</div>}
               {tendPct  > 0 && <div className="bg-[#f7b32b] flex items-center justify-center text-[10px] text-white font-bold" style={{ width: `${tendPct}%`  }}>{tendPct}%</div>}
               {wrongPct > 0 && <div className="bg-red-300 flex items-center justify-center text-[10px] text-white font-bold" style={{ width: `${wrongPct}%` }}>{wrongPct}%</div>}
             </div>
             <div className="flex flex-wrap gap-x-3 gap-y-1 text-[10px] text-[#7aadaa] mt-1">
               <span className="flex items-center gap-0.5"><span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" /> Exakt {exactPct}%</span>
-              <span className="flex items-center gap-0.5"><span className="w-2 h-2 rounded-full bg-emerald-300 inline-block" /> +Tordiff. {diffPct}%</span>
+              <span className="flex items-center gap-0.5"><span className="w-2 h-2 rounded-full bg-sky-400 inline-block" /> +Tordiff. {diffPct}%</span>
               <span className="flex items-center gap-0.5"><span className="w-2 h-2 rounded-full bg-[#f7b32b] inline-block" /> Tendenz {tendPct}%</span>
               <span className="flex items-center gap-0.5"><span className="w-2 h-2 rounded-full bg-red-300 inline-block" /> Falsch {wrongPct}%</span>
             </div>
@@ -211,7 +211,10 @@ export default function Leaderboard({ standings }) {
           <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block ring-2 ring-white" /> P = Exakt (4P)
         </span>
         <span className="flex items-center gap-1">
-          <span className="w-2 h-2 rounded-full bg-[#f7b32b] inline-block ring-2 ring-white" /> B = Tendenz (2–3P)
+          <span className="w-2 h-2 rounded-full bg-sky-400 inline-block ring-2 ring-white" /> +Tordiff. (3P)
+        </span>
+        <span className="flex items-center gap-1">
+          <span className="w-2 h-2 rounded-full bg-[#f7b32b] inline-block ring-2 ring-white" /> B = Tendenz (2P)
         </span>
         <span>Pkt = Gesamt · € = Aktueller Gewinn (1.–5. Platz) · Klick auf Zeile = Profil</span>
       </div>

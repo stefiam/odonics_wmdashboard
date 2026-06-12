@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T21:00:38.598Z",
+  "lastUpdated": "2026-06-12T21:05:30.657Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -664,7 +664,7 @@
       "group": "Gruppe A",
       "result": "2:0",
       "played": true,
-      "date": "2026-06-11T21:00:00"
+      "date": "2026-06-11T21:00:00+02:00"
     },
     {
       "id": "s_dkorea_tschechien",
@@ -674,7 +674,7 @@
       "group": "Gruppe A",
       "result": "2:1",
       "played": true,
-      "date": "2026-06-12T04:00:00"
+      "date": "2026-06-12T04:00:00+02:00"
     },
     {
       "id": "kanada_bosnien_herzegowina",
@@ -684,7 +684,7 @@
       "group": "Gruppe B",
       "result": "1:1",
       "played": true,
-      "date": "2026-06-12T21:00:00"
+      "date": "2026-06-12T21:00:00+02:00"
     },
     {
       "id": "usa_paraguay",
@@ -694,7 +694,7 @@
       "group": "Gruppe D",
       "result": null,
       "played": false,
-      "date": "2026-06-13T03:00:00"
+      "date": "2026-06-13T03:00:00+02:00"
     },
     {
       "id": "katar_schweiz",
@@ -704,7 +704,7 @@
       "group": "Gruppe B",
       "result": null,
       "played": false,
-      "date": "2026-06-13T21:00:00"
+      "date": "2026-06-13T21:00:00+02:00"
     },
     {
       "id": "brasilien_marokko",
@@ -714,7 +714,7 @@
       "group": "Gruppe C",
       "result": null,
       "played": false,
-      "date": "2026-06-14T00:00:00"
+      "date": "2026-06-14T00:00:00+02:00"
     },
     {
       "id": "haiti_schottland",
@@ -724,7 +724,7 @@
       "group": "Gruppe C",
       "result": null,
       "played": false,
-      "date": "2026-06-14T03:00:00"
+      "date": "2026-06-14T03:00:00+02:00"
     },
     {
       "id": "australien_t_rkei",
@@ -734,7 +734,7 @@
       "group": "Gruppe D",
       "result": null,
       "played": false,
-      "date": "2026-06-14T06:00:00"
+      "date": "2026-06-14T06:00:00+02:00"
     },
     {
       "id": "deutschland_cura_ao",
@@ -744,7 +744,7 @@
       "group": "Gruppe E",
       "result": null,
       "played": false,
-      "date": "2026-06-14T19:00:00"
+      "date": "2026-06-14T19:00:00+02:00"
     },
     {
       "id": "niederlande_japan",
@@ -754,7 +754,7 @@
       "group": "Gruppe F",
       "result": null,
       "played": false,
-      "date": "2026-06-14T22:00:00"
+      "date": "2026-06-14T22:00:00+02:00"
     },
     {
       "id": "elfenbeink_ste_ecuador",
@@ -764,7 +764,7 @@
       "group": "Gruppe E",
       "result": null,
       "played": false,
-      "date": "2026-06-15T01:00:00"
+      "date": "2026-06-15T01:00:00+02:00"
     },
     {
       "id": "schweden_tunesien",
@@ -774,7 +774,7 @@
       "group": "Gruppe F",
       "result": null,
       "played": false,
-      "date": "2026-06-15T04:00:00"
+      "date": "2026-06-15T04:00:00+02:00"
     },
     {
       "id": "spanien_kap_verde",
@@ -784,7 +784,7 @@
       "group": "Gruppe H",
       "result": null,
       "played": false,
-      "date": "2026-06-15T18:00:00"
+      "date": "2026-06-15T18:00:00+02:00"
     },
     {
       "id": "belgien__gypten",
@@ -794,7 +794,7 @@
       "group": "Gruppe G",
       "result": null,
       "played": false,
-      "date": "2026-06-15T21:00:00"
+      "date": "2026-06-15T21:00:00+02:00"
     },
     {
       "id": "saudi_arabien_uruguay",
@@ -804,7 +804,7 @@
       "group": "Gruppe H",
       "result": null,
       "played": false,
-      "date": "2026-06-16T00:00:00"
+      "date": "2026-06-16T00:00:00+02:00"
     },
     {
       "id": "iran_neuseeland",
@@ -814,7 +814,7 @@
       "group": "Gruppe G",
       "result": null,
       "played": false,
-      "date": "2026-06-16T03:00:00"
+      "date": "2026-06-16T03:00:00+02:00"
     },
     {
       "id": "frankreich_senegal",
@@ -824,7 +824,7 @@
       "group": "Gruppe I",
       "result": null,
       "played": false,
-      "date": "2026-06-16T21:00:00"
+      "date": "2026-06-16T21:00:00+02:00"
     },
     {
       "id": "irak_norwegen",
@@ -834,7 +834,7 @@
       "group": "Gruppe I",
       "result": null,
       "played": false,
-      "date": "2026-06-17T00:00:00"
+      "date": "2026-06-17T00:00:00+02:00"
     },
     {
       "id": "argentinien_algerien",
@@ -844,7 +844,7 @@
       "group": "Gruppe J",
       "result": null,
       "played": false,
-      "date": "2026-06-17T03:00:00"
+      "date": "2026-06-17T03:00:00+02:00"
     },
     {
       "id": "_sterreich_jordanien",
@@ -854,7 +854,7 @@
       "group": "Gruppe J",
       "result": null,
       "played": false,
-      "date": "2026-06-17T06:00:00"
+      "date": "2026-06-17T06:00:00+02:00"
     },
     {
       "id": "portugal_dr_kongo",
@@ -864,7 +864,7 @@
       "group": "Gruppe K",
       "result": null,
       "played": false,
-      "date": "2026-06-17T19:00:00"
+      "date": "2026-06-17T19:00:00+02:00"
     },
     {
       "id": "england_kroatien",
@@ -874,7 +874,7 @@
       "group": "Gruppe L",
       "result": null,
       "played": false,
-      "date": "2026-06-17T22:00:00"
+      "date": "2026-06-17T22:00:00+02:00"
     },
     {
       "id": "ghana_panama",
@@ -884,7 +884,7 @@
       "group": "Gruppe L",
       "result": null,
       "played": false,
-      "date": "2026-06-18T01:00:00"
+      "date": "2026-06-18T01:00:00+02:00"
     },
     {
       "id": "usbekistan_kolumbien",
@@ -894,7 +894,7 @@
       "group": "Gruppe K",
       "result": null,
       "played": false,
-      "date": "2026-06-18T04:00:00"
+      "date": "2026-06-18T04:00:00+02:00"
     },
     {
       "id": "tschechien_s_dafrika",
@@ -904,7 +904,7 @@
       "group": "Gruppe A",
       "result": null,
       "played": false,
-      "date": "2026-06-18T18:00:00"
+      "date": "2026-06-18T18:00:00+02:00"
     },
     {
       "id": "schweiz_bosnien_herzegowina",
@@ -914,7 +914,7 @@
       "group": "Gruppe B",
       "result": null,
       "played": false,
-      "date": "2026-06-18T21:00:00"
+      "date": "2026-06-18T21:00:00+02:00"
     },
     {
       "id": "kanada_katar",
@@ -924,7 +924,7 @@
       "group": "Gruppe B",
       "result": null,
       "played": false,
-      "date": "2026-06-19T00:00:00"
+      "date": "2026-06-19T00:00:00+02:00"
     },
     {
       "id": "mexiko_s_dkorea",
@@ -934,7 +934,7 @@
       "group": "Gruppe A",
       "result": null,
       "played": false,
-      "date": "2026-06-19T03:00:00"
+      "date": "2026-06-19T03:00:00+02:00"
     },
     {
       "id": "usa_australien",
@@ -944,7 +944,7 @@
       "group": "Gruppe D",
       "result": null,
       "played": false,
-      "date": "2026-06-19T21:00:00"
+      "date": "2026-06-19T21:00:00+02:00"
     },
     {
       "id": "schottland_marokko",
@@ -954,7 +954,7 @@
       "group": "Gruppe C",
       "result": null,
       "played": false,
-      "date": "2026-06-20T00:00:00"
+      "date": "2026-06-20T00:00:00+02:00"
     },
     {
       "id": "brasilien_haiti",
@@ -964,7 +964,7 @@
       "group": "Gruppe C",
       "result": null,
       "played": false,
-      "date": "2026-06-20T02:30:00"
+      "date": "2026-06-20T02:30:00+02:00"
     },
     {
       "id": "t_rkei_paraguay",
@@ -974,7 +974,7 @@
       "group": "Gruppe D",
       "result": null,
       "played": false,
-      "date": "2026-06-20T05:00:00"
+      "date": "2026-06-20T05:00:00+02:00"
     },
     {
       "id": "niederlande_schweden",
@@ -984,7 +984,7 @@
       "group": "Gruppe F",
       "result": null,
       "played": false,
-      "date": "2026-06-20T19:00:00"
+      "date": "2026-06-20T19:00:00+02:00"
     },
     {
       "id": "deutschland_elfenbeink_ste",
@@ -994,7 +994,7 @@
       "group": "Gruppe E",
       "result": null,
       "played": false,
-      "date": "2026-06-20T22:00:00"
+      "date": "2026-06-20T22:00:00+02:00"
     },
     {
       "id": "ecuador_cura_ao",
@@ -1004,7 +1004,7 @@
       "group": "Gruppe E",
       "result": null,
       "played": false,
-      "date": "2026-06-21T02:00:00"
+      "date": "2026-06-21T02:00:00+02:00"
     },
     {
       "id": "tunesien_japan",
@@ -1014,7 +1014,7 @@
       "group": "Gruppe F",
       "result": null,
       "played": false,
-      "date": "2026-06-21T06:00:00"
+      "date": "2026-06-21T06:00:00+02:00"
     },
     {
       "id": "spanien_saudi_arabien",
@@ -1024,7 +1024,7 @@
       "group": "Gruppe H",
       "result": null,
       "played": false,
-      "date": "2026-06-21T18:00:00"
+      "date": "2026-06-21T18:00:00+02:00"
     },
     {
       "id": "belgien_iran",
@@ -1034,7 +1034,7 @@
       "group": "Gruppe G",
       "result": null,
       "played": false,
-      "date": "2026-06-21T21:00:00"
+      "date": "2026-06-21T21:00:00+02:00"
     },
     {
       "id": "uruguay_kap_verde",
@@ -1044,7 +1044,7 @@
       "group": "Gruppe H",
       "result": null,
       "played": false,
-      "date": "2026-06-22T00:00:00"
+      "date": "2026-06-22T00:00:00+02:00"
     },
     {
       "id": "neuseeland__gypten",
@@ -1054,7 +1054,7 @@
       "group": "Gruppe G",
       "result": null,
       "played": false,
-      "date": "2026-06-22T03:00:00"
+      "date": "2026-06-22T03:00:00+02:00"
     },
     {
       "id": "argentinien__sterreich",
@@ -1064,7 +1064,7 @@
       "group": "Gruppe J",
       "result": null,
       "played": false,
-      "date": "2026-06-22T19:00:00"
+      "date": "2026-06-22T19:00:00+02:00"
     },
     {
       "id": "frankreich_irak",
@@ -1074,7 +1074,7 @@
       "group": "Gruppe I",
       "result": null,
       "played": false,
-      "date": "2026-06-22T23:00:00"
+      "date": "2026-06-22T23:00:00+02:00"
     },
     {
       "id": "norwegen_senegal",
@@ -1084,7 +1084,7 @@
       "group": "Gruppe I",
       "result": null,
       "played": false,
-      "date": "2026-06-23T02:00:00"
+      "date": "2026-06-23T02:00:00+02:00"
     },
     {
       "id": "jordanien_algerien",
@@ -1094,7 +1094,7 @@
       "group": "Gruppe J",
       "result": null,
       "played": false,
-      "date": "2026-06-23T05:00:00"
+      "date": "2026-06-23T05:00:00+02:00"
     },
     {
       "id": "portugal_usbekistan",
@@ -1104,7 +1104,7 @@
       "group": "Gruppe K",
       "result": null,
       "played": false,
-      "date": "2026-06-23T19:00:00"
+      "date": "2026-06-23T19:00:00+02:00"
     },
     {
       "id": "england_ghana",
@@ -1114,7 +1114,7 @@
       "group": "Gruppe L",
       "result": null,
       "played": false,
-      "date": "2026-06-23T22:00:00"
+      "date": "2026-06-23T22:00:00+02:00"
     },
     {
       "id": "panama_kroatien",
@@ -1124,7 +1124,7 @@
       "group": "Gruppe L",
       "result": null,
       "played": false,
-      "date": "2026-06-24T01:00:00"
+      "date": "2026-06-24T01:00:00+02:00"
     },
     {
       "id": "kolumbien_dr_kongo",
@@ -1134,7 +1134,7 @@
       "group": "Gruppe K",
       "result": null,
       "played": false,
-      "date": "2026-06-24T04:00:00"
+      "date": "2026-06-24T04:00:00+02:00"
     },
     {
       "id": "bosnien_herzegowina_katar",
@@ -1144,7 +1144,7 @@
       "group": "Gruppe B",
       "result": null,
       "played": false,
-      "date": "2026-06-24T21:00:00"
+      "date": "2026-06-24T21:00:00+02:00"
     },
     {
       "id": "schweiz_kanada",
@@ -1154,7 +1154,7 @@
       "group": "Gruppe B",
       "result": null,
       "played": false,
-      "date": "2026-06-24T21:00:00"
+      "date": "2026-06-24T21:00:00+02:00"
     },
     {
       "id": "marokko_haiti",
@@ -1164,7 +1164,7 @@
       "group": "Gruppe C",
       "result": null,
       "played": false,
-      "date": "2026-06-25T00:00:00"
+      "date": "2026-06-25T00:00:00+02:00"
     },
     {
       "id": "schottland_brasilien",
@@ -1174,7 +1174,7 @@
       "group": "Gruppe C",
       "result": null,
       "played": false,
-      "date": "2026-06-25T00:00:00"
+      "date": "2026-06-25T00:00:00+02:00"
     },
     {
       "id": "s_dafrika_s_dkorea",
@@ -1184,7 +1184,7 @@
       "group": "Gruppe A",
       "result": null,
       "played": false,
-      "date": "2026-06-25T03:00:00"
+      "date": "2026-06-25T03:00:00+02:00"
     },
     {
       "id": "tschechien_mexiko",
@@ -1194,7 +1194,7 @@
       "group": "Gruppe A",
       "result": null,
       "played": false,
-      "date": "2026-06-25T03:00:00"
+      "date": "2026-06-25T03:00:00+02:00"
     },
     {
       "id": "cura_ao_elfenbeink_ste",
@@ -1204,7 +1204,7 @@
       "group": "Gruppe E",
       "result": null,
       "played": false,
-      "date": "2026-06-25T22:00:00"
+      "date": "2026-06-25T22:00:00+02:00"
     },
     {
       "id": "ecuador_deutschland",
@@ -1214,7 +1214,7 @@
       "group": "Gruppe E",
       "result": null,
       "played": false,
-      "date": "2026-06-25T22:00:00"
+      "date": "2026-06-25T22:00:00+02:00"
     },
     {
       "id": "japan_schweden",
@@ -1224,7 +1224,7 @@
       "group": "Gruppe F",
       "result": null,
       "played": false,
-      "date": "2026-06-26T01:00:00"
+      "date": "2026-06-26T01:00:00+02:00"
     },
     {
       "id": "tunesien_niederlande",
@@ -1234,7 +1234,7 @@
       "group": "Gruppe F",
       "result": null,
       "played": false,
-      "date": "2026-06-26T01:00:00"
+      "date": "2026-06-26T01:00:00+02:00"
     },
     {
       "id": "paraguay_australien",
@@ -1244,7 +1244,7 @@
       "group": "Gruppe D",
       "result": null,
       "played": false,
-      "date": "2026-06-26T04:00:00"
+      "date": "2026-06-26T04:00:00+02:00"
     },
     {
       "id": "t_rkei_usa",
@@ -1254,7 +1254,7 @@
       "group": "Gruppe D",
       "result": null,
       "played": false,
-      "date": "2026-06-26T04:00:00"
+      "date": "2026-06-26T04:00:00+02:00"
     },
     {
       "id": "norwegen_frankreich",
@@ -1264,7 +1264,7 @@
       "group": "Gruppe I",
       "result": null,
       "played": false,
-      "date": "2026-06-26T21:00:00"
+      "date": "2026-06-26T21:00:00+02:00"
     },
     {
       "id": "senegal_irak",
@@ -1274,7 +1274,7 @@
       "group": "Gruppe I",
       "result": null,
       "played": false,
-      "date": "2026-06-26T21:00:00"
+      "date": "2026-06-26T21:00:00+02:00"
     },
     {
       "id": "uruguay_spanien",
@@ -1284,7 +1284,7 @@
       "group": "Gruppe H",
       "result": null,
       "played": false,
-      "date": "2026-06-27T02:00:00"
+      "date": "2026-06-27T02:00:00+02:00"
     },
     {
       "id": "kap_verde_saudi_arabien",
@@ -1294,7 +1294,7 @@
       "group": "Gruppe H",
       "result": null,
       "played": false,
-      "date": "2026-06-27T02:00:00"
+      "date": "2026-06-27T02:00:00+02:00"
     },
     {
       "id": "neuseeland_belgien",
@@ -1304,7 +1304,7 @@
       "group": "Gruppe G",
       "result": null,
       "played": false,
-      "date": "2026-06-27T05:00:00"
+      "date": "2026-06-27T05:00:00+02:00"
     },
     {
       "id": "_gypten_iran",
@@ -1314,7 +1314,7 @@
       "group": "Gruppe G",
       "result": null,
       "played": false,
-      "date": "2026-06-27T05:00:00"
+      "date": "2026-06-27T05:00:00+02:00"
     },
     {
       "id": "kroatien_ghana",
@@ -1324,7 +1324,7 @@
       "group": "Gruppe L",
       "result": null,
       "played": false,
-      "date": "2026-06-27T23:00:00"
+      "date": "2026-06-27T23:00:00+02:00"
     },
     {
       "id": "panama_england",
@@ -1334,7 +1334,7 @@
       "group": "Gruppe L",
       "result": null,
       "played": false,
-      "date": "2026-06-27T23:00:00"
+      "date": "2026-06-27T23:00:00+02:00"
     },
     {
       "id": "dr_kongo_usbekistan",
@@ -1344,7 +1344,7 @@
       "group": "Gruppe K",
       "result": null,
       "played": false,
-      "date": "2026-06-28T01:30:00"
+      "date": "2026-06-28T01:30:00+02:00"
     },
     {
       "id": "kolumbien_portugal",
@@ -1354,7 +1354,7 @@
       "group": "Gruppe K",
       "result": null,
       "played": false,
-      "date": "2026-06-28T01:30:00"
+      "date": "2026-06-28T01:30:00+02:00"
     },
     {
       "id": "algerien__sterreich",
@@ -1364,7 +1364,7 @@
       "group": "Gruppe J",
       "result": null,
       "played": false,
-      "date": "2026-06-28T04:00:00"
+      "date": "2026-06-28T04:00:00+02:00"
     },
     {
       "id": "jordanien_argentinien",
@@ -1374,7 +1374,7 @@
       "group": "Gruppe J",
       "result": null,
       "played": false,
-      "date": "2026-06-28T04:00:00"
+      "date": "2026-06-28T04:00:00+02:00"
     },
     {
       "id": "unbekannt_unbekannt",
@@ -1384,7 +1384,7 @@
       "group": null,
       "result": null,
       "played": false,
-      "date": "2026-06-28T21:00:00"
+      "date": "2026-06-28T21:00:00+02:00"
     }
   ]
 }

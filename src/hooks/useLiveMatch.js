@@ -1,51 +1,37 @@
 import { useState, useEffect } from 'react';
 
-const API_KEY = import.meta.env.VITE_FOOTBALL_API_KEY;
-const POLL_INTERVAL = 30_000;
+const POLL_INTERVAL = 60_000;
 
 export default function useLiveMatch() {
   const [liveMatch, setLiveMatch] = useState(null);
 
   useEffect(() => {
-    if (!API_KEY) return;
-
     async function fetchLive() {
       try {
-        const res = await fetch(
-          'https://api.football-data.org/v4/competitions/WC/matches?status=LIVE',
-          { headers: { 'X-Auth-Token': API_KEY } }
-        );
-        if (!res.ok) {
-          console.warn('[LiveTicker] API error:', res.status, res.statusText);
-          return;
-        }
+        const res = await fetch('https://worldcup26.ir/get/games');
+        if (!res.ok) return;
         const data = await res.json();
-        const m = data.matches?.[0];
-        if (!m) { setLiveMatch(null); return; }
+        const games = data.games || [];
 
-        // Score: optional chaining falls fullTime/halfTime null sein kann
-        const homeScore = m.score?.fullTime?.home ?? m.score?.halfTime?.home ?? 0;
-        const awayScore = m.score?.fullTime?.away ?? m.score?.halfTime?.away ?? 0;
+        const live = games.find(g =>
+          g.finished === 'FALSE' &&
+          g.time_elapsed !== 'notstarted' &&
+          g.time_elapsed !== 'finished' &&
+          g.time_elapsed != null &&
+          g.time_elapsed !== ''
+        );
 
-        // Minute: aus API falls vorhanden, sonst aus Anstoßzeit berechnen
-        let minute = m.minute ?? null;
-        if ((minute === null || minute === 0) && m.status === 'IN_PLAY' && m.utcDate) {
-          const elapsed = Math.floor((Date.now() - new Date(m.utcDate)) / 60000);
-          // Zweite Halbzeit: ~15 min Pause abziehen wenn elapsed > 60
-          const adjusted = elapsed > 60 ? elapsed - 15 : elapsed;
-          minute = Math.max(1, Math.min(adjusted, 90));
-        }
+        if (!live) { setLiveMatch(null); return; }
 
         setLiveMatch({
-          homeTeam:  m.homeTeam?.shortName || m.homeTeam?.name || '?',
-          awayTeam:  m.awayTeam?.shortName || m.awayTeam?.name || '?',
-          homeScore,
-          awayScore,
-          minute,
-          status: m.status,
+          homeTeam:  live.home_team_name_en,
+          awayTeam:  live.away_team_name_en,
+          homeScore: parseInt(live.home_score) || 0,
+          awayScore: parseInt(live.away_score) || 0,
+          minute:    live.time_elapsed,
         });
-      } catch (err) {
-        console.warn('[LiveTicker] Fetch error:', err);
+      } catch {
+        // stiller Fallback
       }
     }
 

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import useLiveMatch from './hooks/useLiveMatch';
 import Leaderboard from './components/Leaderboard';
 import PointsChart from './components/PointsChart';
 import RecentForm from './components/RecentForm';
@@ -107,10 +108,27 @@ function NextMatch({ matches }) {
   );
 }
 
+function LiveTicker({ match }) {
+  const min = match.minute;
+  const label = min === 'HT' ? 'HZ' : min ? `${min}'` : '–';
+  return (
+    <div className="border-2 border-red-400 rounded-xl px-3 py-2 text-sm">
+      <div className="flex items-center gap-1.5 text-xs text-red-500 mb-0.5 font-semibold">
+        <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse inline-block" />
+        LIVE · {label}
+      </div>
+      <div className="font-bold text-[#1e4745]">
+        {match.homeTeam} <span className="text-[#f7b32b] font-mono">{match.homeScore} : {match.awayScore}</span> {match.awayTeam}
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState('tabelle');
+  const liveMatch = useLiveMatch();
 
   useEffect(() => {
     let intervalId = null;
@@ -168,7 +186,9 @@ export default function App() {
               <p className="text-xs text-[#2d6460]">Odonics · FIFA World Cup · USA / Kanada / Mexiko</p>
             </div>
           </div>
-          {data && (
+          {liveMatch ? (
+            <LiveTicker match={liveMatch} />
+          ) : data && (
             <div className="border-2 border-[#2d6b68] rounded-xl px-3 py-2">
               <NextMatch matches={data.matches} />
             </div>

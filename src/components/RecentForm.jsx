@@ -2,10 +2,11 @@ const EXACT_POINTS = 4;
 
 function FormDot({ type, title }) {
   const styles = {
-    exact:   'bg-emerald-500 ring-1 ring-emerald-400',
-    good:    'bg-[#f7b32b] ring-1 ring-[#f7b32b]/70',
-    wrong:   'bg-red-400 ring-1 ring-red-300',
-    pending: 'bg-[#d9e8e5] ring-1 ring-[#c5dbd9]',
+    exact:    'bg-emerald-500 ring-1 ring-emerald-400',
+    diff:     'bg-emerald-300 ring-1 ring-emerald-200',
+    tendency: 'bg-[#f7b32b] ring-1 ring-[#f7b32b]/70',
+    wrong:    'bg-red-400 ring-1 ring-red-300',
+    pending:  'bg-[#d9e8e5] ring-1 ring-[#c5dbd9]',
   };
   return (
     <span
@@ -15,23 +16,35 @@ function FormDot({ type, title }) {
   );
 }
 
-// Tipp-Typ aus Punkten ableiten
+// 4 pts = exakt, 3 pts = Tendenz + Tordifferenz, 2 pts = nur Tendenz, 0 = falsch
 function tipType(pred) {
   if (!pred || pred.points == null) return 'pending';
   if (pred.points >= EXACT_POINTS) return 'exact';
-  if (pred.points >= 1) return 'good';
+  if (pred.points === 3) return 'diff';
+  if (pred.points >= 1) return 'tendency';
   return 'wrong';
 }
 
 export default function RecentForm({ standings, matches }) {
   const playedMatches = matches.filter(m => m.played).slice(-8);
 
-  // Streak: aufeinanderfolgende Treffer (>0 Punkte) von hinten
+  // Winning streak: aufeinanderfolgende Treffer (>0 Punkte) von hinten
   const streakOf = (player) => {
     let streak = 0;
     for (let i = playedMatches.length - 1; i >= 0; i--) {
       const pred = player.predictions?.[playedMatches[i].id];
       if (pred && pred.points > 0) streak++;
+      else break;
+    }
+    return streak;
+  };
+
+  // Losing streak: aufeinanderfolgende Nullpunkter von hinten
+  const losingStreakOf = (player) => {
+    let streak = 0;
+    for (let i = playedMatches.length - 1; i >= 0; i--) {
+      const pred = player.predictions?.[playedMatches[i].id];
+      if (pred && pred.points != null && pred.points === 0) streak++;
       else break;
     }
     return streak;
@@ -47,8 +60,10 @@ export default function RecentForm({ standings, matches }) {
         <div className="px-4 py-3 border-b border-[#e5f0ef] bg-[#f6fbfb]">
           <h2 className="text-sm font-semibold text-[#1e4745]">Aktuelle Form</h2>
           <p className="text-xs text-[#7aadaa] mt-0.5">
-            Letzte {playedMatches.length} Spiele — <span className="text-emerald-500">■</span> Exakt
-            {' · '}<span className="text-[#f7b32b]">■</span> Tendenz
+            Letzte {playedMatches.length} Spiele —
+            {' '}<span className="text-emerald-500">■</span> Exakt (4P)
+            {' · '}<span className="text-emerald-300">■</span> +Tordiff. (3P)
+            {' · '}<span className="text-[#f7b32b]">■</span> Tendenz (2P)
             {' · '}<span className="text-red-400">■</span> Falsch
           </p>
         </div>
@@ -73,12 +88,13 @@ export default function RecentForm({ standings, matches }) {
                       ))}
                     </div>
                   </th>
-                  <th className="text-right px-4 py-2 text-xs text-[#7aadaa] font-medium w-16">🔥</th>
+                  <th className="text-right px-4 py-2 text-xs text-[#7aadaa] font-medium w-16">🔥❄️</th>
                 </tr>
               </thead>
               <tbody>
                 {standings.map(player => {
                   const streak = streakOf(player);
+                  const losingStreak = losingStreakOf(player);
                   const recentPts = recentPtsOf(player);
                   return (
                     <tr
@@ -107,8 +123,9 @@ export default function RecentForm({ standings, matches }) {
                           })}
                         </div>
                       </td>
-                      <td className="px-4 py-2.5 text-right text-xs text-orange-500">
-                        {streak > 1 ? `${streak}🔥` : ''}
+                      <td className="px-4 py-2.5 text-right text-xs">
+                        {streak > 1 && <span className="text-orange-500">{streak}🔥</span>}
+                        {losingStreak > 1 && <span className="text-blue-400">{losingStreak}❄️</span>}
                       </td>
                     </tr>
                   );
@@ -120,9 +137,10 @@ export default function RecentForm({ standings, matches }) {
       </div>
 
       {/* Highlight-Karten */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {[
           { label: 'Heißeste Form', icon: '🔥', pick: standings.reduce((a, b) => streakOf(b) > streakOf(a) ? b : a, standings[0]) },
+          { label: 'Losing Streak', icon: '❄️', pick: standings.reduce((a, b) => losingStreakOf(b) > losingStreakOf(a) ? b : a, standings[0]) },
           { label: 'Meiste Exakttreffer', icon: '🎯', pick: standings.reduce((a, b) => (b.exact || 0) > (a.exact || 0) ? b : a, standings[0]) },
           { label: 'Führender', icon: '🏆', pick: standings[0] },
         ].map(({ label, icon, pick }) => (

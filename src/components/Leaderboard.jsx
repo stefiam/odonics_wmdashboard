@@ -13,24 +13,28 @@ function PodiumBadge({ pos }) {
   return <span className="text-[#1e4745]/40 text-sm font-mono w-6 text-center">{pos}.</span>;
 }
 
-function AccuracyBar({ exact, tendency, wrong }) {
-  const total = exact + tendency + wrong;
+function AccuracyBar({ exact, diff = 0, tendency, wrong }) {
+  const total = exact + diff + tendency + wrong;
   if (total === 0) return <div className="h-1.5 bg-[#e5f0ef] rounded-full w-20" />;
-  const exactPct = (exact / total) * 100;
-  const tendPct = (tendency / total) * 100;
+  const exactPct  = (exact   / total) * 100;
+  const diffPct   = (diff    / total) * 100;
+  const tendPct   = (tendency / total) * 100;
   return (
     <div className="h-1.5 rounded-full overflow-hidden bg-[#e5f0ef] w-20 flex">
-      <div className="bg-emerald-500 h-full" style={{ width: `${exactPct}%` }} title={`Exakt: ${exact}`} />
-      <div className="bg-[#f7b32b] h-full" style={{ width: `${tendPct}%` }} title={`Tendenz: ${tendency}`} />
+      <div className="bg-emerald-500 h-full" style={{ width: `${exactPct}%` }} title={`Exakt (4P): ${exact}`} />
+      <div className="bg-emerald-300 h-full" style={{ width: `${diffPct}%` }}  title={`+Tordiff. (3P): ${diff}`} />
+      <div className="bg-[#f7b32b] h-full" style={{ width: `${tendPct}%` }}   title={`Tendenz (2P): ${tendency}`} />
     </div>
   );
 }
 
 function PlayerModal({ player, onClose }) {
-  const total = player.exact + player.tendency + player.wrong;
-  const exactPct = total > 0 ? Math.round((player.exact / total) * 100) : 0;
-  const tendPct = total > 0 ? Math.round((player.tendency / total) * 100) : 0;
-  const wrongPct = total > 0 ? Math.round((player.wrong / total) * 100) : 0;
+  const diff = player.diff || 0;
+  const total = player.exact + diff + player.tendency + player.wrong;
+  const exactPct = total > 0 ? Math.round((player.exact    / total) * 100) : 0;
+  const diffPct  = total > 0 ? Math.round((diff            / total) * 100) : 0;
+  const tendPct  = total > 0 ? Math.round((player.tendency / total) * 100) : 0;
+  const wrongPct = total > 0 ? Math.round((player.wrong    / total) * 100) : 0;
   const history = player.pointsHistory || [];
 
   return (
@@ -52,12 +56,13 @@ function PlayerModal({ player, onClose }) {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-4 gap-2 mb-4">
+        <div className="grid grid-cols-5 gap-2 mb-4">
           {[
             { label: 'Punkte', val: player.points, color: 'text-[#1e4745]' },
-            { label: 'Exakt', val: player.exact, color: 'text-emerald-600' },
-            { label: 'Tendenz', val: player.tendency, color: 'text-[#f7b32b]' },
-            { label: 'Falsch', val: player.wrong, color: 'text-red-400' },
+            { label: 'Exakt',  val: player.exact,     color: 'text-emerald-600' },
+            { label: '+Tordiff.', val: diff,           color: 'text-emerald-400' },
+            { label: 'Tendenz', val: player.tendency,  color: 'text-[#f7b32b]' },
+            { label: 'Falsch',  val: player.wrong,     color: 'text-red-400' },
           ].map(({ label, val, color }) => (
             <div key={label} className="bg-[#f6fbfb] rounded-xl p-3 text-center border border-[#e5f0ef]">
               <div className={`text-xl font-bold ${color}`}>{val}</div>
@@ -72,11 +77,13 @@ function PlayerModal({ player, onClose }) {
             <div className="text-xs text-[#7aadaa] mb-2">Trefferquote ({total} Spiele)</div>
             <div className="flex gap-1 h-4 rounded-full overflow-hidden">
               {exactPct > 0 && <div className="bg-emerald-500 flex items-center justify-center text-[10px] text-white font-bold" style={{ width: `${exactPct}%` }}>{exactPct}%</div>}
-              {tendPct > 0 && <div className="bg-[#f7b32b] flex items-center justify-center text-[10px] text-white font-bold" style={{ width: `${tendPct}%` }}>{tendPct}%</div>}
+              {diffPct  > 0 && <div className="bg-emerald-300 flex items-center justify-center text-[10px] text-white font-bold" style={{ width: `${diffPct}%`  }}>{diffPct}%</div>}
+              {tendPct  > 0 && <div className="bg-[#f7b32b] flex items-center justify-center text-[10px] text-white font-bold" style={{ width: `${tendPct}%`  }}>{tendPct}%</div>}
               {wrongPct > 0 && <div className="bg-red-300 flex items-center justify-center text-[10px] text-white font-bold" style={{ width: `${wrongPct}%` }}>{wrongPct}%</div>}
             </div>
-            <div className="flex gap-3 text-[10px] text-[#7aadaa] mt-1">
+            <div className="flex flex-wrap gap-x-3 gap-y-1 text-[10px] text-[#7aadaa] mt-1">
               <span className="flex items-center gap-0.5"><span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" /> Exakt {exactPct}%</span>
+              <span className="flex items-center gap-0.5"><span className="w-2 h-2 rounded-full bg-emerald-300 inline-block" /> +Tordiff. {diffPct}%</span>
               <span className="flex items-center gap-0.5"><span className="w-2 h-2 rounded-full bg-[#f7b32b] inline-block" /> Tendenz {tendPct}%</span>
               <span className="flex items-center gap-0.5"><span className="w-2 h-2 rounded-full bg-red-300 inline-block" /> Falsch {wrongPct}%</span>
             </div>
@@ -108,6 +115,12 @@ function PlayerModal({ player, onClose }) {
       </div>
     </div>
   );
+}
+
+const PRIZES = { 1: 220, 2: 140, 3: 90, 4: 50, 5: 30 };
+
+function prizeForPos(pos) {
+  return PRIZES[pos] ?? 0;
 }
 
 export default function Leaderboard({ standings }) {
@@ -149,49 +162,58 @@ export default function Leaderboard({ standings }) {
 
       {/* Vollständige Tabelle */}
       <div className="bg-white rounded-xl border-2 border-[#2d6b68] overflow-hidden shadow-sm">
-        <div className="grid grid-cols-[auto_1fr_auto_auto_auto_auto] gap-0 text-xs text-[#7aadaa] uppercase tracking-wider px-4 py-2 border-b border-[#e5f0ef] bg-[#f6fbfb]">
+        <div className="grid grid-cols-[auto_1fr_auto_auto_auto_auto_auto] gap-0 text-xs text-[#7aadaa] uppercase tracking-wider px-4 py-2 border-b border-[#e5f0ef] bg-[#f6fbfb]">
           <span className="w-8">Pos</span>
           <span>Name</span>
           <span className="w-8 text-right" title="Trend: Plätze seit letztem Update">+/−</span>
           <span className="w-10 text-right" title="Exakte Treffer">P</span>
           <span className="w-10 text-right" title="Tendenz richtig">B</span>
           <span className="w-12 text-right">Pkt</span>
+          <span className="w-14 text-right" title="Aktueller Gewinn bei diesem Stand">€</span>
         </div>
 
-        {standings.map((p) => (
-          <div
-            key={p.name}
-            onClick={() => setSelectedPlayer(p)}
-            className={`grid grid-cols-[auto_1fr_auto_auto_auto_auto] items-center gap-0 px-4 py-2.5 border-b border-[#e5f0ef] last:border-0 transition-colors hover:bg-[#f6fbfb] cursor-pointer ${
-              p.isHighlighted ? 'bg-[#fff8e6]' : ''
-            }`}
-          >
-            <div className="w-8 flex items-center"><PodiumBadge pos={p.pos} /></div>
-            <div className="flex flex-col min-w-0">
-              <span className={`font-semibold text-sm truncate text-[#1e4745] ${p.isHighlighted ? 'font-bold' : ''}`}>
-                {p.name}
-              </span>
-              <AccuracyBar exact={p.exact} tendency={p.tendency} wrong={p.wrong} />
+        {standings.map((p) => {
+          const prize = prizeForPos(p.pos);
+          return (
+            <div
+              key={p.name}
+              onClick={() => setSelectedPlayer(p)}
+              className={`grid grid-cols-[auto_1fr_auto_auto_auto_auto_auto] items-center gap-0 px-4 py-2.5 border-b border-[#e5f0ef] last:border-0 transition-colors hover:bg-[#f6fbfb] cursor-pointer ${
+                p.isHighlighted ? 'bg-[#fff8e6]' : ''
+              }`}
+            >
+              <div className="w-8 flex items-center"><PodiumBadge pos={p.pos} /></div>
+              <div className="flex flex-col min-w-0">
+                <span className={`font-semibold text-sm truncate text-[#1e4745] ${p.isHighlighted ? 'font-bold' : ''}`}>
+                  {p.name}
+                </span>
+                <AccuracyBar exact={p.exact} diff={p.diff} tendency={p.tendency} wrong={p.wrong} />
+              </div>
+              <div className="w-8 text-right">
+                <TrendIcon trend={p.posPrev - p.pos} />
+              </div>
+              <div className="w-10 text-right text-xs text-emerald-600 font-medium">{p.exact}</div>
+              <div className="w-10 text-right text-xs text-[#f7b32b] font-medium">{p.tendency}</div>
+              <div className="w-12 text-right font-bold text-sm text-[#1e4745]">{p.points}</div>
+              <div className="w-14 text-right text-xs font-semibold">
+                {prize > 0
+                  ? <span className="text-[#f7b32b]">{prize} €</span>
+                  : <span className="text-[#d9e8e5]">–</span>}
+              </div>
             </div>
-            <div className="w-8 text-right">
-              <TrendIcon trend={p.posPrev - p.pos} />
-            </div>
-            <div className="w-10 text-right text-xs text-emerald-600 font-medium">{p.exact}</div>
-            <div className="w-10 text-right text-xs text-[#f7b32b] font-medium">{p.tendency}</div>
-            <div className="w-12 text-right font-bold text-sm text-[#1e4745]">{p.points}</div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 px-3 py-2 rounded-lg bg-[#2d6b68] text-xs text-white">
         <span><span className="font-bold">+/−</span> = Plätze seit letztem Update</span>
         <span className="flex items-center gap-1">
-          <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block ring-2 ring-white" /> P = Exakt getippt
+          <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block ring-2 ring-white" /> P = Exakt (4P)
         </span>
         <span className="flex items-center gap-1">
-          <span className="w-2 h-2 rounded-full bg-[#f7b32b] inline-block ring-2 ring-white" /> B = Tendenz richtig
+          <span className="w-2 h-2 rounded-full bg-[#f7b32b] inline-block ring-2 ring-white" /> B = Tendenz (2–3P)
         </span>
-        <span>Pkt = Gesamt · Klick auf Zeile = Profil</span>
+        <span>Pkt = Gesamt · € = Aktueller Gewinn (1.–5. Platz) · Klick auf Zeile = Profil</span>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ function tipClass(pred) {
   if (!pred || !pred.tip) return 'text-gray-300';
   if (pred.points == null) return 'bg-[#f0f8f7] text-[#5a8a86]';
   if (pred.points >= EXACT_POINTS) return 'bg-emerald-50 text-emerald-700';
+  if (pred.points === 3) return 'bg-emerald-50/60 text-emerald-500';
   if (pred.points >= 1) return 'bg-[#fff8e6] text-[#c8890a]';
   return 'bg-red-50 text-red-500';
 }

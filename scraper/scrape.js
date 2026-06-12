@@ -276,10 +276,11 @@ async function run() {
     const old = prevMap[s.name] || {};
     const predictions = playerPred[s.name] || {};
 
-    let exact = 0, tendency = 0, wrong = 0;
+    let exact = 0, diff = 0, tendency = 0, wrong = 0;
     Object.values(predictions).forEach(p => {
       if (p.points == null) return;
       if (p.points >= EXACT_POINTS) exact++;
+      else if (p.points === 3) diff++;
       else if (p.points >= 1) tendency++;
       else wrong++;
     });
@@ -289,7 +290,7 @@ async function run() {
 
     return {
       pos: s.pos, trend: s.trend, name: s.name, points: s.points,
-      exact, tendency, wrong,
+      exact, diff, tendency, wrong,
       posPrev: old.pos ?? s.pos,
       pointsHistory: history,
       isHighlighted: s.name === HIGHLIGHT_NAME,

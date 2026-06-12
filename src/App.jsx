@@ -73,7 +73,7 @@ function NextMatch({ matches }) {
   const live = real.find(m => {
     if (!m.date) return false;
     const start = new Date(m.date).getTime();
-    return now >= start && now <= start + 140 * 60000;
+    return now >= start && now <= start + 120 * 60000;
   });
 
   if (live) {
@@ -120,7 +120,7 @@ export default function App() {
       return (d.matches || []).some(m => {
         if (!m.date) return false;
         const start = new Date(m.date).getTime();
-        return now >= start && now <= start + 140 * 60 * 1000;
+        return now >= start && now <= start + 120 * 60 * 1000;
       });
     }
 

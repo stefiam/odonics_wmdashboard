@@ -131,10 +131,10 @@ export default function Leaderboard({ standings }) {
             <button
               key={p.name}
               onClick={() => setSelectedPlayer(p)}
-              className={`relative flex flex-col items-center justify-center py-4 px-2 rounded-xl border ${minH} w-full transition-shadow hover:shadow-md cursor-pointer ${
+              className={`relative flex flex-col items-center justify-center py-4 px-2 rounded-xl border-2 ${minH} w-full transition-shadow hover:shadow-md cursor-pointer ${
                 p.isHighlighted
-                  ? 'bg-[#fff8e6] border-[#f7b32b]/60 shadow-sm'
-                  : 'bg-white border-[#d9e8e5] shadow-sm'
+                  ? 'bg-[#fff8e6] border-[#f7b32b] shadow-sm'
+                  : 'bg-white border-[#2d6b68] shadow-sm'
               }`}
             >
               {visualPos === 1 && <span className="absolute -top-3 text-xl">👑</span>}
@@ -148,7 +148,7 @@ export default function Leaderboard({ standings }) {
       </div>
 
       {/* Vollständige Tabelle */}
-      <div className="bg-white rounded-xl border border-[#d9e8e5] overflow-hidden shadow-sm">
+      <div className="bg-white rounded-xl border-2 border-[#2d6b68] overflow-hidden shadow-sm">
         <div className="grid grid-cols-[auto_1fr_auto_auto_auto_auto] gap-0 text-xs text-[#7aadaa] uppercase tracking-wider px-4 py-2 border-b border-[#e5f0ef] bg-[#f6fbfb]">
           <span className="w-8">Pos</span>
           <span>Name</span>
@@ -183,10 +183,14 @@ export default function Leaderboard({ standings }) {
         ))}
       </div>
 
-      <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-xs text-[#7aadaa]">
-        <span><span className="text-emerald-600 font-bold">+/−</span> = Plätze seit letztem Update</span>
-        <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" /> P = Exakt getippt</span>
-        <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-[#f7b32b] inline-block" /> B = Tendenz richtig</span>
+      <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 px-3 py-2 rounded-lg bg-[#2d6b68] text-xs text-white">
+        <span><span className="font-bold">+/−</span> = Plätze seit letztem Update</span>
+        <span className="flex items-center gap-1">
+          <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block ring-2 ring-white" /> P = Exakt getippt
+        </span>
+        <span className="flex items-center gap-1">
+          <span className="w-2 h-2 rounded-full bg-[#f7b32b] inline-block ring-2 ring-white" /> B = Tendenz richtig
+        </span>
         <span>Pkt = Gesamt · Klick auf Zeile = Profil</span>
       </div>
     </div>

@@ -119,9 +119,13 @@ export default function App() {
               <p className="text-xs text-[#2d6460]">Odonics · FIFA World Cup · USA / Kanada / Mexiko</p>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
-            {data && <NextMatch matches={data.matches} />}
-            <div className="text-right text-sm">
+          <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
+            {data && (
+              <div className="border-2 border-[#2d6b68] rounded-xl px-3 py-2">
+                <NextMatch matches={data.matches} />
+              </div>
+            )}
+            <div className="border-2 border-[#2d6b68] rounded-xl px-3 py-2 text-right text-sm">
               <div className="text-[#2d6460] text-xs mb-0.5">Finale in</div>
               <Countdown targetDate="2026-07-19T21:00:00Z" />
             </div>

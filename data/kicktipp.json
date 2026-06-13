@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T15:44:18.469Z",
+  "lastUpdated": "2026-06-13T22:05:58.043Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -18,6 +18,8 @@
         6,
         4,
         8,
+        10,
+        13,
         10
       ],
       "isHighlighted": false,
@@ -37,6 +39,14 @@
         "usa_paraguay": {
           "tip": "1:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "1:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
+          "points": null
         }
       }
     },
@@ -49,7 +59,7 @@
       "diff": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 1,
+      "posPrev": 2,
       "pointsHistory": [
         0,
         2,
@@ -57,6 +67,8 @@
         6,
         4,
         8,
+        10,
+        12,
         10
       ],
       "isHighlighted": false,
@@ -76,6 +88,14 @@
         "usa_paraguay": {
           "tip": "2:1",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:1",
+          "points": null
         }
       }
     },
@@ -88,7 +108,7 @@
       "diff": 0,
       "tendency": 2,
       "wrong": 0,
-      "posPrev": 4,
+      "posPrev": 3,
       "pointsHistory": [
         0,
         4,
@@ -96,6 +116,8 @@
         4,
         2,
         6,
+        8,
+        10,
         8
       ],
       "isHighlighted": false,
@@ -115,6 +137,61 @@
         "usa_paraguay": {
           "tip": "1:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:1",
+          "points": null
+        }
+      }
+    },
+    {
+      "pos": 3,
+      "trend": 0,
+      "name": "TippJungle",
+      "points": 8,
+      "exact": 1,
+      "diff": 0,
+      "tendency": 2,
+      "wrong": 0,
+      "posPrev": 8,
+      "pointsHistory": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        6,
+        8
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:0",
+          "points": 4
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
+        },
+        "kanada_bosnien_herzegowina": {
+          "tip": "1:0",
+          "points": null
+        },
+        "usa_paraguay": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:2",
+          "points": 2
         }
       }
     },
@@ -127,7 +204,7 @@
       "diff": 0,
       "tendency": 2,
       "wrong": 0,
-      "posPrev": 4,
+      "posPrev": 3,
       "pointsHistory": [
         0,
         4,
@@ -135,6 +212,8 @@
         4,
         2,
         6,
+        8,
+        10,
         8
       ],
       "isHighlighted": false,
@@ -154,6 +233,14 @@
         "usa_paraguay": {
           "tip": "2:1",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:4",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
+          "points": null
         }
       }
     },
@@ -166,13 +253,15 @@
       "diff": 0,
       "tendency": 2,
       "wrong": 0,
-      "posPrev": 4,
+      "posPrev": 3,
       "pointsHistory": [
         0,
         2,
         4,
         2,
         6,
+        8,
+        10,
         8
       ],
       "isHighlighted": false,
@@ -192,6 +281,14 @@
         "usa_paraguay": {
           "tip": "1:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:4",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:1",
+          "points": null
         }
       }
     },
@@ -204,7 +301,7 @@
       "diff": 0,
       "tendency": 2,
       "wrong": 0,
-      "posPrev": 4,
+      "posPrev": 3,
       "pointsHistory": [
         0,
         3,
@@ -212,6 +309,8 @@
         4,
         2,
         6,
+        8,
+        10,
         8
       ],
       "isHighlighted": false,
@@ -231,11 +330,19 @@
         "usa_paraguay": {
           "tip": "1:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:0",
+          "points": null
         }
       }
     },
     {
-      "pos": 7,
+      "pos": 8,
       "trend": 0,
       "name": "Schneckerl",
       "points": 7,
@@ -243,7 +350,7 @@
       "diff": 1,
       "tendency": 2,
       "wrong": 0,
-      "posPrev": 4,
+      "posPrev": 8,
       "pointsHistory": [
         0,
         3,
@@ -251,6 +358,8 @@
         5,
         9,
         5,
+        7,
+        9,
         7
       ],
       "isHighlighted": false,
@@ -270,11 +379,19 @@
         "usa_paraguay": {
           "tip": "0:1",
           "points": null
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:0",
+          "points": null
         }
       }
     },
     {
-      "pos": 8,
+      "pos": 9,
       "trend": 0,
       "name": "WAC",
       "points": 6,
@@ -282,11 +399,13 @@
       "diff": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 10,
+      "posPrev": 9,
       "pointsHistory": [
         0,
         2,
         4,
+        6,
+        8,
         6
       ],
       "isHighlighted": false,
@@ -306,47 +425,19 @@
         "usa_paraguay": {
           "tip": "3:1",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
+          "points": null
         }
       }
     },
     {
-      "pos": 8,
-      "trend": 0,
-      "name": "TippJungle",
-      "points": 6,
-      "exact": 1,
-      "diff": 0,
-      "tendency": 1,
-      "wrong": 0,
-      "posPrev": 10,
-      "pointsHistory": [
-        0,
-        2,
-        4,
-        6
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "mexiko_s_dafrika": {
-          "tip": "2:0",
-          "points": 4
-        },
-        "s_dkorea_tschechien": {
-          "tip": "1:1",
-          "points": null
-        },
-        "kanada_bosnien_herzegowina": {
-          "tip": "1:0",
-          "points": null
-        },
-        "usa_paraguay": {
-          "tip": "2:1",
-          "points": 2
-        }
-      }
-    },
-    {
-      "pos": 8,
+      "pos": 9,
       "trend": 0,
       "name": "Panu",
       "points": 6,
@@ -354,11 +445,13 @@
       "diff": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 10,
+      "posPrev": 9,
       "pointsHistory": [
         0,
         2,
         4,
+        6,
+        8,
         6
       ],
       "isHighlighted": false,
@@ -378,11 +471,19 @@
         "usa_paraguay": {
           "tip": "2:1",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:2",
+          "points": null
         }
       }
     },
     {
-      "pos": 8,
+      "pos": 9,
       "trend": 0,
       "name": "Sigi",
       "points": 6,
@@ -390,13 +491,15 @@
       "diff": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 15,
+      "posPrev": 9,
       "pointsHistory": [
         0,
         4,
         2,
         4,
         2,
+        6,
+        8,
         6
       ],
       "isHighlighted": false,
@@ -416,11 +519,19 @@
         "usa_paraguay": {
           "tip": "1:1",
           "points": null
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:0",
+          "points": null
         }
       }
     },
     {
-      "pos": 8,
+      "pos": 9,
       "trend": 0,
       "name": "Robi",
       "points": 6,
@@ -428,7 +539,7 @@
       "diff": 0,
       "tendency": 3,
       "wrong": 0,
-      "posPrev": 10,
+      "posPrev": 9,
       "pointsHistory": [
         0,
         3,
@@ -436,6 +547,8 @@
         6,
         2,
         4,
+        6,
+        8,
         6
       ],
       "isHighlighted": false,
@@ -455,11 +568,19 @@
         "usa_paraguay": {
           "tip": "1:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:4",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:0",
+          "points": null
         }
       }
     },
     {
-      "pos": 8,
+      "pos": 9,
       "trend": 0,
       "name": "DOl",
       "points": 6,
@@ -467,13 +588,15 @@
       "diff": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 10,
+      "posPrev": 3,
       "pointsHistory": [
         0,
         2,
         4,
         7,
         4,
+        6,
+        10,
         6
       ],
       "isHighlighted": false,
@@ -493,11 +616,19 @@
         "usa_paraguay": {
           "tip": "2:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:1",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:2",
+          "points": null
         }
       }
     },
     {
-      "pos": 8,
+      "pos": 9,
       "trend": 0,
       "name": "Peppolini",
       "points": 6,
@@ -505,10 +636,12 @@
       "diff": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 1,
+      "posPrev": 9,
       "pointsHistory": [
         0,
         2,
+        6,
+        8,
         6
       ],
       "isHighlighted": false,
@@ -528,6 +661,14 @@
         "usa_paraguay": {
           "tip": "1:1",
           "points": null
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:1",
+          "points": null
         }
       }
     },
@@ -540,13 +681,15 @@
       "diff": 1,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 16,
+      "posPrev": 15,
       "pointsHistory": [
         0,
         2,
         3,
         6,
         3,
+        5,
+        7,
         5
       ],
       "isHighlighted": false,
@@ -566,6 +709,14 @@
         "usa_paraguay": {
           "tip": "2:1",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
+          "points": null
         }
       }
     },
@@ -578,13 +729,15 @@
       "diff": 0,
       "tendency": 2,
       "wrong": 0,
-      "posPrev": 18,
+      "posPrev": 15,
       "pointsHistory": [
         0,
         3,
         2,
         5,
         2,
+        4,
+        7,
         4
       ],
       "isHighlighted": false,
@@ -604,6 +757,14 @@
         "usa_paraguay": {
           "tip": "1:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "1:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
+          "points": null
         }
       }
     },
@@ -616,8 +777,10 @@
       "diff": 0,
       "tendency": 0,
       "wrong": 0,
-      "posPrev": 3,
+      "posPrev": 17,
       "pointsHistory": [
+        4,
+        6,
         4
       ],
       "isHighlighted": false,
@@ -637,6 +800,14 @@
         "usa_paraguay": {
           "tip": "1:2",
           "points": null
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
+          "points": null
         }
       }
     },
@@ -649,13 +820,15 @@
       "diff": 0,
       "tendency": 2,
       "wrong": 0,
-      "posPrev": 18,
+      "posPrev": 17,
       "pointsHistory": [
         0,
         3,
         2,
         4,
         2,
+        4,
+        6,
         4
       ],
       "isHighlighted": false,
@@ -675,6 +848,14 @@
         "usa_paraguay": {
           "tip": "2:1",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
+          "points": null
         }
       }
     },
@@ -687,10 +868,12 @@
       "diff": 1,
       "tendency": 0,
       "wrong": 0,
-      "posPrev": 10,
+      "posPrev": 19,
       "pointsHistory": [
         0,
         2,
+        3,
+        5,
         3
       ],
       "isHighlighted": false,
@@ -710,6 +893,14 @@
         "usa_paraguay": {
           "tip": "1:1",
           "points": null
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:1",
+          "points": null
         }
       }
     },
@@ -722,10 +913,12 @@
       "diff": 0,
       "tendency": 0,
       "wrong": 0,
-      "posPrev": 6,
+      "posPrev": 20,
       "pointsHistory": [
         0,
         4,
+        0,
+        2,
         0
       ],
       "isHighlighted": false,
@@ -744,6 +937,14 @@
         },
         "usa_paraguay": {
           "tip": "1:1",
+          "points": null
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:0",
           "points": null
         }
       }
@@ -796,8 +997,8 @@
       "homeTeam": "Katar",
       "awayTeam": "Schweiz",
       "group": "Gruppe B",
-      "result": null,
-      "played": false,
+      "result": "1:1",
+      "played": true,
       "date": "2026-06-13T21:00:00+02:00"
     },
     {
@@ -806,8 +1007,8 @@
       "homeTeam": "Brasilien",
       "awayTeam": "Marokko",
       "group": "Gruppe C",
-      "result": null,
-      "played": false,
+      "result": "0:0",
+      "played": true,
       "date": "2026-06-14T00:00:00+02:00"
     },
     {

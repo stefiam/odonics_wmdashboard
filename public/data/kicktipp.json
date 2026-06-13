@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T19:04:35.324Z",
+  "lastUpdated": "2026-06-13T19:09:53.150Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -876,8 +876,8 @@
       "homeTeam": "Katar",
       "awayTeam": "Schweiz",
       "group": "Gruppe B",
-      "result": null,
-      "played": false,
+      "result": "0:0",
+      "played": true,
       "date": "2026-06-13T21:00:00+02:00"
     },
     {

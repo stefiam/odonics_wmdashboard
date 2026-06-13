@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { liveMinuteLabel } from '../lib/liveMinute';
 
 function TipBadge({ tip, points, result }) {
   if (!tip) return <span className="text-gray-300 text-xs">–</span>;
@@ -91,7 +92,7 @@ export default function MatchBreakdown({ matches, standings, liveMatch }) {
                   : 'bg-[#e5f0ef] text-[#7aadaa]'
             }`}>
               {live
-                ? <span className="flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse inline-block" />Live</span>
+                ? <span className="flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse inline-block" />Live{match.date && liveMinuteLabel(new Date(match.date).getTime(), Date.now()) ? ` · ${liveMinuteLabel(new Date(match.date).getTime(), Date.now())}` : ''}</span>
                 : match.played ? 'Abgepfiffen' : 'Ausstehend'
               }
             </span>

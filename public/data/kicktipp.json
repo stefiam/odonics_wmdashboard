@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T15:44:18.469Z",
+  "lastUpdated": "2026-06-13T19:04:35.324Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -37,6 +37,10 @@
         "usa_paraguay": {
           "tip": "1:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "1:2",
+          "points": null
         }
       }
     },
@@ -76,6 +80,10 @@
         "usa_paraguay": {
           "tip": "2:1",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
+          "points": null
         }
       }
     },
@@ -115,6 +123,10 @@
         "usa_paraguay": {
           "tip": "1:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
         }
       }
     },
@@ -154,6 +166,10 @@
         "usa_paraguay": {
           "tip": "2:1",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:4",
+          "points": null
         }
       }
     },
@@ -192,6 +208,10 @@
         "usa_paraguay": {
           "tip": "1:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:4",
+          "points": null
         }
       }
     },
@@ -231,6 +251,10 @@
         "usa_paraguay": {
           "tip": "1:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
         }
       }
     },
@@ -270,6 +294,10 @@
         "usa_paraguay": {
           "tip": "0:1",
           "points": null
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
         }
       }
     },
@@ -306,6 +334,10 @@
         "usa_paraguay": {
           "tip": "3:1",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
+          "points": null
         }
       }
     },
@@ -342,6 +374,10 @@
         "usa_paraguay": {
           "tip": "2:1",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
         }
       }
     },
@@ -378,6 +414,10 @@
         "usa_paraguay": {
           "tip": "2:1",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
         }
       }
     },
@@ -415,6 +455,10 @@
         },
         "usa_paraguay": {
           "tip": "1:1",
+          "points": null
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
           "points": null
         }
       }
@@ -455,6 +499,10 @@
         "usa_paraguay": {
           "tip": "1:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:4",
+          "points": null
         }
       }
     },
@@ -493,6 +541,10 @@
         "usa_paraguay": {
           "tip": "2:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:1",
+          "points": null
         }
       }
     },
@@ -527,6 +579,10 @@
         },
         "usa_paraguay": {
           "tip": "1:1",
+          "points": null
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
           "points": null
         }
       }
@@ -566,6 +622,10 @@
         "usa_paraguay": {
           "tip": "2:1",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
+          "points": null
         }
       }
     },
@@ -604,6 +664,10 @@
         "usa_paraguay": {
           "tip": "1:0",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "1:2",
+          "points": null
         }
       }
     },
@@ -636,6 +700,10 @@
         },
         "usa_paraguay": {
           "tip": "1:2",
+          "points": null
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
           "points": null
         }
       }
@@ -675,6 +743,10 @@
         "usa_paraguay": {
           "tip": "2:1",
           "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
         }
       }
     },
@@ -710,6 +782,10 @@
         "usa_paraguay": {
           "tip": "1:1",
           "points": null
+        },
+        "katar_schweiz": {
+          "tip": "0:3",
+          "points": null
         }
       }
     },
@@ -744,6 +820,10 @@
         },
         "usa_paraguay": {
           "tip": "1:1",
+          "points": null
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
           "points": null
         }
       }

@@ -1,23 +1,24 @@
 {
-  "lastUpdated": "2026-06-12T23:05:14.389Z",
+  "lastUpdated": "2026-06-13T08:50:16.077Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
       "pos": 1,
       "trend": 0,
       "name": "Bella",
-      "points": 8,
+      "points": 10,
       "exact": 2,
       "diff": 0,
-      "tendency": 0,
+      "tendency": 1,
       "wrong": 0,
-      "posPrev": 6,
+      "posPrev": 1,
       "pointsHistory": [
         0,
         4,
         6,
         4,
-        8
+        8,
+        10
       ],
       "isHighlighted": false,
       "predictions": {
@@ -32,6 +33,10 @@
         "kanada_bosnien_herzegowina": {
           "tip": "1:1",
           "points": 4
+        },
+        "usa_paraguay": {
+          "tip": "1:0",
+          "points": 2
         }
       }
     },
@@ -39,19 +44,20 @@
       "pos": 1,
       "trend": 0,
       "name": "Kiki",
-      "points": 8,
+      "points": 10,
       "exact": 2,
       "diff": 0,
-      "tendency": 0,
+      "tendency": 1,
       "wrong": 0,
-      "posPrev": 6,
+      "posPrev": 1,
       "pointsHistory": [
         0,
         2,
         4,
         6,
         4,
-        8
+        8,
+        10
       ],
       "isHighlighted": false,
       "predictions": {
@@ -66,11 +72,170 @@
         "kanada_bosnien_herzegowina": {
           "tip": "1:1",
           "points": 4
+        },
+        "usa_paraguay": {
+          "tip": "2:1",
+          "points": 2
         }
       }
     },
     {
       "pos": 3,
+      "trend": 0,
+      "name": "Michel",
+      "points": 8,
+      "exact": 1,
+      "diff": 0,
+      "tendency": 2,
+      "wrong": 0,
+      "posPrev": 4,
+      "pointsHistory": [
+        0,
+        4,
+        2,
+        4,
+        2,
+        6,
+        8
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "1:0",
+          "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:2",
+          "points": null
+        },
+        "kanada_bosnien_herzegowina": {
+          "tip": "1:1",
+          "points": 4
+        },
+        "usa_paraguay": {
+          "tip": "1:0",
+          "points": 2
+        }
+      }
+    },
+    {
+      "pos": 3,
+      "trend": 0,
+      "name": "MaWa44",
+      "points": 8,
+      "exact": 1,
+      "diff": 0,
+      "tendency": 2,
+      "wrong": 0,
+      "posPrev": 4,
+      "pointsHistory": [
+        0,
+        4,
+        2,
+        4,
+        2,
+        6,
+        8
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "1:0",
+          "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
+        },
+        "kanada_bosnien_herzegowina": {
+          "tip": "1:1",
+          "points": 4
+        },
+        "usa_paraguay": {
+          "tip": "2:1",
+          "points": 2
+        }
+      }
+    },
+    {
+      "pos": 3,
+      "trend": 0,
+      "name": "Andy",
+      "points": 8,
+      "exact": 1,
+      "diff": 0,
+      "tendency": 2,
+      "wrong": 0,
+      "posPrev": 4,
+      "pointsHistory": [
+        0,
+        2,
+        4,
+        2,
+        6,
+        8
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "3:0",
+          "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:2",
+          "points": null
+        },
+        "kanada_bosnien_herzegowina": {
+          "tip": "1:1",
+          "points": 4
+        },
+        "usa_paraguay": {
+          "tip": "1:0",
+          "points": 2
+        }
+      }
+    },
+    {
+      "pos": 3,
+      "trend": 0,
+      "name": "OnkelAlex",
+      "points": 8,
+      "exact": 1,
+      "diff": 0,
+      "tendency": 2,
+      "wrong": 0,
+      "posPrev": 4,
+      "pointsHistory": [
+        0,
+        3,
+        2,
+        4,
+        2,
+        6,
+        8
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "0:1",
+          "points": null
+        },
+        "kanada_bosnien_herzegowina": {
+          "tip": "1:1",
+          "points": 4
+        },
+        "usa_paraguay": {
+          "tip": "1:0",
+          "points": 2
+        }
+      }
+    },
+    {
+      "pos": 7,
       "trend": 0,
       "name": "Schneckerl",
       "points": 7,
@@ -101,79 +266,123 @@
         "kanada_bosnien_herzegowina": {
           "tip": "0:0",
           "points": 2
-        }
-      }
-    },
-    {
-      "pos": 4,
-      "trend": 0,
-      "name": "Michel",
-      "points": 6,
-      "exact": 1,
-      "diff": 0,
-      "tendency": 1,
-      "wrong": 0,
-      "posPrev": 15,
-      "pointsHistory": [
-        0,
-        4,
-        2,
-        4,
-        2,
-        6
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "mexiko_s_dafrika": {
-          "tip": "1:0",
-          "points": 2
         },
-        "s_dkorea_tschechien": {
-          "tip": "1:2",
+        "usa_paraguay": {
+          "tip": "0:1",
           "points": null
-        },
-        "kanada_bosnien_herzegowina": {
-          "tip": "1:1",
-          "points": 4
         }
       }
     },
     {
-      "pos": 4,
+      "pos": 8,
       "trend": 0,
-      "name": "MaWa44",
+      "name": "WAC",
       "points": 6,
       "exact": 1,
       "diff": 0,
       "tendency": 1,
       "wrong": 0,
-      "posPrev": 15,
+      "posPrev": 10,
       "pointsHistory": [
         0,
-        4,
         2,
         4,
-        2,
         6
       ],
       "isHighlighted": false,
       "predictions": {
         "mexiko_s_dafrika": {
-          "tip": "1:0",
-          "points": 2
+          "tip": "2:0",
+          "points": 4
         },
         "s_dkorea_tschechien": {
           "tip": "1:1",
           "points": null
         },
         "kanada_bosnien_herzegowina": {
-          "tip": "1:1",
-          "points": 4
+          "tip": "2:1",
+          "points": null
+        },
+        "usa_paraguay": {
+          "tip": "3:1",
+          "points": 2
         }
       }
     },
     {
-      "pos": 4,
+      "pos": 8,
+      "trend": 0,
+      "name": "TippJungle",
+      "points": 6,
+      "exact": 1,
+      "diff": 0,
+      "tendency": 1,
+      "wrong": 0,
+      "posPrev": 10,
+      "pointsHistory": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:0",
+          "points": 4
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
+        },
+        "kanada_bosnien_herzegowina": {
+          "tip": "1:0",
+          "points": null
+        },
+        "usa_paraguay": {
+          "tip": "2:1",
+          "points": 2
+        }
+      }
+    },
+    {
+      "pos": 8,
+      "trend": 0,
+      "name": "Panu",
+      "points": 6,
+      "exact": 1,
+      "diff": 0,
+      "tendency": 1,
+      "wrong": 0,
+      "posPrev": 10,
+      "pointsHistory": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:0",
+          "points": 4
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
+        },
+        "kanada_bosnien_herzegowina": {
+          "tip": "2:1",
+          "points": null
+        },
+        "usa_paraguay": {
+          "tip": "2:1",
+          "points": 2
+        }
+      }
+    },
+    {
+      "pos": 8,
       "trend": 0,
       "name": "Sigi",
       "points": 6,
@@ -203,58 +412,30 @@
         "kanada_bosnien_herzegowina": {
           "tip": "1:1",
           "points": 4
-        }
-      }
-    },
-    {
-      "pos": 4,
-      "trend": 0,
-      "name": "Andy",
-      "points": 6,
-      "exact": 1,
-      "diff": 0,
-      "tendency": 1,
-      "wrong": 0,
-      "posPrev": 15,
-      "pointsHistory": [
-        0,
-        2,
-        4,
-        2,
-        6
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "mexiko_s_dafrika": {
-          "tip": "3:0",
-          "points": 2
         },
-        "s_dkorea_tschechien": {
-          "tip": "1:2",
-          "points": null
-        },
-        "kanada_bosnien_herzegowina": {
+        "usa_paraguay": {
           "tip": "1:1",
-          "points": 4
+          "points": null
         }
       }
     },
     {
-      "pos": 4,
+      "pos": 8,
       "trend": 0,
-      "name": "OnkelAlex",
+      "name": "Robi",
       "points": 6,
-      "exact": 1,
+      "exact": 0,
       "diff": 0,
-      "tendency": 1,
+      "tendency": 3,
       "wrong": 0,
-      "posPrev": 15,
+      "posPrev": 10,
       "pointsHistory": [
         0,
         3,
         2,
-        4,
+        6,
         2,
+        4,
         6
       ],
       "isHighlighted": false,
@@ -264,17 +445,59 @@
           "points": 2
         },
         "s_dkorea_tschechien": {
-          "tip": "0:1",
+          "tip": "0:2",
           "points": null
         },
         "kanada_bosnien_herzegowina": {
-          "tip": "1:1",
-          "points": 4
+          "tip": "0:0",
+          "points": 2
+        },
+        "usa_paraguay": {
+          "tip": "1:0",
+          "points": 2
         }
       }
     },
     {
-      "pos": 4,
+      "pos": 8,
+      "trend": 0,
+      "name": "DOl",
+      "points": 6,
+      "exact": 1,
+      "diff": 0,
+      "tendency": 1,
+      "wrong": 0,
+      "posPrev": 10,
+      "pointsHistory": [
+        0,
+        2,
+        4,
+        7,
+        4,
+        6
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:0",
+          "points": 4
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
+        },
+        "kanada_bosnien_herzegowina": {
+          "tip": "1:2",
+          "points": null
+        },
+        "usa_paraguay": {
+          "tip": "2:0",
+          "points": 2
+        }
+      }
+    },
+    {
+      "pos": 8,
       "trend": 0,
       "name": "Peppolini",
       "points": 6,
@@ -301,104 +524,91 @@
         "kanada_bosnien_herzegowina": {
           "tip": "2:1",
           "points": null
+        },
+        "usa_paraguay": {
+          "tip": "1:1",
+          "points": null
         }
       }
     },
     {
-      "pos": 10,
+      "pos": 15,
       "trend": 0,
-      "name": "WAC",
-      "points": 4,
-      "exact": 1,
-      "diff": 0,
-      "tendency": 0,
+      "name": "Raphi",
+      "points": 5,
+      "exact": 0,
+      "diff": 1,
+      "tendency": 1,
       "wrong": 0,
-      "posPrev": 3,
+      "posPrev": 16,
       "pointsHistory": [
         0,
         2,
-        4
+        3,
+        6,
+        3,
+        5
       ],
       "isHighlighted": false,
       "predictions": {
         "mexiko_s_dafrika": {
-          "tip": "2:0",
-          "points": 4
+          "tip": "3:1",
+          "points": 3
         },
         "s_dkorea_tschechien": {
           "tip": "1:1",
           "points": null
         },
         "kanada_bosnien_herzegowina": {
+          "tip": "1:2",
+          "points": null
+        },
+        "usa_paraguay": {
           "tip": "2:1",
-          "points": null
+          "points": 2
         }
       }
     },
     {
-      "pos": 10,
+      "pos": 16,
       "trend": 0,
-      "name": "TippJungle",
+      "name": "Jacky",
       "points": 4,
-      "exact": 1,
+      "exact": 0,
       "diff": 0,
-      "tendency": 0,
+      "tendency": 2,
       "wrong": 0,
-      "posPrev": 3,
+      "posPrev": 18,
       "pointsHistory": [
         0,
+        3,
+        2,
+        5,
         2,
         4
       ],
       "isHighlighted": false,
       "predictions": {
         "mexiko_s_dafrika": {
-          "tip": "2:0",
-          "points": 4
+          "tip": "2:1",
+          "points": 2
         },
         "s_dkorea_tschechien": {
-          "tip": "1:1",
+          "tip": "0:2",
           "points": null
         },
         "kanada_bosnien_herzegowina": {
+          "tip": "1:2",
+          "points": null
+        },
+        "usa_paraguay": {
           "tip": "1:0",
-          "points": null
+          "points": 2
         }
       }
     },
     {
-      "pos": 10,
-      "trend": 0,
-      "name": "Panu",
-      "points": 4,
-      "exact": 1,
-      "diff": 0,
-      "tendency": 0,
-      "wrong": 0,
-      "posPrev": 3,
-      "pointsHistory": [
-        0,
-        2,
-        4
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "mexiko_s_dafrika": {
-          "tip": "2:0",
-          "points": 4
-        },
-        "s_dkorea_tschechien": {
-          "tip": "1:1",
-          "points": null
-        },
-        "kanada_bosnien_herzegowina": {
-          "tip": "2:1",
-          "points": null
-        }
-      }
-    },
-    {
-      "pos": 10,
+      "pos": 16,
       "trend": 0,
       "name": "AlexP",
       "points": 4,
@@ -423,24 +633,28 @@
         "kanada_bosnien_herzegowina": {
           "tip": "2:0",
           "points": null
+        },
+        "usa_paraguay": {
+          "tip": "1:2",
+          "points": null
         }
       }
     },
     {
-      "pos": 10,
+      "pos": 16,
       "trend": 0,
-      "name": "Robi",
+      "name": "Phips",
       "points": 4,
       "exact": 0,
       "diff": 0,
       "tendency": 2,
       "wrong": 0,
-      "posPrev": 15,
+      "posPrev": 18,
       "pointsHistory": [
         0,
         3,
         2,
-        6,
+        4,
         2,
         4
       ],
@@ -455,79 +669,17 @@
           "points": null
         },
         "kanada_bosnien_herzegowina": {
-          "tip": "0:0",
+          "tip": "1:3",
+          "points": null
+        },
+        "usa_paraguay": {
+          "tip": "2:1",
           "points": 2
         }
       }
     },
     {
-      "pos": 10,
-      "trend": 0,
-      "name": "DOl",
-      "points": 4,
-      "exact": 1,
-      "diff": 0,
-      "tendency": 0,
-      "wrong": 0,
-      "posPrev": 1,
-      "pointsHistory": [
-        0,
-        2,
-        4,
-        7,
-        4
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "mexiko_s_dafrika": {
-          "tip": "2:0",
-          "points": 4
-        },
-        "s_dkorea_tschechien": {
-          "tip": "1:1",
-          "points": null
-        },
-        "kanada_bosnien_herzegowina": {
-          "tip": "1:2",
-          "points": null
-        }
-      }
-    },
-    {
-      "pos": 16,
-      "trend": 0,
-      "name": "Raphi",
-      "points": 3,
-      "exact": 0,
-      "diff": 1,
-      "tendency": 0,
-      "wrong": 0,
-      "posPrev": 2,
-      "pointsHistory": [
-        0,
-        2,
-        3,
-        6,
-        3
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "mexiko_s_dafrika": {
-          "tip": "3:1",
-          "points": 3
-        },
-        "s_dkorea_tschechien": {
-          "tip": "1:1",
-          "points": null
-        },
-        "kanada_bosnien_herzegowina": {
-          "tip": "1:2",
-          "points": null
-        }
-      }
-    },
-    {
-      "pos": 16,
+      "pos": 19,
       "trend": 0,
       "name": "ZaM",
       "points": 3,
@@ -554,71 +706,9 @@
         "kanada_bosnien_herzegowina": {
           "tip": "2:1",
           "points": null
-        }
-      }
-    },
-    {
-      "pos": 18,
-      "trend": 0,
-      "name": "Jacky",
-      "points": 2,
-      "exact": 0,
-      "diff": 0,
-      "tendency": 1,
-      "wrong": 0,
-      "posPrev": 4,
-      "pointsHistory": [
-        0,
-        3,
-        2,
-        5,
-        2
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "mexiko_s_dafrika": {
-          "tip": "2:1",
-          "points": 2
         },
-        "s_dkorea_tschechien": {
-          "tip": "0:2",
-          "points": null
-        },
-        "kanada_bosnien_herzegowina": {
-          "tip": "1:2",
-          "points": null
-        }
-      }
-    },
-    {
-      "pos": 18,
-      "trend": 0,
-      "name": "Phips",
-      "points": 2,
-      "exact": 0,
-      "diff": 0,
-      "tendency": 1,
-      "wrong": 0,
-      "posPrev": 6,
-      "pointsHistory": [
-        0,
-        3,
-        2,
-        4,
-        2
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "mexiko_s_dafrika": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "s_dkorea_tschechien": {
-          "tip": "0:2",
-          "points": null
-        },
-        "kanada_bosnien_herzegowina": {
-          "tip": "1:3",
+        "usa_paraguay": {
+          "tip": "1:1",
           "points": null
         }
       }
@@ -650,6 +740,10 @@
         },
         "kanada_bosnien_herzegowina": {
           "tip": "0:1",
+          "points": null
+        },
+        "usa_paraguay": {
+          "tip": "1:1",
           "points": null
         }
       }
@@ -692,8 +786,8 @@
       "homeTeam": "USA",
       "awayTeam": "Paraguay",
       "group": "Gruppe D",
-      "result": null,
-      "played": false,
+      "result": "4:1",
+      "played": true,
       "date": "2026-06-13T03:00:00+02:00"
     },
     {

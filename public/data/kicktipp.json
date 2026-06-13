@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T21:06:14.986Z",
+  "lastUpdated": "2026-06-13T22:02:44.599Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -42,6 +42,10 @@
         },
         "katar_schweiz": {
           "tip": "1:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
           "points": null
         }
       }
@@ -88,6 +92,10 @@
         "katar_schweiz": {
           "tip": "0:3",
           "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:1",
+          "points": null
         }
       }
     },
@@ -132,6 +140,10 @@
         },
         "katar_schweiz": {
           "tip": "0:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:1",
           "points": null
         }
       }
@@ -178,6 +190,10 @@
         "katar_schweiz": {
           "tip": "0:4",
           "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
+          "points": null
         }
       }
     },
@@ -221,6 +237,10 @@
         },
         "katar_schweiz": {
           "tip": "0:4",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:1",
           "points": null
         }
       }
@@ -267,6 +287,10 @@
         "katar_schweiz": {
           "tip": "0:2",
           "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:0",
+          "points": null
         }
       }
     },
@@ -312,6 +336,10 @@
         "katar_schweiz": {
           "tip": "0:2",
           "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:0",
+          "points": null
         }
       }
     },
@@ -353,6 +381,10 @@
         },
         "katar_schweiz": {
           "tip": "0:3",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
           "points": null
         }
       }
@@ -396,6 +428,10 @@
         "katar_schweiz": {
           "tip": "0:2",
           "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:2",
+          "points": null
         }
       }
     },
@@ -437,6 +473,10 @@
         },
         "katar_schweiz": {
           "tip": "0:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:2",
           "points": null
         }
       }
@@ -481,6 +521,10 @@
         },
         "katar_schweiz": {
           "tip": "0:3",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:0",
           "points": null
         }
       }
@@ -527,6 +571,10 @@
         "katar_schweiz": {
           "tip": "0:4",
           "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:0",
+          "points": null
         }
       }
     },
@@ -571,6 +619,10 @@
         "katar_schweiz": {
           "tip": "0:1",
           "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:2",
+          "points": null
         }
       }
     },
@@ -611,6 +663,10 @@
         },
         "katar_schweiz": {
           "tip": "0:3",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:1",
           "points": null
         }
       }
@@ -656,6 +712,10 @@
         "katar_schweiz": {
           "tip": "0:3",
           "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
+          "points": null
         }
       }
     },
@@ -700,6 +760,10 @@
         "katar_schweiz": {
           "tip": "1:2",
           "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
+          "points": null
         }
       }
     },
@@ -738,6 +802,10 @@
         },
         "katar_schweiz": {
           "tip": "0:3",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
           "points": null
         }
       }
@@ -783,6 +851,10 @@
         "katar_schweiz": {
           "tip": "0:2",
           "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
+          "points": null
         }
       }
     },
@@ -824,6 +896,10 @@
         "katar_schweiz": {
           "tip": "0:3",
           "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:1",
+          "points": null
         }
       }
     },
@@ -864,6 +940,10 @@
         },
         "katar_schweiz": {
           "tip": "0:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:0",
           "points": null
         }
       }

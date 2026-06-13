@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T22:02:44.599Z",
+  "lastUpdated": "2026-06-13T22:05:58.043Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -151,6 +151,53 @@
     {
       "pos": 3,
       "trend": 0,
+      "name": "TippJungle",
+      "points": 8,
+      "exact": 1,
+      "diff": 0,
+      "tendency": 2,
+      "wrong": 0,
+      "posPrev": 8,
+      "pointsHistory": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        6,
+        8
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "mexiko_s_dafrika": {
+          "tip": "2:0",
+          "points": 4
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
+        },
+        "kanada_bosnien_herzegowina": {
+          "tip": "1:0",
+          "points": null
+        },
+        "usa_paraguay": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "2:2",
+          "points": 2
+        }
+      }
+    },
+    {
+      "pos": 3,
+      "trend": 0,
       "name": "MaWa44",
       "points": 8,
       "exact": 1,
@@ -295,7 +342,7 @@
       }
     },
     {
-      "pos": 7,
+      "pos": 8,
       "trend": 0,
       "name": "Schneckerl",
       "points": 7,
@@ -344,7 +391,7 @@
       }
     },
     {
-      "pos": 8,
+      "pos": 9,
       "trend": 0,
       "name": "WAC",
       "points": 6,
@@ -390,53 +437,7 @@
       }
     },
     {
-      "pos": 8,
-      "trend": 0,
-      "name": "TippJungle",
-      "points": 6,
-      "exact": 1,
-      "diff": 0,
-      "tendency": 1,
-      "wrong": 0,
-      "posPrev": 9,
-      "pointsHistory": [
-        0,
-        2,
-        4,
-        6,
-        8,
-        6
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "mexiko_s_dafrika": {
-          "tip": "2:0",
-          "points": 4
-        },
-        "s_dkorea_tschechien": {
-          "tip": "1:1",
-          "points": null
-        },
-        "kanada_bosnien_herzegowina": {
-          "tip": "1:0",
-          "points": null
-        },
-        "usa_paraguay": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "katar_schweiz": {
-          "tip": "0:2",
-          "points": null
-        },
-        "brasilien_marokko": {
-          "tip": "2:2",
-          "points": null
-        }
-      }
-    },
-    {
-      "pos": 8,
+      "pos": 9,
       "trend": 0,
       "name": "Panu",
       "points": 6,
@@ -482,7 +483,7 @@
       }
     },
     {
-      "pos": 8,
+      "pos": 9,
       "trend": 0,
       "name": "Sigi",
       "points": 6,
@@ -530,7 +531,7 @@
       }
     },
     {
-      "pos": 8,
+      "pos": 9,
       "trend": 0,
       "name": "Robi",
       "points": 6,
@@ -579,7 +580,7 @@
       }
     },
     {
-      "pos": 8,
+      "pos": 9,
       "trend": 0,
       "name": "DOl",
       "points": 6,
@@ -627,7 +628,7 @@
       }
     },
     {
-      "pos": 8,
+      "pos": 9,
       "trend": 0,
       "name": "Peppolini",
       "points": 6,
@@ -1006,8 +1007,8 @@
       "homeTeam": "Brasilien",
       "awayTeam": "Marokko",
       "group": "Gruppe C",
-      "result": null,
-      "played": false,
+      "result": "0:0",
+      "played": true,
       "date": "2026-06-14T00:00:00+02:00"
     },
     {

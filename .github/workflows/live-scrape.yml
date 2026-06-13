@@ -7,7 +7,7 @@ name: Match Day Loop
 
 on:
   schedule:
-    - cron: '0 */3 * * 6,7'   # alle 3h, nur Juni+Juli (WM) — Redundanz-Kicks
+    - cron: '0 */3 * 6,7 *'   # alle 3h, nur Juni+Juli (WM) — Redundanz-Kicks
   workflow_dispatch:
 
 permissions:

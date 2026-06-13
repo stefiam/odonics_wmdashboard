@@ -1,22 +1,26 @@
-name: Live Match Updater
+name: Match Day Loop
+
+# Selbsttragender Scraper: einmal gestartet, bleibt der Job ~5 Stunden am Leben
+# und scraped während laufender Spiele alle 5 Minuten. Dadurch muss GitHubs
+# unzuverlässiger Cron nur EINMAL pro 5-Stunden-Fenster feuern (statt alle 5 Min).
+# Mehrere Kicks/Tag = Redundanz gegen ausgefallene/verspätete Schedule-Läufe.
 
 on:
   schedule:
-    - cron: '*/5 * * 6,7 *'   # alle 5 Minuten, nur Juni + Juli (WM-Zeitraum)
+    - cron: '0 */3 * * 6,7'   # alle 3h, nur Juni+Juli (WM) — Redundanz-Kicks
   workflow_dispatch:
-
-concurrency:
-  group: wm-deploy   # verhindert parallele Läufe mit scrape.yml-Deploys
-  cancel-in-progress: false
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+
+concurrency:
+  group: wm-loop            # nur ein Loop gleichzeitig
+  cancel-in-progress: false
 
 jobs:
-  live-update:
+  loop:
     runs-on: ubuntu-latest
+    timeout-minutes: 340     # < 6h Hard-Limit von GitHub
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,78 +28,71 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           persist-credentials: true
 
-      - name: Check if match is currently live
-        id: check
-        run: |
-          IS_LIVE=$(node -e "
-            const fs = require('fs');
-            try {
-              const d = JSON.parse(fs.readFileSync('public/data/kicktipp.json', 'utf8'));
-              const now = Date.now();
-              const live = (d.matches || []).some(m => {
-                if (!m.date) return false;
-                const start = new Date(m.date).getTime(); // +02:00 ist im String enthalten
-                return now >= start && now <= start + 120 * 60 * 1000;
-              });
-              console.log(live ? 'true' : 'false');
-            } catch(e) { console.log('false'); }
-          ")
-          echo "is_live=$IS_LIVE" >> \$GITHUB_OUTPUT
-          echo "Live match detected: $IS_LIVE"
-
       - name: Setup Node.js
-        if: steps.check.outputs.is_live == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-
-      - name: Install frontend dependencies
-        if: steps.check.outputs.is_live == 'true'
-        run: npm ci
 
       - name: Install scraper dependencies
-        if: steps.check.outputs.is_live == 'true'
         run: cd scraper && npm ci
 
       - name: Cache Playwright Chromium
-        if: steps.check.outputs.is_live == 'true'
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ hashFiles('scraper/package-lock.json') }}
 
       - name: Install Playwright Chromium
-        if: steps.check.outputs.is_live == 'true'
         run: cd scraper && npx playwright install chromium --with-deps
 
-      - name: Run scraper
-        if: steps.check.outputs.is_live == 'true'
+      - name: Scrape loop
         env:
           KICKTIPP_USER: ${{ secrets.KICKTIPP_USER }}
           KICKTIPP_PASS: ${{ secrets.KICKTIPP_PASS }}
           KICKTIPP_COMMUNITY: ${{ secrets.KICKTIPP_COMMUNITY }}
-        run: cd scraper && node scrape.js
-
-      - name: Commit updated data
-        if: steps.check.outputs.is_live == 'true'
         run: |
           git config user.name "WM Dashboard Bot"
           git config user.email "bot@wm2026-dashboard"
-          git add public/data/kicktipp.json
-          git diff --staged --quiet || git commit -m "chore: live update [$(date -u '+%H:%M UTC')]"
-          git pull --rebase --autostash origin main
-          git push
 
-      - name: Build dashboard
-        if: steps.check.outputs.is_live == 'true'
-        env:
-          VITE_FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
-        run: npm run build
+          BUDGET_END=$(( $(date +%s) + 5 * 3600 ))   # max. 5h Laufzeit
 
-      - name: Deploy to GitHub Pages
-        if: steps.check.outputs.is_live == 'true'
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          # Spielstatus aus kicktipp.json: "active" wenn jetzt ein Spiel im
+          # Fenster [Anpfiff, +135min] liegt, "soon" wenn eins in <3h anpfeift.
+          status() {
+            node -e "
+              const fs = require('fs');
+              let d; try { d = JSON.parse(fs.readFileSync('public/data/kicktipp.json','utf8')); } catch(e) { console.log('idle'); process.exit(0); }
+              const now = Date.now();
+              const m = d.matches || [];
+              const active = m.some(g => { if(!g.date) return false; const s = new Date(g.date).getTime(); return now >= s && now <= s + 135*60*1000; });
+              const soon   = m.some(g => { if(!g.date) return false; const s = new Date(g.date).getTime(); return s > now && s <= now + 3*60*60*1000; });
+              console.log(active ? 'active' : soon ? 'soon' : 'idle');
+            "
+          }
+
+          while [ "$(date +%s)" -lt "$BUDGET_END" ]; do
+            ST=$(status)
+            echo "$(date -u '+%H:%M UTC') · Status: $ST"
+
+            if [ "$ST" = "active" ]; then
+              (cd scraper && node scrape.js) || echo "Scrape fehlgeschlagen, weiter"
+              git add public/data/kicktipp.json
+              if ! git diff --staged --quiet; then
+                git commit -m "chore: live update [$(date -u '+%H:%M UTC')]"
+                git pull --rebase --autostash origin main || true
+                git push || echo "Push fehlgeschlagen, nächster Durchlauf"
+                echo "→ Daten aktualisiert & gepusht"
+              else
+                echo "→ keine Änderung"
+              fi
+              sleep 300
+            elif [ "$ST" = "soon" ]; then
+              echo "→ Spiel startet bald, warte"
+              sleep 300
+            else
+              echo "→ kein Spiel aktiv/bald — Loop beendet"
+              break
+            fi
+          done
+
+          echo "Loop-Budget erreicht oder kein Spiel mehr — Ende."

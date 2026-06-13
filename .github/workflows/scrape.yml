@@ -8,6 +8,8 @@ on:
   workflow_dispatch: # manueller Start möglich
   push:
     branches: [main]
+    paths-ignore:
+      - 'public/data/**'   # Daten-Commits (vom Loop) lösen keinen Redeploy aus
 
 permissions:
   contents: write

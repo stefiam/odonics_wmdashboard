@@ -9,6 +9,10 @@ import WhatIf from './components/WhatIf';
 
 const BASE = import.meta.env.BASE_URL;
 
+// Daten live direkt aus dem Repo (raw) — ein Commit ist in ~5 Min sichtbar,
+// kein Deploy nötig. ?t=… umgeht den 5-Min-CDN-Cache bei manuellem Reload.
+const DATA_URL = 'https://raw.githubusercontent.com/stefiam/odonics_wmdashboard/main/public/data/kicktipp.json';
+
 function formatDate(isoString) {
   if (!isoString) return '–';
   return new Date(isoString).toLocaleString('de-AT', {
@@ -143,7 +147,7 @@ export default function App() {
     }
 
     function load() {
-      fetch(`${BASE}data/kicktipp.json`)
+      fetch(`${DATA_URL}?t=${Date.now()}`)
         .then(r => { if (!r.ok) throw new Error(r.statusText); return r.json(); })
         .then(d => {
           setData(d);

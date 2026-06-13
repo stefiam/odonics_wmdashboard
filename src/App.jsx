@@ -50,55 +50,14 @@ function Countdown({ targetDate }) {
 }
 
 
-function useTick(intervalMs) {
-  const [now, setNow] = useState(() => new Date());
-  useEffect(() => {
-    const id = setInterval(() => setNow(new Date()), intervalMs);
-    return () => clearInterval(id);
-  }, [intervalMs]);
-  return now;
-}
-
-function liveMinuteLabel(startDate, now) {
-  const elapsed = Math.floor((now - new Date(startDate)) / 60000);
-  if (elapsed <= 45) return `${Math.max(1, elapsed)}'`;
-  if (elapsed <= 62) return 'HZ';
-  return '2. HZ';
-}
-
+// Kein Uhr-basiertes "Live" mehr — der echte Live-Status kommt ausschließlich
+// von worldcup26.ir (LiveTicker). NextMatch zeigt nur das nächste Spiel.
 function NextMatch({ matches }) {
-  const now = useTick(30000);
-
   if (!matches?.length) return null;
 
   const invalidLabels = new Set(['gast', 'gruppe', 'ergebnis', 'heim', 'datum', 'termin']);
   const real = matches.filter(m => m.label && !invalidLabels.has(m.label.toLowerCase()));
   if (!real.length) return null;
-
-  const live = real.find(m => {
-    if (!m.date) return false;
-    const start = new Date(m.date).getTime();
-    return now >= start && now <= start + 120 * 60000;
-  });
-
-  if (live) {
-    const minuteLabel = liveMinuteLabel(live.date, now);
-    // Zeige result wenn vorhanden — kommt vom 5-min Scraper
-    const score = live.result || null;
-    return (
-      <div className="text-right text-sm">
-        <div className="flex items-center justify-end gap-1.5 text-xs text-red-500 mb-0.5 font-semibold">
-          <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse inline-block" />
-          LIVE · {minuteLabel}
-        </div>
-        <span className="font-semibold text-[#1e4745]">{live.label}</span>
-        {score
-          ? <span className="ml-2 text-[#f7b32b] font-bold font-mono">{score}</span>
-          : <span className="ml-1 text-xs text-[#a8d0cc]">– : –</span>
-        }
-      </div>
-    );
-  }
 
   const next = real.find(m => !m.played);
   if (!next) return null;
@@ -234,7 +193,7 @@ export default function App() {
             {activeTab === 'tabelle' && <Leaderboard standings={data.standings} />}
             {activeTab === 'verlauf' && <PointsChart standings={data.standings} />}
             {activeTab === 'form' && <RecentForm standings={data.standings} matches={data.matches} />}
-            {activeTab === 'spiele' && <MatchBreakdown matches={data.matches} standings={data.standings} />}
+            {activeTab === 'spiele' && <MatchBreakdown matches={data.matches} standings={data.standings} liveMatch={liveMatch} />}
             {activeTab === 'h2h' && <HeadToHead standings={data.standings} matches={data.matches} />}
             {activeTab === 'whatif' && <WhatIf standings={data.standings} matches={data.matches} />}
           </>

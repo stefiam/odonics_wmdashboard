@@ -50,15 +50,22 @@ function TipDistribution({ match, standings }) {
   );
 }
 
-function isMatchLive(match) {
-  if (!match.date) return false;
-  const start = new Date(match.date).getTime();
-  const now = Date.now();
-  return now >= start && now <= start + 120 * 60 * 1000;
+// "Live" nur wenn worldcup26.ir tatsächlich ein laufendes Spiel meldet
+// (liveMatch != null) UND dieses Match gerade im Zeitfenster liegt — das
+// Zeitfenster wählt nur, WELCHES der API-Live-Status zugeordnet wird.
+// Kein API-Live → kein falsches "Live" allein wegen verstrichener Anstoßzeit.
+function makeIsLive(liveMatch) {
+  return (match) => {
+    if (!liveMatch || !match.date) return false;
+    const start = new Date(match.date).getTime();
+    const now = Date.now();
+    return now >= start && now <= start + 120 * 60 * 1000;
+  };
 }
 
-export default function MatchBreakdown({ matches, standings }) {
+export default function MatchBreakdown({ matches, standings, liveMatch }) {
   const [expanded, setExpanded] = useState(null);
+  const isMatchLive = makeIsLive(liveMatch);
 
   const live    = matches.filter(m => isMatchLive(m));
   const played  = matches.filter(m => m.played && !isMatchLive(m));

@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import useLiveMatch from './hooks/useLiveMatch';
-import { liveMinuteLabel } from './lib/liveMinute';
 import Leaderboard from './components/Leaderboard';
 import PointsChart from './components/PointsChart';
 import RecentForm from './components/RecentForm';
@@ -51,15 +50,6 @@ function Countdown({ targetDate }) {
 }
 
 
-function useTick(intervalMs) {
-  const [now, setNow] = useState(() => Date.now());
-  useEffect(() => {
-    const id = setInterval(() => setNow(Date.now()), intervalMs);
-    return () => clearInterval(id);
-  }, [intervalMs]);
-  return now;
-}
-
 // Kein Uhr-basiertes "Live" mehr — der echte Live-Status kommt ausschließlich
 // von worldcup26.ir (LiveTicker). NextMatch zeigt nur das nächste Spiel.
 function NextMatch({ matches }) {
@@ -81,12 +71,12 @@ function NextMatch({ matches }) {
   );
 }
 
-function LiveTicker({ match, minute }) {
+function LiveTicker({ match }) {
   return (
     <div className="border-2 border-red-400 rounded-xl px-3 py-2 text-sm">
       <div className="flex items-center gap-1.5 text-xs text-red-500 mb-0.5 font-semibold">
         <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse inline-block" />
-        LIVE{minute ? ` · ${minute}` : ''}
+        LIVE
       </div>
       <div className="font-bold text-[#1e4745]">
         {match.homeTeam} <span className="text-[#f7b32b] font-mono">{match.homeScore} : {match.awayScore}</span> {match.awayTeam}
@@ -100,19 +90,6 @@ export default function App() {
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState('tabelle');
   const liveMatch = useLiveMatch();
-  const now = useTick(30000);
-
-  // Minute für den Ticker aus der Anstoßzeit des gerade laufenden Spiels
-  // (API liefert keine Zahl). Nur wenn die API "live" bestätigt.
-  let liveMinute = null;
-  if (liveMatch && data?.matches) {
-    const m = data.matches.find(x => {
-      if (!x.date) return false;
-      const s = new Date(x.date).getTime();
-      return now >= s && now <= s + 135 * 60 * 1000;
-    });
-    if (m) liveMinute = liveMinuteLabel(new Date(m.date).getTime(), now);
-  }
 
   useEffect(() => {
     let intervalId = null;
@@ -171,7 +148,7 @@ export default function App() {
             </div>
           </div>
           {liveMatch ? (
-            <LiveTicker match={liveMatch} minute={liveMinute} />
+            <LiveTicker match={liveMatch} />
           ) : data && (
             <div className="border-2 border-[#2d6b68] rounded-xl px-3 py-2">
               <NextMatch matches={data.matches} />

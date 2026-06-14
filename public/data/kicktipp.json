@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T18:47:25.012Z",
+  "lastUpdated": "2026-06-14T18:52:41.332Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -72,72 +72,6 @@
     {
       "pos": 2,
       "trend": 0,
-      "name": "MaWa44",
-      "points": 13,
-      "exact": 1,
-      "diff": 1,
-      "tendency": 3,
-      "wrong": 0,
-      "posPrev": 5,
-      "pointsHistory": [
-        0,
-        4,
-        2,
-        4,
-        2,
-        6,
-        8,
-        10,
-        8,
-        10,
-        12,
-        10,
-        12,
-        13
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "deutschland_cura_ao": {
-          "tip": "5:0",
-          "points": 3
-        },
-        "mexiko_s_dafrika": {
-          "tip": "1:0",
-          "points": 2
-        },
-        "s_dkorea_tschechien": {
-          "tip": "1:1",
-          "points": null
-        },
-        "kanada_bosnien_herzegowina": {
-          "tip": "1:1",
-          "points": 4
-        },
-        "usa_paraguay": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "katar_schweiz": {
-          "tip": "0:4",
-          "points": null
-        },
-        "brasilien_marokko": {
-          "tip": "3:1",
-          "points": null
-        },
-        "haiti_schottland": {
-          "tip": "0:2",
-          "points": 2
-        },
-        "australien_t_rkei": {
-          "tip": "0:1",
-          "points": null
-        }
-      }
-    },
-    {
-      "pos": 3,
-      "trend": -1,
       "name": "Bella",
       "points": 12,
       "exact": 2,
@@ -201,8 +135,8 @@
       }
     },
     {
-      "pos": 3,
-      "trend": -1,
+      "pos": 2,
+      "trend": 0,
       "name": "TippJungle",
       "points": 12,
       "exact": 1,
@@ -266,8 +200,8 @@
       }
     },
     {
-      "pos": 3,
-      "trend": -1,
+      "pos": 2,
+      "trend": 0,
       "name": "Panu",
       "points": 12,
       "exact": 2,
@@ -329,8 +263,75 @@
       }
     },
     {
-      "pos": 3,
-      "trend": -1,
+      "pos": 2,
+      "trend": 0,
+      "name": "MaWa44",
+      "points": 12,
+      "exact": 1,
+      "diff": 0,
+      "tendency": 4,
+      "wrong": 0,
+      "posPrev": 2,
+      "pointsHistory": [
+        0,
+        4,
+        2,
+        4,
+        2,
+        6,
+        8,
+        10,
+        8,
+        10,
+        12,
+        10,
+        12,
+        13,
+        12
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "deutschland_cura_ao": {
+          "tip": "5:0",
+          "points": 2
+        },
+        "mexiko_s_dafrika": {
+          "tip": "1:0",
+          "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": null
+        },
+        "kanada_bosnien_herzegowina": {
+          "tip": "1:1",
+          "points": 4
+        },
+        "usa_paraguay": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:4",
+          "points": null
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
+          "points": null
+        },
+        "haiti_schottland": {
+          "tip": "0:2",
+          "points": 2
+        },
+        "australien_t_rkei": {
+          "tip": "0:1",
+          "points": null
+        }
+      }
+    },
+    {
+      "pos": 2,
+      "trend": 0,
       "name": "Andy",
       "points": 12,
       "exact": 1,
@@ -395,8 +396,8 @@
       }
     },
     {
-      "pos": 3,
-      "trend": -1,
+      "pos": 2,
+      "trend": 0,
       "name": "OnkelAlex",
       "points": 12,
       "exact": 1,
@@ -462,8 +463,8 @@
       }
     },
     {
-      "pos": 3,
-      "trend": -1,
+      "pos": 2,
+      "trend": 0,
       "name": "Peppolini",
       "points": 12,
       "exact": 2,
@@ -1386,7 +1387,7 @@
       "homeTeam": "Deutschland",
       "awayTeam": "Curaçao",
       "group": "Gruppe E",
-      "result": "6:1",
+      "result": "7:1",
       "played": true,
       "date": "2026-06-14T19:00:00+02:00"
     },

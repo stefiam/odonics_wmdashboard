@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T17:01:52.926Z",
+  "lastUpdated": "2026-06-14T17:07:09.356Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -1293,8 +1293,8 @@
       "homeTeam": "Deutschland",
       "awayTeam": "Curaçao",
       "group": "Gruppe E",
-      "result": null,
-      "played": false,
+      "result": "0:0",
+      "played": true,
       "date": "2026-06-14T19:00:00+02:00"
     },
     {

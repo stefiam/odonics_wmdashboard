@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T18:43:32.950Z",
+  "lastUpdated": "2026-06-15T23:05:39.486Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -10,7 +10,7 @@
       "exact": 1,
       "diff": 2,
       "tendency": 4,
-      "wrong": 6,
+      "wrong": 8,
       "posPrev": 14,
       "pointsHistory": [
         0,
@@ -55,6 +55,14 @@
           "tip": "4:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "3:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:2",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "3:1",
           "points": 3
@@ -97,7 +105,7 @@
       "exact": 2,
       "diff": 1,
       "tendency": 3,
-      "wrong": 7,
+      "wrong": 9,
       "posPrev": 1,
       "pointsHistory": [
         0,
@@ -138,6 +146,14 @@
         },
         "spanien_kap_verde": {
           "tip": "6:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "3:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -182,7 +198,7 @@
       "exact": 1,
       "diff": 1,
       "tendency": 5,
-      "wrong": 6,
+      "wrong": 8,
       "posPrev": 9,
       "pointsHistory": [
         0,
@@ -228,6 +244,14 @@
           "tip": "5:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:0",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -270,7 +294,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 6,
-      "wrong": 6,
+      "wrong": 8,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -315,6 +339,14 @@
           "tip": "6:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "0:2",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "3:0",
           "points": 2
@@ -357,7 +389,7 @@
       "exact": 2,
       "diff": 0,
       "tendency": 4,
-      "wrong": 7,
+      "wrong": 9,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -402,6 +434,14 @@
           "tip": "4:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -444,7 +484,7 @@
       "exact": 2,
       "diff": 0,
       "tendency": 4,
-      "wrong": 7,
+      "wrong": 9,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -484,6 +524,14 @@
         },
         "spanien_kap_verde": {
           "tip": "4:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "1:0",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "0:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -528,7 +576,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 5,
-      "wrong": 7,
+      "wrong": 9,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -574,6 +622,14 @@
           "tip": "3:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:0",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:2",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -616,7 +672,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 5,
-      "wrong": 7,
+      "wrong": 9,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -657,6 +713,14 @@
           "tip": "3:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:2",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -694,12 +758,193 @@
     {
       "pos": 7,
       "trend": -1,
+      "name": "Panu",
+      "points": 14,
+      "exact": 2,
+      "diff": 0,
+      "tendency": 3,
+      "wrong": 10,
+      "posPrev": 2,
+      "pointsHistory": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        6,
+        10,
+        13,
+        10,
+        14,
+        12,
+        14
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "deutschland_cura_ao": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "niederlande_japan": {
+          "tip": "1:3",
+          "points": 0
+        },
+        "elfenbeink_ste_ecuador": {
+          "tip": "0:2",
+          "points": 0
+        },
+        "schweden_tunesien": {
+          "tip": "2:3",
+          "points": 0
+        },
+        "spanien_kap_verde": {
+          "tip": "2:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "3:0",
+          "points": 2
+        },
+        "mexiko_s_dafrika": {
+          "tip": "2:0",
+          "points": 4
+        },
+        "s_dkorea_tschechien": {
+          "tip": "1:1",
+          "points": 0
+        },
+        "kanada_bosnien_herzegowina": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "usa_paraguay": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "0:2",
+          "points": 0
+        },
+        "brasilien_marokko": {
+          "tip": "3:2",
+          "points": 0
+        },
+        "haiti_schottland": {
+          "tip": "0:1",
+          "points": 4
+        },
+        "australien_t_rkei": {
+          "tip": "1:2",
+          "points": 0
+        }
+      }
+    },
+    {
+      "pos": 7,
+      "trend": 1,
+      "name": "Jacky",
+      "points": 14,
+      "exact": 2,
+      "diff": 0,
+      "tendency": 3,
+      "wrong": 10,
+      "posPrev": 10,
+      "pointsHistory": [
+        0,
+        3,
+        2,
+        5,
+        2,
+        4,
+        7,
+        4,
+        8,
+        10,
+        8,
+        10,
+        11,
+        10,
+        13,
+        10,
+        14
+      ],
+      "isHighlighted": false,
+      "predictions": {
+        "deutschland_cura_ao": {
+          "tip": "3:0",
+          "points": 2
+        },
+        "niederlande_japan": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "elfenbeink_ste_ecuador": {
+          "tip": "0:1",
+          "points": 0
+        },
+        "schweden_tunesien": {
+          "tip": "1:2",
+          "points": 0
+        },
+        "spanien_kap_verde": {
+          "tip": "3:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:0",
+          "points": 4
+        },
+        "mexiko_s_dafrika": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "s_dkorea_tschechien": {
+          "tip": "0:2",
+          "points": 0
+        },
+        "kanada_bosnien_herzegowina": {
+          "tip": "1:2",
+          "points": 0
+        },
+        "usa_paraguay": {
+          "tip": "1:0",
+          "points": 2
+        },
+        "katar_schweiz": {
+          "tip": "1:2",
+          "points": 0
+        },
+        "brasilien_marokko": {
+          "tip": "3:1",
+          "points": 0
+        },
+        "haiti_schottland": {
+          "tip": "0:1",
+          "points": 4
+        },
+        "australien_t_rkei": {
+          "tip": "2:3",
+          "points": 0
+        }
+      }
+    },
+    {
+      "pos": 7,
+      "trend": -1,
       "name": "MaWa44",
       "points": 14,
       "exact": 1,
       "diff": 0,
       "tendency": 5,
-      "wrong": 7,
+      "wrong": 9,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -744,6 +989,14 @@
           "tip": "3:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "3:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "0:1",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
@@ -786,7 +1039,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 5,
-      "wrong": 7,
+      "wrong": 9,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -832,6 +1085,14 @@
           "tip": "3:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:0",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "0:1",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -867,14 +1128,14 @@
       }
     },
     {
-      "pos": 11,
+      "pos": 13,
       "trend": 1,
       "name": "Phips",
       "points": 13,
       "exact": 0,
       "diff": 1,
       "tendency": 5,
-      "wrong": 7,
+      "wrong": 9,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -918,6 +1179,14 @@
           "tip": "4:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "4:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "0:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -953,14 +1222,14 @@
       }
     },
     {
-      "pos": 12,
+      "pos": 14,
       "trend": -1,
       "name": "Michel",
       "points": 12,
       "exact": 1,
       "diff": 0,
       "tendency": 4,
-      "wrong": 8,
+      "wrong": 10,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -1004,6 +1273,14 @@
           "tip": "4:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "0:1",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
@@ -1039,14 +1316,14 @@
       }
     },
     {
-      "pos": 12,
+      "pos": 14,
       "trend": -1,
       "name": "Bella",
       "points": 12,
       "exact": 2,
       "diff": 0,
       "tendency": 2,
-      "wrong": 9,
+      "wrong": 11,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -1087,6 +1364,14 @@
           "tip": "3:1",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:2",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "0:1",
           "points": 0
@@ -1122,93 +1407,14 @@
       }
     },
     {
-      "pos": 12,
-      "trend": -1,
-      "name": "Panu",
-      "points": 12,
-      "exact": 2,
-      "diff": 0,
-      "tendency": 2,
-      "wrong": 9,
-      "posPrev": 2,
-      "pointsHistory": [
-        0,
-        2,
-        4,
-        6,
-        8,
-        6,
-        10,
-        13,
-        10,
-        14,
-        12
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "deutschland_cura_ao": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "niederlande_japan": {
-          "tip": "1:3",
-          "points": 0
-        },
-        "elfenbeink_ste_ecuador": {
-          "tip": "0:2",
-          "points": 0
-        },
-        "schweden_tunesien": {
-          "tip": "2:3",
-          "points": 0
-        },
-        "spanien_kap_verde": {
-          "tip": "2:0",
-          "points": 0
-        },
-        "mexiko_s_dafrika": {
-          "tip": "2:0",
-          "points": 4
-        },
-        "s_dkorea_tschechien": {
-          "tip": "1:1",
-          "points": 0
-        },
-        "kanada_bosnien_herzegowina": {
-          "tip": "2:1",
-          "points": 0
-        },
-        "usa_paraguay": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "katar_schweiz": {
-          "tip": "0:2",
-          "points": 0
-        },
-        "brasilien_marokko": {
-          "tip": "3:2",
-          "points": 0
-        },
-        "haiti_schottland": {
-          "tip": "0:1",
-          "points": 4
-        },
-        "australien_t_rkei": {
-          "tip": "1:2",
-          "points": 0
-        }
-      }
-    },
-    {
-      "pos": 12,
+      "pos": 14,
       "trend": 1,
       "name": "AlexP",
       "points": 12,
       "exact": 1,
       "diff": 0,
       "tendency": 4,
-      "wrong": 8,
+      "wrong": 10,
       "posPrev": 15,
       "pointsHistory": [
         4,
@@ -1248,6 +1454,14 @@
           "tip": "5:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "0:2",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -1283,14 +1497,14 @@
       }
     },
     {
-      "pos": 12,
+      "pos": 14,
       "trend": 1,
       "name": "Sigi",
       "points": 12,
       "exact": 1,
       "diff": 0,
       "tendency": 4,
-      "wrong": 8,
+      "wrong": 10,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -1311,6 +1525,8 @@
         10,
         8,
         10,
+        14,
+        12,
         14,
         12
       ],
@@ -1334,6 +1550,14 @@
         },
         "spanien_kap_verde": {
           "tip": "4:1",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "3:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1371,14 +1595,14 @@
       }
     },
     {
-      "pos": 17,
+      "pos": 18,
       "trend": -1,
       "name": "ZaM",
       "points": 10,
       "exact": 1,
       "diff": 2,
       "tendency": 0,
-      "wrong": 9,
+      "wrong": 11,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -1409,6 +1633,14 @@
           "tip": "4:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "3:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:2",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "3:1",
           "points": 3
@@ -1444,98 +1676,14 @@
       }
     },
     {
-      "pos": 17,
-      "trend": -1,
-      "name": "Jacky",
-      "points": 10,
-      "exact": 1,
-      "diff": 0,
-      "tendency": 3,
-      "wrong": 9,
-      "posPrev": 10,
-      "pointsHistory": [
-        0,
-        3,
-        2,
-        5,
-        2,
-        4,
-        7,
-        4,
-        8,
-        10,
-        8,
-        10,
-        11,
-        10,
-        13,
-        10
-      ],
-      "isHighlighted": false,
-      "predictions": {
-        "deutschland_cura_ao": {
-          "tip": "3:0",
-          "points": 2
-        },
-        "niederlande_japan": {
-          "tip": "2:1",
-          "points": 0
-        },
-        "elfenbeink_ste_ecuador": {
-          "tip": "0:1",
-          "points": 0
-        },
-        "schweden_tunesien": {
-          "tip": "1:2",
-          "points": 0
-        },
-        "spanien_kap_verde": {
-          "tip": "3:0",
-          "points": 0
-        },
-        "mexiko_s_dafrika": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "s_dkorea_tschechien": {
-          "tip": "0:2",
-          "points": 0
-        },
-        "kanada_bosnien_herzegowina": {
-          "tip": "1:2",
-          "points": 0
-        },
-        "usa_paraguay": {
-          "tip": "1:0",
-          "points": 2
-        },
-        "katar_schweiz": {
-          "tip": "1:2",
-          "points": 0
-        },
-        "brasilien_marokko": {
-          "tip": "3:1",
-          "points": 0
-        },
-        "haiti_schottland": {
-          "tip": "0:1",
-          "points": 4
-        },
-        "australien_t_rkei": {
-          "tip": "2:3",
-          "points": 0
-        }
-      }
-    },
-    {
-      "pos": 17,
+      "pos": 18,
       "trend": -1,
       "name": "Robi",
       "points": 10,
       "exact": 0,
       "diff": 0,
       "tendency": 5,
-      "wrong": 8,
+      "wrong": 10,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -1578,6 +1726,14 @@
         },
         "spanien_kap_verde": {
           "tip": "5:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "2:0",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "0:3",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1622,7 +1778,7 @@
       "exact": 0,
       "diff": 0,
       "tendency": 2,
-      "wrong": 11,
+      "wrong": 13,
       "posPrev": 20,
       "pointsHistory": [
         0,
@@ -1659,6 +1815,14 @@
         },
         "spanien_kap_verde": {
           "tip": "4:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:3",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1833,8 +1997,8 @@
       "homeTeam": "Belgien",
       "awayTeam": "Ägypten",
       "group": "Gruppe G",
-      "result": null,
-      "played": false,
+      "result": "1:1",
+      "played": true,
       "date": "2026-06-15T21:00:00+02:00"
     },
     {
@@ -1843,8 +2007,8 @@
       "homeTeam": "Saudi-Arabien",
       "awayTeam": "Uruguay",
       "group": "Gruppe H",
-      "result": null,
-      "played": false,
+      "result": "1:0",
+      "played": true,
       "date": "2026-06-16T00:00:00+02:00"
     },
     {

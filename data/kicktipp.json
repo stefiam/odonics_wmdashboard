@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T12:26:04.050Z",
+  "lastUpdated": "2026-06-15T16:23:29.089Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -11,7 +11,7 @@
       "diff": 2,
       "tendency": 4,
       "wrong": 0,
-      "posPrev": 1,
+      "posPrev": 14,
       "pointsHistory": [
         0,
         2,
@@ -50,6 +50,10 @@
         "schweden_tunesien": {
           "tip": "1:0",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "4:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "3:1",
@@ -132,6 +136,10 @@
           "tip": "2:1",
           "points": 2
         },
+        "spanien_kap_verde": {
+          "tip": "6:0",
+          "points": null
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -175,7 +183,7 @@
       "diff": 1,
       "tendency": 5,
       "wrong": 0,
-      "posPrev": 2,
+      "posPrev": 9,
       "pointsHistory": [
         0,
         3,
@@ -215,6 +223,10 @@
         "schweden_tunesien": {
           "tip": "2:0",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "5:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -259,7 +271,7 @@
       "diff": 0,
       "tendency": 6,
       "wrong": 0,
-      "posPrev": 5,
+      "posPrev": 2,
       "pointsHistory": [
         0,
         2,
@@ -298,6 +310,10 @@
         "schweden_tunesien": {
           "tip": "1:0",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "6:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -342,7 +358,7 @@
       "diff": 0,
       "tendency": 4,
       "wrong": 0,
-      "posPrev": 3,
+      "posPrev": 10,
       "pointsHistory": [
         0,
         2,
@@ -381,6 +397,10 @@
         "schweden_tunesien": {
           "tip": "2:1",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "4:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -425,7 +445,7 @@
       "diff": 0,
       "tendency": 4,
       "wrong": 0,
-      "posPrev": 3,
+      "posPrev": 2,
       "pointsHistory": [
         0,
         2,
@@ -461,6 +481,10 @@
         "schweden_tunesien": {
           "tip": "2:1",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "4:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -505,7 +529,7 @@
       "diff": 0,
       "tendency": 5,
       "wrong": 0,
-      "posPrev": 7,
+      "posPrev": 10,
       "pointsHistory": [
         0,
         2,
@@ -545,6 +569,10 @@
         "schweden_tunesien": {
           "tip": "2:0",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "3:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -589,7 +617,7 @@
       "diff": 0,
       "tendency": 5,
       "wrong": 0,
-      "posPrev": 7,
+      "posPrev": 2,
       "pointsHistory": [
         0,
         2,
@@ -624,6 +652,10 @@
         "schweden_tunesien": {
           "tip": "1:0",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "3:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -668,7 +700,7 @@
       "diff": 0,
       "tendency": 5,
       "wrong": 0,
-      "posPrev": 7,
+      "posPrev": 2,
       "pointsHistory": [
         0,
         4,
@@ -707,6 +739,10 @@
         "schweden_tunesien": {
           "tip": "1:0",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "3:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -751,7 +787,7 @@
       "diff": 0,
       "tendency": 5,
       "wrong": 0,
-      "posPrev": 7,
+      "posPrev": 2,
       "pointsHistory": [
         0,
         3,
@@ -791,6 +827,10 @@
         "schweden_tunesien": {
           "tip": "2:0",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "3:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -835,7 +875,7 @@
       "diff": 1,
       "tendency": 5,
       "wrong": 0,
-      "posPrev": 7,
+      "posPrev": 15,
       "pointsHistory": [
         0,
         3,
@@ -873,6 +913,10 @@
         "schweden_tunesien": {
           "tip": "2:1",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "4:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -917,7 +961,7 @@
       "diff": 0,
       "tendency": 4,
       "wrong": 0,
-      "posPrev": 13,
+      "posPrev": 10,
       "pointsHistory": [
         0,
         4,
@@ -955,6 +999,10 @@
         "schweden_tunesien": {
           "tip": "1:0",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "4:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -999,7 +1047,7 @@
       "diff": 0,
       "tendency": 2,
       "wrong": 0,
-      "posPrev": 3,
+      "posPrev": 2,
       "pointsHistory": [
         0,
         4,
@@ -1033,6 +1081,10 @@
         },
         "schweden_tunesien": {
           "tip": "1:2",
+          "points": null
+        },
+        "spanien_kap_verde": {
+          "tip": "3:1",
           "points": null
         },
         "mexiko_s_dafrika": {
@@ -1110,6 +1162,10 @@
           "tip": "2:3",
           "points": null
         },
+        "spanien_kap_verde": {
+          "tip": "2:0",
+          "points": null
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -1153,7 +1209,7 @@
       "diff": 0,
       "tendency": 4,
       "wrong": 0,
-      "posPrev": 13,
+      "posPrev": 15,
       "pointsHistory": [
         4,
         6,
@@ -1187,6 +1243,10 @@
         "schweden_tunesien": {
           "tip": "1:0",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "5:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1231,7 +1291,7 @@
       "diff": 0,
       "tendency": 4,
       "wrong": 0,
-      "posPrev": 10,
+      "posPrev": 15,
       "pointsHistory": [
         0,
         4,
@@ -1271,6 +1331,10 @@
         "schweden_tunesien": {
           "tip": "2:1",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "4:1",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -1315,7 +1379,7 @@
       "diff": 2,
       "tendency": 0,
       "wrong": 0,
-      "posPrev": 19,
+      "posPrev": 15,
       "pointsHistory": [
         0,
         2,
@@ -1339,6 +1403,10 @@
         },
         "schweden_tunesien": {
           "tip": "2:2",
+          "points": null
+        },
+        "spanien_kap_verde": {
+          "tip": "4:0",
           "points": null
         },
         "mexiko_s_dafrika": {
@@ -1384,7 +1452,7 @@
       "diff": 0,
       "tendency": 3,
       "wrong": 0,
-      "posPrev": 6,
+      "posPrev": 10,
       "pointsHistory": [
         0,
         3,
@@ -1419,6 +1487,10 @@
         },
         "schweden_tunesien": {
           "tip": "1:2",
+          "points": null
+        },
+        "spanien_kap_verde": {
+          "tip": "3:0",
           "points": null
         },
         "mexiko_s_dafrika": {
@@ -1464,7 +1536,7 @@
       "diff": 0,
       "tendency": 5,
       "wrong": 0,
-      "posPrev": 17,
+      "posPrev": 15,
       "pointsHistory": [
         0,
         3,
@@ -1503,6 +1575,10 @@
         "schweden_tunesien": {
           "tip": "3:0",
           "points": 2
+        },
+        "spanien_kap_verde": {
+          "tip": "5:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -1579,6 +1655,10 @@
         },
         "schweden_tunesien": {
           "tip": "1:2",
+          "points": null
+        },
+        "spanien_kap_verde": {
+          "tip": "4:0",
           "points": null
         },
         "mexiko_s_dafrika": {
@@ -1743,8 +1823,8 @@
       "homeTeam": "Spanien",
       "awayTeam": "Kap Verde",
       "group": "Gruppe H",
-      "result": null,
-      "played": false,
+      "result": "0:0",
+      "played": true,
       "date": "2026-06-15T18:00:00+02:00"
     },
     {

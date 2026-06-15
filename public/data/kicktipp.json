@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T21:10:00.145Z",
+  "lastUpdated": "2026-06-15T22:00:19.746Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -58,6 +58,10 @@
         "belgien__gypten": {
           "tip": "3:1",
           "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:2",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "3:1",
@@ -147,6 +151,10 @@
         "belgien__gypten": {
           "tip": "3:1",
           "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:2",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -240,6 +248,10 @@
           "tip": "2:0",
           "points": 0
         },
+        "saudi_arabien_uruguay": {
+          "tip": "1:3",
+          "points": null
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -330,6 +342,10 @@
         "belgien__gypten": {
           "tip": "2:1",
           "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "0:2",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -422,6 +438,10 @@
           "tip": "2:1",
           "points": 0
         },
+        "saudi_arabien_uruguay": {
+          "tip": "1:3",
+          "points": null
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -509,6 +529,10 @@
         "belgien__gypten": {
           "tip": "1:0",
           "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "0:2",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -602,6 +626,10 @@
           "tip": "2:0",
           "points": 0
         },
+        "saudi_arabien_uruguay": {
+          "tip": "1:2",
+          "points": null
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -688,6 +716,10 @@
         "belgien__gypten": {
           "tip": "2:1",
           "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:2",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -779,6 +811,10 @@
         "belgien__gypten": {
           "tip": "3:1",
           "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "0:1",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -872,6 +908,10 @@
           "tip": "2:0",
           "points": 0
         },
+        "saudi_arabien_uruguay": {
+          "tip": "0:1",
+          "points": null
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -961,6 +1001,10 @@
         "belgien__gypten": {
           "tip": "4:1",
           "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "0:3",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -1052,6 +1096,10 @@
           "tip": "2:1",
           "points": 0
         },
+        "saudi_arabien_uruguay": {
+          "tip": "0:1",
+          "points": null
+        },
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
@@ -1139,6 +1187,10 @@
           "tip": "2:1",
           "points": 0
         },
+        "saudi_arabien_uruguay": {
+          "tip": "1:2",
+          "points": null
+        },
         "mexiko_s_dafrika": {
           "tip": "0:1",
           "points": 0
@@ -1221,6 +1273,10 @@
         "belgien__gypten": {
           "tip": "2:1",
           "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "3:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1307,6 +1363,10 @@
         "belgien__gypten": {
           "tip": "2:1",
           "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "0:2",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1400,6 +1460,10 @@
           "tip": "3:1",
           "points": 0
         },
+        "saudi_arabien_uruguay": {
+          "tip": "1:1",
+          "points": null
+        },
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
@@ -1476,6 +1540,10 @@
         "belgien__gypten": {
           "tip": "3:1",
           "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:2",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "3:1",
@@ -1564,6 +1632,10 @@
         "belgien__gypten": {
           "tip": "2:1",
           "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:0",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -1656,6 +1728,10 @@
           "tip": "2:0",
           "points": 0
         },
+        "saudi_arabien_uruguay": {
+          "tip": "0:3",
+          "points": null
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -1740,6 +1816,10 @@
         "belgien__gypten": {
           "tip": "2:1",
           "points": 0
+        },
+        "saudi_arabien_uruguay": {
+          "tip": "1:3",
+          "points": null
         },
         "mexiko_s_dafrika": {
           "tip": "1:1",

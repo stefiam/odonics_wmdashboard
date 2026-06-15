@@ -139,15 +139,18 @@ function scrapeView() {
       const points = parseInt(cells[gIdx]?.textContent.trim().replace(/[^\d-]/g, '')) || 0;
 
       let trend = 0;
+      let trendVal = 0;
       const tc = cells[posIdx + 1];
       if (tc) {
         const sig = (tc.className || '') + (tc.innerHTML || '') + tc.textContent;
-        if (/up|plus|positiv|steig|▲/i.test(sig)) trend = 1;
-        else if (/down|minus|negativ|fall|▼/i.test(sig)) trend = -1;
+        const numMatch = tc.textContent.trim().replace(/[^\d]/g, '').match(/\d+/);
+        const n = numMatch ? parseInt(numMatch[0]) : 0;
+        if (/up|plus|positiv|steig|▲/i.test(sig)) { trend = 1; trendVal = n; }
+        else if (/down|minus|negativ|fall|▼/i.test(sig)) { trend = -1; trendVal = n; }
       }
 
       const predRaw = matchColIdx.map(ci => cells[ci] ? parseTipCell(cells[ci]) : { tip: null, points: null });
-      standings.push({ pos, trend, name, points, predRaw });
+      standings.push({ pos, trend, trendVal, name, points, predRaw });
     }
     if (standings.length > 0) {
       log.push(`Header: ${statHeaders.join('|')} → ${standings.length} Spieler, ${matchColIdx.length} Match-Spalten, ${currentGames.length} Spiele`);
@@ -217,7 +220,7 @@ async function run() {
       break;
     }
     if (!baseStandings) {
-      baseStandings = view.standings.map(s => ({ pos: s.pos, trend: s.trend, name: s.name, points: s.points }));
+      baseStandings = view.standings.map(s => ({ pos: s.pos, trend: s.trend, trendVal: s.trendVal, name: s.name, points: s.points }));
       if (view.navHrefs.length) console.log(`  Nav-Links (Spieltag): ${[...new Set(view.navHrefs)].slice(0, 4).join(' , ')}`);
     }
 
@@ -288,8 +291,15 @@ async function run() {
     const pointsChanged = history[history.length - 1] !== s.points;
     if (pointsChanged) history.push(s.points);
 
-    // posPrev nur updaten wenn sich Punkte geändert haben — sonst bleibt der alte Wert
-    const posPrev = pointsChanged ? (old.pos ?? s.pos) : (old.posPrev ?? old.pos ?? s.pos);
+    // posPrev direkt aus Kicktipps eigenem +/- berechnen (verhindert Gleiten im Match Day Loop).
+    // Wenn trendVal > 0: Kicktipp hat eine echte Zahl → posPrev = pos ± trendVal.
+    // Sonst Fallback auf inkrementelles Tracking.
+    let posPrev;
+    if (s.trendVal > 0) {
+      posPrev = s.pos + (s.trend > 0 ? s.trendVal : -s.trendVal);
+    } else {
+      posPrev = pointsChanged ? (old.pos ?? s.pos) : (old.posPrev ?? old.pos ?? s.pos);
+    }
 
     return {
       pos: s.pos, trend: s.trend, name: s.name, points: s.points,

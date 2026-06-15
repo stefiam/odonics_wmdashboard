@@ -276,7 +276,16 @@ async function run() {
 
   const mergedStandings = (baseStandings || []).map(s => {
     const old = prevMap[s.name] || {};
-    const predictions = playerPred[s.name] || {};
+    // Kicktipp zeigt kein "0"-Badge bei Falsch-Tipps → points bleibt null.
+    // Bei gespielten Matches mit Tipp aber ohne Punkte → 0 Punkte (falsch) ableiten.
+    const rawPreds = playerPred[s.name] || {};
+    const predictions = {};
+    Object.entries(rawPreds).forEach(([id, p]) => {
+      if (!p.tip) return;
+      const matchPlayed = allGames.get(id)?.played;
+      const pts = (p.points == null && matchPlayed) ? 0 : p.points;
+      predictions[id] = { tip: p.tip, points: pts };
+    });
 
     let exact = 0, diff = 0, tendency = 0, wrong = 0;
     Object.values(predictions).forEach(p => {

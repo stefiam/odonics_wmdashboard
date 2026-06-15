@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T18:43:32.950Z",
+  "lastUpdated": "2026-06-15T19:03:11.549Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -10,7 +10,7 @@
       "exact": 1,
       "diff": 2,
       "tendency": 4,
-      "wrong": 6,
+      "wrong": 7,
       "posPrev": 14,
       "pointsHistory": [
         0,
@@ -55,6 +55,10 @@
           "tip": "4:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "3:1",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "3:1",
           "points": 3
@@ -97,7 +101,7 @@
       "exact": 2,
       "diff": 1,
       "tendency": 3,
-      "wrong": 7,
+      "wrong": 8,
       "posPrev": 1,
       "pointsHistory": [
         0,
@@ -138,6 +142,10 @@
         },
         "spanien_kap_verde": {
           "tip": "6:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "3:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -182,7 +190,7 @@
       "exact": 1,
       "diff": 1,
       "tendency": 5,
-      "wrong": 6,
+      "wrong": 7,
       "posPrev": 9,
       "pointsHistory": [
         0,
@@ -228,6 +236,10 @@
           "tip": "5:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:0",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -270,7 +282,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 6,
-      "wrong": 6,
+      "wrong": 7,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -315,6 +327,10 @@
           "tip": "6:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:1",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "3:0",
           "points": 2
@@ -357,7 +373,7 @@
       "exact": 2,
       "diff": 0,
       "tendency": 4,
-      "wrong": 7,
+      "wrong": 8,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -402,6 +418,10 @@
           "tip": "4:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:1",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -444,7 +464,7 @@
       "exact": 2,
       "diff": 0,
       "tendency": 4,
-      "wrong": 7,
+      "wrong": 8,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -484,6 +504,10 @@
         },
         "spanien_kap_verde": {
           "tip": "4:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "1:0",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -528,7 +552,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 5,
-      "wrong": 7,
+      "wrong": 8,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -574,6 +598,10 @@
           "tip": "3:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:0",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -616,7 +644,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 5,
-      "wrong": 7,
+      "wrong": 8,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -655,6 +683,10 @@
         },
         "spanien_kap_verde": {
           "tip": "3:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -699,7 +731,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 5,
-      "wrong": 7,
+      "wrong": 8,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -744,6 +776,10 @@
           "tip": "3:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "3:1",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
@@ -786,7 +822,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 5,
-      "wrong": 7,
+      "wrong": 8,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -832,6 +868,10 @@
           "tip": "3:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:0",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -874,7 +914,7 @@
       "exact": 0,
       "diff": 1,
       "tendency": 5,
-      "wrong": 7,
+      "wrong": 8,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -916,6 +956,10 @@
         },
         "spanien_kap_verde": {
           "tip": "4:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "4:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -960,7 +1004,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 4,
-      "wrong": 8,
+      "wrong": 9,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -1002,6 +1046,10 @@
         },
         "spanien_kap_verde": {
           "tip": "4:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1046,7 +1094,7 @@
       "exact": 2,
       "diff": 0,
       "tendency": 2,
-      "wrong": 9,
+      "wrong": 10,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -1085,6 +1133,10 @@
         },
         "spanien_kap_verde": {
           "tip": "3:1",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1129,7 +1181,7 @@
       "exact": 2,
       "diff": 0,
       "tendency": 2,
-      "wrong": 9,
+      "wrong": 10,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -1164,6 +1216,10 @@
         },
         "spanien_kap_verde": {
           "tip": "2:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1208,7 +1264,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 4,
-      "wrong": 8,
+      "wrong": 9,
       "posPrev": 15,
       "pointsHistory": [
         4,
@@ -1246,6 +1302,10 @@
         },
         "spanien_kap_verde": {
           "tip": "5:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1290,7 +1350,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 4,
-      "wrong": 8,
+      "wrong": 9,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -1336,6 +1396,10 @@
           "tip": "4:1",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "3:1",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
@@ -1378,7 +1442,7 @@
       "exact": 1,
       "diff": 2,
       "tendency": 0,
-      "wrong": 9,
+      "wrong": 10,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -1407,6 +1471,10 @@
         },
         "spanien_kap_verde": {
           "tip": "4:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "3:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1451,7 +1519,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 3,
-      "wrong": 9,
+      "wrong": 10,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -1491,6 +1559,10 @@
         },
         "spanien_kap_verde": {
           "tip": "3:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1535,7 +1607,7 @@
       "exact": 0,
       "diff": 0,
       "tendency": 5,
-      "wrong": 8,
+      "wrong": 9,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -1580,6 +1652,10 @@
           "tip": "5:0",
           "points": 0
         },
+        "belgien__gypten": {
+          "tip": "2:0",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -1622,7 +1698,7 @@
       "exact": 0,
       "diff": 0,
       "tendency": 2,
-      "wrong": 11,
+      "wrong": 12,
       "posPrev": 20,
       "pointsHistory": [
         0,
@@ -1659,6 +1735,10 @@
         },
         "spanien_kap_verde": {
           "tip": "4:0",
+          "points": 0
+        },
+        "belgien__gypten": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1833,8 +1913,8 @@
       "homeTeam": "Belgien",
       "awayTeam": "Ägypten",
       "group": "Gruppe G",
-      "result": null,
-      "played": false,
+      "result": "0:0",
+      "played": true,
       "date": "2026-06-15T21:00:00+02:00"
     },
     {

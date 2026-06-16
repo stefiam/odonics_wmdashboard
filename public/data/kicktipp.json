@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T20:53:52.358Z",
+  "lastUpdated": "2026-06-16T20:59:08.532Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -113,8 +113,8 @@
       "name": "Sigi",
       "points": 21,
       "exact": 2,
-      "diff": 1,
-      "tendency": 5,
+      "diff": 0,
+      "tendency": 6,
       "wrong": 9,
       "posPrev": 3,
       "pointsHistory": [
@@ -148,7 +148,7 @@
       "predictions": {
         "frankreich_senegal": {
           "tip": "3:1",
-          "points": 3
+          "points": 2
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -222,8 +222,8 @@
       "name": "Raphi",
       "points": 21,
       "exact": 1,
-      "diff": 3,
-      "tendency": 4,
+      "diff": 2,
+      "tendency": 5,
       "wrong": 9,
       "posPrev": 4,
       "pointsHistory": [
@@ -253,7 +253,7 @@
       "predictions": {
         "frankreich_senegal": {
           "tip": "3:1",
-          "points": 3
+          "points": 2
         },
         "mexiko_s_dafrika": {
           "tip": "3:1",
@@ -327,8 +327,8 @@
       "name": "Andy",
       "points": 21,
       "exact": 1,
-      "diff": 1,
-      "tendency": 7,
+      "diff": 0,
+      "tendency": 8,
       "wrong": 8,
       "posPrev": 4,
       "pointsHistory": [
@@ -359,7 +359,7 @@
       "predictions": {
         "frankreich_senegal": {
           "tip": "3:1",
-          "points": 3
+          "points": 2
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -539,8 +539,8 @@
       "name": "Peppolini",
       "points": 21,
       "exact": 2,
-      "diff": 1,
-      "tendency": 5,
+      "diff": 0,
+      "tendency": 6,
       "wrong": 9,
       "posPrev": 4,
       "pointsHistory": [
@@ -568,7 +568,7 @@
       "predictions": {
         "frankreich_senegal": {
           "tip": "3:1",
-          "points": 3
+          "points": 2
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -641,9 +641,9 @@
       "trend": 0,
       "name": "Kiki",
       "points": 19,
-      "exact": 2,
+      "exact": 3,
       "diff": 1,
-      "tendency": 4,
+      "tendency": 3,
       "wrong": 10,
       "posPrev": 3,
       "pointsHistory": [
@@ -671,7 +671,7 @@
       "predictions": {
         "frankreich_senegal": {
           "tip": "2:1",
-          "points": 2
+          "points": 4
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -745,8 +745,8 @@
       "name": "WAC",
       "points": 19,
       "exact": 1,
-      "diff": 1,
-      "tendency": 6,
+      "diff": 0,
+      "tendency": 7,
       "wrong": 9,
       "posPrev": 8,
       "pointsHistory": [
@@ -778,7 +778,7 @@
       "predictions": {
         "frankreich_senegal": {
           "tip": "3:1",
-          "points": 3
+          "points": 2
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1061,9 +1061,9 @@
       "trend": 0,
       "name": "Michel",
       "points": 16,
-      "exact": 1,
+      "exact": 2,
       "diff": 0,
-      "tendency": 6,
+      "tendency": 5,
       "wrong": 10,
       "posPrev": 10,
       "pointsHistory": [
@@ -1093,7 +1093,7 @@
       "predictions": {
         "frankreich_senegal": {
           "tip": "2:1",
-          "points": 2
+          "points": 4
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -1167,8 +1167,8 @@
       "name": "Bella",
       "points": 15,
       "exact": 2,
-      "diff": 1,
-      "tendency": 2,
+      "diff": 0,
+      "tendency": 3,
       "wrong": 12,
       "posPrev": 14,
       "pointsHistory": [
@@ -1194,7 +1194,7 @@
       "predictions": {
         "frankreich_senegal": {
           "tip": "3:1",
-          "points": 3
+          "points": 2
         },
         "mexiko_s_dafrika": {
           "tip": "0:1",
@@ -1268,8 +1268,8 @@
       "name": "Panu",
       "points": 15,
       "exact": 2,
-      "diff": 1,
-      "tendency": 2,
+      "diff": 0,
+      "tendency": 3,
       "wrong": 12,
       "posPrev": 14,
       "pointsHistory": [
@@ -1293,7 +1293,7 @@
       "predictions": {
         "frankreich_senegal": {
           "tip": "4:2",
-          "points": 3
+          "points": 2
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1970,9 +1970,9 @@
       "trend": 0,
       "name": "Säulenmann",
       "points": 8,
-      "exact": 1,
+      "exact": 0,
       "diff": 0,
-      "tendency": 2,
+      "tendency": 3,
       "wrong": 14,
       "posPrev": 20,
       "pointsHistory": [
@@ -1996,7 +1996,7 @@
       "predictions": {
         "frankreich_senegal": {
           "tip": "2:0",
-          "points": 4
+          "points": 2
         },
         "mexiko_s_dafrika": {
           "tip": "1:1",

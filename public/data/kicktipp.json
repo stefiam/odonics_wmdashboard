@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T21:14:57.002Z",
+  "lastUpdated": "2026-06-16T22:05:13.648Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -10,7 +10,7 @@
       "exact": 3,
       "diff": 0,
       "tendency": 5,
-      "wrong": 9,
+      "wrong": 10,
       "posPrev": 3,
       "pointsHistory": [
         0,
@@ -45,6 +45,10 @@
         "frankreich_senegal": {
           "tip": "3:1",
           "points": 4
+        },
+        "irak_norwegen": {
+          "tip": "1:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -120,7 +124,7 @@
       "exact": 3,
       "diff": 0,
       "tendency": 5,
-      "wrong": 9,
+      "wrong": 10,
       "posPrev": 1,
       "pointsHistory": [
         0,
@@ -150,6 +154,10 @@
         "frankreich_senegal": {
           "tip": "3:0",
           "points": 2
+        },
+        "irak_norwegen": {
+          "tip": "0:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -225,7 +233,7 @@
       "exact": 2,
       "diff": 2,
       "tendency": 4,
-      "wrong": 9,
+      "wrong": 10,
       "posPrev": 4,
       "pointsHistory": [
         0,
@@ -256,6 +264,10 @@
         "frankreich_senegal": {
           "tip": "3:1",
           "points": 4
+        },
+        "irak_norwegen": {
+          "tip": "1:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:1",
@@ -331,7 +343,7 @@
       "exact": 2,
       "diff": 0,
       "tendency": 7,
-      "wrong": 8,
+      "wrong": 9,
       "posPrev": 4,
       "pointsHistory": [
         0,
@@ -363,6 +375,10 @@
         "frankreich_senegal": {
           "tip": "3:1",
           "points": 4
+        },
+        "irak_norwegen": {
+          "tip": "0:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -438,7 +454,7 @@
       "exact": 3,
       "diff": 0,
       "tendency": 5,
-      "wrong": 9,
+      "wrong": 10,
       "posPrev": 4,
       "pointsHistory": [
         0,
@@ -467,6 +483,10 @@
         "frankreich_senegal": {
           "tip": "3:1",
           "points": 4
+        },
+        "irak_norwegen": {
+          "tip": "0:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -542,7 +562,7 @@
       "exact": 1,
       "diff": 1,
       "tendency": 7,
-      "wrong": 8,
+      "wrong": 9,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -573,6 +593,10 @@
         "frankreich_senegal": {
           "tip": "4:0",
           "points": 2
+        },
+        "irak_norwegen": {
+          "tip": "0:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -648,7 +672,7 @@
       "exact": 2,
       "diff": 0,
       "tendency": 6,
-      "wrong": 9,
+      "wrong": 10,
       "posPrev": 8,
       "pointsHistory": [
         0,
@@ -681,6 +705,10 @@
         "frankreich_senegal": {
           "tip": "3:1",
           "points": 4
+        },
+        "irak_norwegen": {
+          "tip": "1:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -756,7 +784,7 @@
       "exact": 2,
       "diff": 1,
       "tendency": 4,
-      "wrong": 10,
+      "wrong": 11,
       "posPrev": 7,
       "pointsHistory": [
         0,
@@ -784,6 +812,10 @@
         "frankreich_senegal": {
           "tip": "2:1",
           "points": 2
+        },
+        "irak_norwegen": {
+          "tip": "0:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -859,7 +891,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 7,
-      "wrong": 9,
+      "wrong": 10,
       "posPrev": 8,
       "pointsHistory": [
         0,
@@ -890,6 +922,10 @@
         "frankreich_senegal": {
           "tip": "3:0",
           "points": 2
+        },
+        "irak_norwegen": {
+          "tip": "0:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -965,7 +1001,7 @@
       "exact": 0,
       "diff": 1,
       "tendency": 7,
-      "wrong": 9,
+      "wrong": 10,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -994,6 +1030,10 @@
         "frankreich_senegal": {
           "tip": "4:0",
           "points": 2
+        },
+        "irak_norwegen": {
+          "tip": "0:3",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -1069,7 +1109,7 @@
       "exact": 3,
       "diff": 0,
       "tendency": 2,
-      "wrong": 12,
+      "wrong": 13,
       "posPrev": 14,
       "pointsHistory": [
         0,
@@ -1096,6 +1136,10 @@
         "frankreich_senegal": {
           "tip": "3:1",
           "points": 4
+        },
+        "irak_norwegen": {
+          "tip": "1:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "0:1",
@@ -1171,7 +1215,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 6,
-      "wrong": 10,
+      "wrong": 11,
       "posPrev": 11,
       "pointsHistory": [
         0,
@@ -1201,6 +1245,10 @@
         "frankreich_senegal": {
           "tip": "2:1",
           "points": 2
+        },
+        "irak_norwegen": {
+          "tip": "0:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -1276,7 +1324,7 @@
       "exact": 2,
       "diff": 1,
       "tendency": 2,
-      "wrong": 12,
+      "wrong": 13,
       "posPrev": 14,
       "pointsHistory": [
         0,
@@ -1300,6 +1348,10 @@
         "frankreich_senegal": {
           "tip": "4:2",
           "points": 3
+        },
+        "irak_norwegen": {
+          "tip": "3:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1375,7 +1427,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 5,
-      "wrong": 11,
+      "wrong": 12,
       "posPrev": 11,
       "pointsHistory": [
         0,
@@ -1400,6 +1452,10 @@
       "predictions": {
         "frankreich_senegal": {
           "tip": "1:1",
+          "points": 0
+        },
+        "irak_norwegen": {
+          "tip": "0:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1476,7 +1532,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 5,
-      "wrong": 11,
+      "wrong": 12,
       "posPrev": 14,
       "pointsHistory": [
         4,
@@ -1500,6 +1556,10 @@
         "frankreich_senegal": {
           "tip": "3:0",
           "points": 2
+        },
+        "irak_norwegen": {
+          "tip": "1:4",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1575,7 +1635,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 5,
-      "wrong": 11,
+      "wrong": 12,
       "posPrev": 11,
       "pointsHistory": [
         0,
@@ -1604,6 +1664,10 @@
       "predictions": {
         "frankreich_senegal": {
           "tip": "1:1",
+          "points": 0
+        },
+        "irak_norwegen": {
+          "tip": "0:4",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1680,7 +1744,7 @@
       "exact": 0,
       "diff": 0,
       "tendency": 7,
-      "wrong": 10,
+      "wrong": 11,
       "posPrev": 14,
       "pointsHistory": [
         0,
@@ -1710,6 +1774,10 @@
         "frankreich_senegal": {
           "tip": "5:0",
           "points": 2
+        },
+        "irak_norwegen": {
+          "tip": "0:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -1785,7 +1853,7 @@
       "exact": 1,
       "diff": 0,
       "tendency": 4,
-      "wrong": 12,
+      "wrong": 13,
       "posPrev": 19,
       "pointsHistory": [
         0,
@@ -1813,6 +1881,10 @@
         "frankreich_senegal": {
           "tip": "3:0",
           "points": 2
+        },
+        "irak_norwegen": {
+          "tip": "0:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -1888,7 +1960,7 @@
       "exact": 1,
       "diff": 2,
       "tendency": 0,
-      "wrong": 13,
+      "wrong": 14,
       "posPrev": 18,
       "pointsHistory": [
         0,
@@ -1907,6 +1979,10 @@
       "predictions": {
         "frankreich_senegal": {
           "tip": "1:1",
+          "points": 0
+        },
+        "irak_norwegen": {
+          "tip": "0:3",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1979,7 +2055,7 @@
       "exact": 0,
       "diff": 1,
       "tendency": 2,
-      "wrong": 14,
+      "wrong": 15,
       "posPrev": 20,
       "pointsHistory": [
         0,
@@ -2004,6 +2080,10 @@
         "frankreich_senegal": {
           "tip": "2:0",
           "points": 3
+        },
+        "irak_norwegen": {
+          "tip": "0:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:1",
@@ -2249,8 +2329,8 @@
       "homeTeam": "Irak",
       "awayTeam": "Norwegen",
       "group": "Gruppe I",
-      "result": null,
-      "played": false,
+      "result": "0:0",
+      "played": true,
       "date": "2026-06-17T00:00:00+02:00"
     },
     {

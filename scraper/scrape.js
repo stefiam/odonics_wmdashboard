@@ -23,7 +23,7 @@ const COMMUNITY = process.env.KICKTIPP_COMMUNITY;
 const OUT_PATH = path.join(__dirname, '..', 'public', 'data', 'kicktipp.json');
 
 const EXACT_POINTS = 4;           // Kicktipp WM: exakter Treffer = 4 Punkte
-const MAX_SPIELTAGE = 20;         // Obergrenze für den Durchlauf
+const MAX_SPIELTAGE = 30;         // Obergrenze für den Durchlauf
 
 if (!USER || !PASS || !COMMUNITY) {
   console.error('ERROR: KICKTIPP_USER, KICKTIPP_PASS und KICKTIPP_COMMUNITY müssen gesetzt sein.');
@@ -227,12 +227,13 @@ async function run() {
     const gids = view.currentGames.map(g => matchId(g.heim, g.gast));
     const aligned = gids.length > 0 && view.standings.every(s => (s.predRaw || []).length === gids.length);
 
-    // Spiele sammeln (dedupe)
+    // Spiele sammeln — beim ersten Auftreten eintragen, bei späteren Aufrufen
+    // nur dann updaten wenn das Ergebnis jetzt vorhanden ist (played: false → true).
     let newGames = 0;
     view.currentGames.forEach((g, idx) => {
       const id = gids[idx];
+      const played = g.ergebnis && g.ergebnis !== '-:-' && /\d+\s*:\s*\d+/.test(g.ergebnis);
       if (!allGames.has(id)) {
-        const played = g.ergebnis && g.ergebnis !== '-:-' && /\d+\s*:\s*\d+/.test(g.ergebnis);
         allGames.set(id, {
           id, label: `${g.heim} – ${g.gast}`,
           homeTeam: g.heim, awayTeam: g.gast, group: g.gruppe || null,
@@ -240,6 +241,10 @@ async function run() {
           played: !!played, date: parseDate(g.termin, g.termin),
         });
         newGames++;
+      } else if (played && !allGames.get(id).played) {
+        // Ergebnis ist jetzt bekannt — bestehenden Eintrag aktualisieren
+        const existing = allGames.get(id);
+        allGames.set(id, { ...existing, result: g.ergebnis.replace(/\s/g, ''), played: true });
       }
     });
 

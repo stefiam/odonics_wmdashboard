@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T19:13:31.306Z",
+  "lastUpdated": "2026-06-22T21:03:49.220Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -10,7 +10,7 @@
       "exact": 5,
       "diff": 4,
       "tendency": 15,
-      "wrong": 17,
+      "wrong": 18,
       "posPrev": 1,
       "pointsHistory": [
         0,
@@ -86,6 +86,10 @@
       "predictions": {
         "argentinien__sterreich": {
           "tip": "2:2",
+          "points": 0
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -258,7 +262,7 @@
       "exact": 4,
       "diff": 4,
       "tendency": 15,
-      "wrong": 18,
+      "wrong": 19,
       "posPrev": 3,
       "pointsHistory": [
         0,
@@ -340,6 +344,10 @@
         "argentinien__sterreich": {
           "tip": "3:1",
           "points": 3
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -511,7 +519,7 @@
       "exact": 5,
       "diff": 5,
       "tendency": 13,
-      "wrong": 18,
+      "wrong": 19,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -590,6 +598,10 @@
       "predictions": {
         "argentinien__sterreich": {
           "tip": "1:1",
+          "points": 0
+        },
+        "frankreich_irak": {
+          "tip": "3:0",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -762,7 +774,7 @@
       "exact": 4,
       "diff": 1,
       "tendency": 18,
-      "wrong": 18,
+      "wrong": 19,
       "posPrev": 4,
       "pointsHistory": [
         0,
@@ -840,6 +852,10 @@
         "argentinien__sterreich": {
           "tip": "2:1",
           "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -1011,7 +1027,7 @@
       "exact": 4,
       "diff": 4,
       "tendency": 15,
-      "wrong": 18,
+      "wrong": 19,
       "posPrev": 7,
       "pointsHistory": [
         4,
@@ -1085,6 +1101,10 @@
         "argentinien__sterreich": {
           "tip": "2:1",
           "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1256,7 +1276,7 @@
       "exact": 5,
       "diff": 3,
       "tendency": 14,
-      "wrong": 19,
+      "wrong": 20,
       "posPrev": 8,
       "pointsHistory": [
         0,
@@ -1332,6 +1352,10 @@
         "argentinien__sterreich": {
           "tip": "2:1",
           "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1503,7 +1527,7 @@
       "exact": 4,
       "diff": 3,
       "tendency": 18,
-      "wrong": 16,
+      "wrong": 17,
       "posPrev": 5,
       "pointsHistory": [
         0,
@@ -1577,6 +1601,10 @@
       "predictions": {
         "argentinien__sterreich": {
           "tip": "2:2",
+          "points": 0
+        },
+        "frankreich_irak": {
+          "tip": "4:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1749,7 +1777,7 @@
       "exact": 5,
       "diff": 2,
       "tendency": 13,
-      "wrong": 21,
+      "wrong": 22,
       "posPrev": 6,
       "pointsHistory": [
         0,
@@ -1827,6 +1855,10 @@
       "predictions": {
         "argentinien__sterreich": {
           "tip": "2:2",
+          "points": 0
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1999,7 +2031,7 @@
       "exact": 3,
       "diff": 4,
       "tendency": 15,
-      "wrong": 19,
+      "wrong": 20,
       "posPrev": 9,
       "pointsHistory": [
         0,
@@ -2072,6 +2104,10 @@
       "predictions": {
         "argentinien__sterreich": {
           "tip": "2:3",
+          "points": 0
+        },
+        "frankreich_irak": {
+          "tip": "4:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -2244,7 +2280,7 @@
       "exact": 2,
       "diff": 2,
       "tendency": 18,
-      "wrong": 19,
+      "wrong": 20,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -2319,6 +2355,10 @@
         "argentinien__sterreich": {
           "tip": "3:0",
           "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -2490,7 +2530,7 @@
       "exact": 0,
       "diff": 5,
       "tendency": 19,
-      "wrong": 17,
+      "wrong": 18,
       "posPrev": 11,
       "pointsHistory": [
         0,
@@ -2555,6 +2595,10 @@
         "argentinien__sterreich": {
           "tip": "3:0",
           "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -2726,7 +2770,7 @@
       "exact": 6,
       "diff": 3,
       "tendency": 12,
-      "wrong": 17,
+      "wrong": 18,
       "posPrev": 12,
       "pointsHistory": [
         0,
@@ -2788,6 +2832,10 @@
         "argentinien__sterreich": {
           "tip": "3:2",
           "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "6:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:1",
@@ -2947,7 +2995,7 @@
       "exact": 2,
       "diff": 5,
       "tendency": 11,
-      "wrong": 23,
+      "wrong": 24,
       "posPrev": 13,
       "pointsHistory": [
         0,
@@ -3004,6 +3052,10 @@
         "argentinien__sterreich": {
           "tip": "3:2",
           "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "1:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -3175,7 +3227,7 @@
       "exact": 5,
       "diff": 3,
       "tendency": 12,
-      "wrong": 21,
+      "wrong": 22,
       "posPrev": 14,
       "pointsHistory": [
         0,
@@ -3245,6 +3297,10 @@
         "argentinien__sterreich": {
           "tip": "3:2",
           "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "3:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "0:1",
@@ -3416,7 +3472,7 @@
       "exact": 2,
       "diff": 4,
       "tendency": 16,
-      "wrong": 19,
+      "wrong": 20,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -3488,6 +3544,10 @@
         "argentinien__sterreich": {
           "tip": "2:1",
           "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -3659,7 +3719,7 @@
       "exact": 1,
       "diff": 3,
       "tendency": 17,
-      "wrong": 20,
+      "wrong": 21,
       "posPrev": 16,
       "pointsHistory": [
         0,
@@ -3736,6 +3796,10 @@
         "argentinien__sterreich": {
           "tip": "2:1",
           "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -3907,7 +3971,7 @@
       "exact": 1,
       "diff": 3,
       "tendency": 14,
-      "wrong": 23,
+      "wrong": 24,
       "posPrev": 17,
       "pointsHistory": [
         0,
@@ -3974,6 +4038,10 @@
       "predictions": {
         "argentinien__sterreich": {
           "tip": "0:1",
+          "points": 0
+        },
+        "frankreich_irak": {
+          "tip": "3:0",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -4146,7 +4214,7 @@
       "exact": 2,
       "diff": 2,
       "tendency": 13,
-      "wrong": 24,
+      "wrong": 25,
       "posPrev": 17,
       "pointsHistory": [
         0,
@@ -4212,6 +4280,10 @@
         "argentinien__sterreich": {
           "tip": "2:1",
           "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "2:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -4383,7 +4455,7 @@
       "exact": 2,
       "diff": 1,
       "tendency": 16,
-      "wrong": 22,
+      "wrong": 23,
       "posPrev": 19,
       "pointsHistory": [
         0,
@@ -4455,6 +4527,10 @@
         "argentinien__sterreich": {
           "tip": "2:1",
           "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -4626,7 +4702,7 @@
       "exact": 0,
       "diff": 3,
       "tendency": 14,
-      "wrong": 24,
+      "wrong": 25,
       "posPrev": 20,
       "pointsHistory": [
         0,
@@ -4692,6 +4768,10 @@
         "argentinien__sterreich": {
           "tip": "3:1",
           "points": 3
+        },
+        "frankreich_irak": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -5273,8 +5353,8 @@
       "homeTeam": "Frankreich",
       "awayTeam": "Irak",
       "group": "Gruppe I",
-      "result": null,
-      "played": false,
+      "result": "0:0",
+      "played": true,
       "date": "2026-06-22T23:00:00+02:00"
     },
     {

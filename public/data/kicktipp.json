@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T19:13:43.194Z",
+  "lastUpdated": "2026-06-23T20:04:02.130Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -10,7 +10,7 @@
       "exact": 5,
       "diff": 4,
       "tendency": 18,
-      "wrong": 18,
+      "wrong": 19,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -115,6 +115,10 @@
         "portugal_usbekistan": {
           "tip": "3:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -286,7 +290,7 @@
       "exact": 5,
       "diff": 2,
       "tendency": 20,
-      "wrong": 18,
+      "wrong": 19,
       "posPrev": 4,
       "pointsHistory": [
         0,
@@ -387,6 +391,10 @@
         "portugal_usbekistan": {
           "tip": "3:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -558,7 +566,7 @@
       "exact": 6,
       "diff": 5,
       "tendency": 15,
-      "wrong": 19,
+      "wrong": 20,
       "posPrev": 1,
       "pointsHistory": [
         0,
@@ -663,6 +671,10 @@
         "portugal_usbekistan": {
           "tip": "2:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -834,7 +846,7 @@
       "exact": 5,
       "diff": 4,
       "tendency": 18,
-      "wrong": 18,
+      "wrong": 19,
       "posPrev": 6,
       "pointsHistory": [
         4,
@@ -931,6 +943,10 @@
         "portugal_usbekistan": {
           "tip": "2:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1102,7 +1118,7 @@
       "exact": 4,
       "diff": 5,
       "tendency": 20,
-      "wrong": 16,
+      "wrong": 17,
       "posPrev": 6,
       "pointsHistory": [
         0,
@@ -1200,6 +1216,10 @@
         "portugal_usbekistan": {
           "tip": "3:1",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:1",
@@ -1371,7 +1391,7 @@
       "exact": 6,
       "diff": 4,
       "tendency": 17,
-      "wrong": 18,
+      "wrong": 19,
       "posPrev": 3,
       "pointsHistory": [
         0,
@@ -1469,6 +1489,10 @@
         "portugal_usbekistan": {
           "tip": "2:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -1640,7 +1664,7 @@
       "exact": 5,
       "diff": 4,
       "tendency": 16,
-      "wrong": 20,
+      "wrong": 21,
       "posPrev": 7,
       "pointsHistory": [
         0,
@@ -1738,6 +1762,10 @@
         "portugal_usbekistan": {
           "tip": "3:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1909,7 +1937,7 @@
       "exact": 1,
       "diff": 6,
       "tendency": 21,
-      "wrong": 17,
+      "wrong": 18,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -1997,6 +2025,10 @@
         "portugal_usbekistan": {
           "tip": "4:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -2168,7 +2200,7 @@
       "exact": 6,
       "diff": 2,
       "tendency": 16,
-      "wrong": 21,
+      "wrong": 22,
       "posPrev": 8,
       "pointsHistory": [
         0,
@@ -2269,6 +2301,10 @@
         "portugal_usbekistan": {
           "tip": "3:1",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -2440,7 +2476,7 @@
       "exact": 3,
       "diff": 2,
       "tendency": 20,
-      "wrong": 20,
+      "wrong": 21,
       "posPrev": 9,
       "pointsHistory": [
         0,
@@ -2540,6 +2576,10 @@
         "portugal_usbekistan": {
           "tip": "2:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -2711,7 +2751,7 @@
       "exact": 3,
       "diff": 4,
       "tendency": 18,
-      "wrong": 20,
+      "wrong": 21,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -2805,6 +2845,10 @@
         "portugal_usbekistan": {
           "tip": "2:1",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "2:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -2976,7 +3020,7 @@
       "exact": 5,
       "diff": 4,
       "tendency": 14,
-      "wrong": 22,
+      "wrong": 23,
       "posPrev": 14,
       "pointsHistory": [
         0,
@@ -3071,6 +3115,10 @@
         "portugal_usbekistan": {
           "tip": "3:1",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "0:1",
@@ -3242,7 +3290,7 @@
       "exact": 3,
       "diff": 5,
       "tendency": 16,
-      "wrong": 21,
+      "wrong": 22,
       "posPrev": 11,
       "pointsHistory": [
         0,
@@ -3340,6 +3388,10 @@
         "portugal_usbekistan": {
           "tip": "3:1",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "4:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -3511,7 +3563,7 @@
       "exact": 1,
       "diff": 4,
       "tendency": 19,
-      "wrong": 21,
+      "wrong": 22,
       "posPrev": 16,
       "pointsHistory": [
         0,
@@ -3610,6 +3662,10 @@
         "portugal_usbekistan": {
           "tip": "3:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "4:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -3781,7 +3837,7 @@
       "exact": 6,
       "diff": 3,
       "tendency": 14,
-      "wrong": 19,
+      "wrong": 20,
       "posPrev": 12,
       "pointsHistory": [
         0,
@@ -3868,6 +3924,10 @@
         "portugal_usbekistan": {
           "tip": "2:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:1",
@@ -4027,7 +4087,7 @@
       "exact": 2,
       "diff": 5,
       "tendency": 12,
-      "wrong": 26,
+      "wrong": 27,
       "posPrev": 13,
       "pointsHistory": [
         0,
@@ -4106,6 +4166,10 @@
         "portugal_usbekistan": {
           "tip": "2:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -4277,7 +4341,7 @@
       "exact": 3,
       "diff": 2,
       "tendency": 18,
-      "wrong": 22,
+      "wrong": 23,
       "posPrev": 18,
       "pointsHistory": [
         0,
@@ -4372,6 +4436,10 @@
         "portugal_usbekistan": {
           "tip": "3:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "4:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -4543,7 +4611,7 @@
       "exact": 2,
       "diff": 4,
       "tendency": 15,
-      "wrong": 24,
+      "wrong": 25,
       "posPrev": 17,
       "pointsHistory": [
         0,
@@ -4632,6 +4700,10 @@
         "portugal_usbekistan": {
           "tip": "2:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -4803,7 +4875,7 @@
       "exact": 2,
       "diff": 4,
       "tendency": 15,
-      "wrong": 24,
+      "wrong": 25,
       "posPrev": 18,
       "pointsHistory": [
         0,
@@ -4893,6 +4965,10 @@
         "portugal_usbekistan": {
           "tip": "1:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:1",
@@ -5064,7 +5140,7 @@
       "exact": 1,
       "diff": 4,
       "tendency": 15,
-      "wrong": 25,
+      "wrong": 26,
       "posPrev": 20,
       "pointsHistory": [
         0,
@@ -5155,6 +5231,10 @@
         "portugal_usbekistan": {
           "tip": "2:0",
           "points": 2
+        },
+        "england_ghana": {
+          "tip": "4:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -5776,8 +5856,8 @@
       "homeTeam": "England",
       "awayTeam": "Ghana",
       "group": "Gruppe L",
-      "result": null,
-      "played": false,
+      "result": "0:0",
+      "played": true,
       "date": "2026-06-23T22:00:00+02:00"
     },
     {

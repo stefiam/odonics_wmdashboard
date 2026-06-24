@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T22:09:38.492Z",
+  "lastUpdated": "2026-06-24T22:14:54.872Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -5760,11 +5760,11 @@
       "pos": 20,
       "trend": -1,
       "name": "Panu",
-      "points": 63,
+      "points": 65,
       "exact": 2,
       "diff": 5,
-      "tendency": 12,
-      "wrong": 33,
+      "tendency": 13,
+      "wrong": 32,
       "posPrev": 19,
       "pointsHistory": [
         0,
@@ -5820,7 +5820,8 @@
         61,
         63,
         65,
-        63
+        63,
+        65
       ],
       "isHighlighted": false,
       "predictions": {
@@ -5834,7 +5835,7 @@
         },
         "marokko_haiti": {
           "tip": "1:4",
-          "points": 0
+          "points": 2
         },
         "schottland_brasilien": {
           "tip": "5:2",
@@ -6542,7 +6543,7 @@
       "homeTeam": "Marokko",
       "awayTeam": "Haiti",
       "group": "Gruppe C",
-      "result": "0:0",
+      "result": "0:1",
       "played": true,
       "date": "2026-06-25T00:00:00+02:00"
     },

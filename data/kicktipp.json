@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-24T09:39:16.877Z",
+  "lastUpdated": "2026-06-24T16:25:22.724Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
       "pos": 1,
-      "trend": 1,
+      "trend": 0,
       "name": "WAC",
       "points": 89,
       "exact": 5,
@@ -98,38 +98,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "3:1",
-          "points": 3
-        },
-        "frankreich_irak": {
-          "tip": "4:0",
-          "points": 2
-        },
-        "norwegen_senegal": {
-          "tip": "3:1",
-          "points": 2
-        },
-        "jordanien_algerien": {
-          "tip": "1:2",
-          "points": 4
-        },
-        "portugal_usbekistan": {
-          "tip": "3:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:1",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "1:2",
-          "points": 3
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "2:0",
-          "points": 2
-        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -289,12 +257,44 @@
         "neuseeland__gypten": {
           "tip": "0:2",
           "points": 3
+        },
+        "argentinien__sterreich": {
+          "tip": "3:1",
+          "points": 3
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 2
+        },
+        "norwegen_senegal": {
+          "tip": "3:1",
+          "points": 2
+        },
+        "jordanien_algerien": {
+          "tip": "1:2",
+          "points": 4
+        },
+        "portugal_usbekistan": {
+          "tip": "3:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:1",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "1:2",
+          "points": 3
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "2:0",
+          "points": 2
         }
       }
     },
     {
       "pos": 2,
-      "trend": 1,
+      "trend": 0,
       "name": "AlexP",
       "points": 87,
       "exact": 6,
@@ -380,38 +380,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "frankreich_irak": {
-          "tip": "4:0",
-          "points": 2
-        },
-        "norwegen_senegal": {
-          "tip": "2:0",
-          "points": 2
-        },
-        "jordanien_algerien": {
-          "tip": "1:2",
-          "points": 4
-        },
-        "portugal_usbekistan": {
-          "tip": "2:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:0",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "1:2",
-          "points": 3
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "1:0",
-          "points": 4
-        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -571,12 +539,44 @@
         "neuseeland__gypten": {
           "tip": "1:2",
           "points": 2
+        },
+        "argentinien__sterreich": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 2
+        },
+        "norwegen_senegal": {
+          "tip": "2:0",
+          "points": 2
+        },
+        "jordanien_algerien": {
+          "tip": "1:2",
+          "points": 4
+        },
+        "portugal_usbekistan": {
+          "tip": "2:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "1:2",
+          "points": 3
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "1:0",
+          "points": 4
         }
       }
     },
     {
       "pos": 3,
-      "trend": 1,
+      "trend": 0,
       "name": "Andy",
       "points": 87,
       "exact": 5,
@@ -666,38 +666,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "frankreich_irak": {
-          "tip": "4:0",
-          "points": 2
-        },
-        "norwegen_senegal": {
-          "tip": "1:0",
-          "points": 3
-        },
-        "jordanien_algerien": {
-          "tip": "1:2",
-          "points": 4
-        },
-        "portugal_usbekistan": {
-          "tip": "3:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:0",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "0:2",
-          "points": 2
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "2:1",
-          "points": 3
-        },
         "mexiko_s_dafrika": {
           "tip": "3:0",
           "points": 2
@@ -857,12 +825,44 @@
         "neuseeland__gypten": {
           "tip": "0:1",
           "points": 2
+        },
+        "argentinien__sterreich": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 2
+        },
+        "norwegen_senegal": {
+          "tip": "1:0",
+          "points": 3
+        },
+        "jordanien_algerien": {
+          "tip": "1:2",
+          "points": 4
+        },
+        "portugal_usbekistan": {
+          "tip": "3:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "0:2",
+          "points": 2
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "2:1",
+          "points": 3
         }
       }
     },
     {
       "pos": 4,
-      "trend": -1,
+      "trend": 0,
       "name": "Schneckerl",
       "points": 85,
       "exact": 6,
@@ -956,38 +956,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "1:1",
-          "points": 0
-        },
-        "frankreich_irak": {
-          "tip": "3:0",
-          "points": 4
-        },
-        "norwegen_senegal": {
-          "tip": "3:1",
-          "points": 2
-        },
-        "jordanien_algerien": {
-          "tip": "1:1",
-          "points": 0
-        },
-        "portugal_usbekistan": {
-          "tip": "2:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:0",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "1:3",
-          "points": 2
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "2:0",
-          "points": 2
-        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -1147,6 +1115,38 @@
         "neuseeland__gypten": {
           "tip": "3:1",
           "points": 0
+        },
+        "argentinien__sterreich": {
+          "tip": "1:1",
+          "points": 0
+        },
+        "frankreich_irak": {
+          "tip": "3:0",
+          "points": 4
+        },
+        "norwegen_senegal": {
+          "tip": "3:1",
+          "points": 2
+        },
+        "jordanien_algerien": {
+          "tip": "1:1",
+          "points": 0
+        },
+        "portugal_usbekistan": {
+          "tip": "2:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "1:3",
+          "points": 2
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "2:0",
+          "points": 2
         }
       }
     },
@@ -1239,38 +1239,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "2:2",
-          "points": 0
-        },
-        "frankreich_irak": {
-          "tip": "4:1",
-          "points": 3
-        },
-        "norwegen_senegal": {
-          "tip": "2:1",
-          "points": 3
-        },
-        "jordanien_algerien": {
-          "tip": "0:2",
-          "points": 2
-        },
-        "portugal_usbekistan": {
-          "tip": "3:1",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:0",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "0:2",
-          "points": 2
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "2:1",
-          "points": 3
-        },
         "mexiko_s_dafrika": {
           "tip": "3:1",
           "points": 3
@@ -1430,12 +1398,44 @@
         "neuseeland__gypten": {
           "tip": "1:2",
           "points": 2
+        },
+        "argentinien__sterreich": {
+          "tip": "2:2",
+          "points": 0
+        },
+        "frankreich_irak": {
+          "tip": "4:1",
+          "points": 3
+        },
+        "norwegen_senegal": {
+          "tip": "2:1",
+          "points": 3
+        },
+        "jordanien_algerien": {
+          "tip": "0:2",
+          "points": 2
+        },
+        "portugal_usbekistan": {
+          "tip": "3:1",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "0:2",
+          "points": 2
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "2:1",
+          "points": 3
         }
       }
     },
     {
       "pos": 6,
-      "trend": 1,
+      "trend": 0,
       "name": "Kiki",
       "points": 82,
       "exact": 6,
@@ -1522,38 +1522,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "frankreich_irak": {
-          "tip": "4:0",
-          "points": 2
-        },
-        "norwegen_senegal": {
-          "tip": "1:1",
-          "points": 0
-        },
-        "jordanien_algerien": {
-          "tip": "0:1",
-          "points": 3
-        },
-        "portugal_usbekistan": {
-          "tip": "3:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:0",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "0:2",
-          "points": 2
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "1:0",
-          "points": 4
-        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -1713,12 +1681,44 @@
         "neuseeland__gypten": {
           "tip": "1:1",
           "points": 0
+        },
+        "argentinien__sterreich": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 2
+        },
+        "norwegen_senegal": {
+          "tip": "1:1",
+          "points": 0
+        },
+        "jordanien_algerien": {
+          "tip": "0:1",
+          "points": 3
+        },
+        "portugal_usbekistan": {
+          "tip": "3:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "0:2",
+          "points": 2
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "1:0",
+          "points": 4
         }
       }
     },
     {
       "pos": 6,
-      "trend": -1,
+      "trend": 0,
       "name": "Peppolini",
       "points": 82,
       "exact": 6,
@@ -1805,38 +1805,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "2:2",
-          "points": 0
-        },
-        "frankreich_irak": {
-          "tip": "4:0",
-          "points": 2
-        },
-        "norwegen_senegal": {
-          "tip": "2:2",
-          "points": 0
-        },
-        "jordanien_algerien": {
-          "tip": "1:2",
-          "points": 4
-        },
-        "portugal_usbekistan": {
-          "tip": "2:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:0",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "1:3",
-          "points": 2
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "2:0",
-          "points": 2
-        },
         "mexiko_s_dafrika": {
           "tip": "3:0",
           "points": 2
@@ -1996,12 +1964,44 @@
         "neuseeland__gypten": {
           "tip": "0:2",
           "points": 3
+        },
+        "argentinien__sterreich": {
+          "tip": "2:2",
+          "points": 0
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 2
+        },
+        "norwegen_senegal": {
+          "tip": "2:2",
+          "points": 0
+        },
+        "jordanien_algerien": {
+          "tip": "1:2",
+          "points": 4
+        },
+        "portugal_usbekistan": {
+          "tip": "2:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "1:3",
+          "points": 2
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "2:0",
+          "points": 2
         }
       }
     },
     {
       "pos": 8,
-      "trend": 1,
+      "trend": 0,
       "name": "Phips",
       "points": 80,
       "exact": 1,
@@ -2078,38 +2078,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "3:0",
-          "points": 2
-        },
-        "frankreich_irak": {
-          "tip": "4:0",
-          "points": 2
-        },
-        "norwegen_senegal": {
-          "tip": "2:1",
-          "points": 3
-        },
-        "jordanien_algerien": {
-          "tip": "1:2",
-          "points": 4
-        },
-        "portugal_usbekistan": {
-          "tip": "4:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:1",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "0:2",
-          "points": 2
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "3:0",
-          "points": 2
-        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -2269,12 +2237,44 @@
         "neuseeland__gypten": {
           "tip": "0:2",
           "points": 3
+        },
+        "argentinien__sterreich": {
+          "tip": "3:0",
+          "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 2
+        },
+        "norwegen_senegal": {
+          "tip": "2:1",
+          "points": 3
+        },
+        "jordanien_algerien": {
+          "tip": "1:2",
+          "points": 4
+        },
+        "portugal_usbekistan": {
+          "tip": "4:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:1",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "0:2",
+          "points": 2
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "3:0",
+          "points": 2
         }
       }
     },
     {
       "pos": 9,
-      "trend": -1,
+      "trend": 0,
       "name": "Sigi",
       "points": 79,
       "exact": 6,
@@ -2364,38 +2364,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "2:2",
-          "points": 0
-        },
-        "frankreich_irak": {
-          "tip": "4:0",
-          "points": 2
-        },
-        "norwegen_senegal": {
-          "tip": "3:0",
-          "points": 2
-        },
-        "jordanien_algerien": {
-          "tip": "1:2",
-          "points": 4
-        },
-        "portugal_usbekistan": {
-          "tip": "3:1",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:1",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "1:2",
-          "points": 3
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "4:1",
-          "points": 2
-        },
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
@@ -2555,12 +2523,44 @@
         "neuseeland__gypten": {
           "tip": "0:1",
           "points": 2
+        },
+        "argentinien__sterreich": {
+          "tip": "2:2",
+          "points": 0
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 2
+        },
+        "norwegen_senegal": {
+          "tip": "3:0",
+          "points": 2
+        },
+        "jordanien_algerien": {
+          "tip": "1:2",
+          "points": 4
+        },
+        "portugal_usbekistan": {
+          "tip": "3:1",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:1",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "1:2",
+          "points": 3
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "4:1",
+          "points": 2
         }
       }
     },
     {
       "pos": 10,
-      "trend": -1,
+      "trend": 0,
       "name": "TippJungle",
       "points": 78,
       "exact": 3,
@@ -2649,38 +2649,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "3:0",
-          "points": 2
-        },
-        "frankreich_irak": {
-          "tip": "3:0",
-          "points": 4
-        },
-        "norwegen_senegal": {
-          "tip": "3:1",
-          "points": 2
-        },
-        "jordanien_algerien": {
-          "tip": "1:1",
-          "points": 0
-        },
-        "portugal_usbekistan": {
-          "tip": "2:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:0",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "0:2",
-          "points": 2
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "3:1",
-          "points": 2
-        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -2840,12 +2808,44 @@
         "neuseeland__gypten": {
           "tip": "0:2",
           "points": 3
+        },
+        "argentinien__sterreich": {
+          "tip": "3:0",
+          "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "3:0",
+          "points": 4
+        },
+        "norwegen_senegal": {
+          "tip": "3:1",
+          "points": 2
+        },
+        "jordanien_algerien": {
+          "tip": "1:1",
+          "points": 0
+        },
+        "portugal_usbekistan": {
+          "tip": "2:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "0:2",
+          "points": 2
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "3:1",
+          "points": 2
         }
       }
     },
     {
       "pos": 11,
-      "trend": 1,
+      "trend": 0,
       "name": "ZaM",
       "points": 73,
       "exact": 8,
@@ -2921,38 +2921,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "3:2",
-          "points": 2
-        },
-        "frankreich_irak": {
-          "tip": "6:0",
-          "points": 2
-        },
-        "norwegen_senegal": {
-          "tip": "0:1",
-          "points": 0
-        },
-        "jordanien_algerien": {
-          "tip": "0:0",
-          "points": 0
-        },
-        "portugal_usbekistan": {
-          "tip": "2:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:0",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "0:1",
-          "points": 4
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "1:0",
-          "points": 4
-        },
         "mexiko_s_dafrika": {
           "tip": "3:1",
           "points": 3
@@ -3100,12 +3068,44 @@
         "neuseeland__gypten": {
           "tip": "0:1",
           "points": 2
+        },
+        "argentinien__sterreich": {
+          "tip": "3:2",
+          "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "6:0",
+          "points": 2
+        },
+        "norwegen_senegal": {
+          "tip": "0:1",
+          "points": 0
+        },
+        "jordanien_algerien": {
+          "tip": "0:0",
+          "points": 0
+        },
+        "portugal_usbekistan": {
+          "tip": "2:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "0:1",
+          "points": 4
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "1:0",
+          "points": 4
         }
       }
     },
     {
       "pos": 12,
-      "trend": 1,
+      "trend": 0,
       "name": "Michel",
       "points": 73,
       "exact": 3,
@@ -3188,38 +3188,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "frankreich_irak": {
-          "tip": "3:0",
-          "points": 4
-        },
-        "norwegen_senegal": {
-          "tip": "1:1",
-          "points": 0
-        },
-        "jordanien_algerien": {
-          "tip": "0:2",
-          "points": 2
-        },
-        "portugal_usbekistan": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "2:1",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "1:2",
-          "points": 3
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "2:0",
-          "points": 2
-        },
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
@@ -3379,12 +3347,44 @@
         "neuseeland__gypten": {
           "tip": "1:1",
           "points": 0
+        },
+        "argentinien__sterreich": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "3:0",
+          "points": 4
+        },
+        "norwegen_senegal": {
+          "tip": "1:1",
+          "points": 0
+        },
+        "jordanien_algerien": {
+          "tip": "0:2",
+          "points": 2
+        },
+        "portugal_usbekistan": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "1:2",
+          "points": 3
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "2:0",
+          "points": 2
         }
       }
     },
     {
       "pos": 12,
-      "trend": 1,
+      "trend": 0,
       "name": "Bella",
       "points": 73,
       "exact": 5,
@@ -3468,38 +3468,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "3:2",
-          "points": 2
-        },
-        "frankreich_irak": {
-          "tip": "3:1",
-          "points": 2
-        },
-        "norwegen_senegal": {
-          "tip": "2:1",
-          "points": 3
-        },
-        "jordanien_algerien": {
-          "tip": "1:1",
-          "points": 0
-        },
-        "portugal_usbekistan": {
-          "tip": "3:1",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:0",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "1:2",
-          "points": 3
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "3:1",
-          "points": 2
-        },
         "mexiko_s_dafrika": {
           "tip": "0:1",
           "points": 0
@@ -3659,12 +3627,44 @@
         "neuseeland__gypten": {
           "tip": "1:2",
           "points": 2
+        },
+        "argentinien__sterreich": {
+          "tip": "3:2",
+          "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "3:1",
+          "points": 2
+        },
+        "norwegen_senegal": {
+          "tip": "2:1",
+          "points": 3
+        },
+        "jordanien_algerien": {
+          "tip": "1:1",
+          "points": 0
+        },
+        "portugal_usbekistan": {
+          "tip": "3:1",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "1:2",
+          "points": 3
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "3:1",
+          "points": 2
         }
       }
     },
     {
       "pos": 14,
-      "trend": -1,
+      "trend": 0,
       "name": "DOl",
       "points": 72,
       "exact": 3,
@@ -3751,38 +3751,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "2:3",
-          "points": 0
-        },
-        "frankreich_irak": {
-          "tip": "4:1",
-          "points": 3
-        },
-        "norwegen_senegal": {
-          "tip": "2:2",
-          "points": 0
-        },
-        "jordanien_algerien": {
-          "tip": "2:2",
-          "points": 0
-        },
-        "portugal_usbekistan": {
-          "tip": "3:1",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "4:1",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "0:2",
-          "points": 2
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "2:1",
-          "points": 3
-        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -3942,12 +3910,44 @@
         "neuseeland__gypten": {
           "tip": "0:3",
           "points": 2
+        },
+        "argentinien__sterreich": {
+          "tip": "2:3",
+          "points": 0
+        },
+        "frankreich_irak": {
+          "tip": "4:1",
+          "points": 3
+        },
+        "norwegen_senegal": {
+          "tip": "2:2",
+          "points": 0
+        },
+        "jordanien_algerien": {
+          "tip": "2:2",
+          "points": 0
+        },
+        "portugal_usbekistan": {
+          "tip": "3:1",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "4:1",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "0:2",
+          "points": 2
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "2:1",
+          "points": 3
         }
       }
     },
     {
       "pos": 15,
-      "trend": 1,
+      "trend": 0,
       "name": "MaWa44",
       "points": 71,
       "exact": 1,
@@ -4035,38 +4035,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "frankreich_irak": {
-          "tip": "4:0",
-          "points": 2
-        },
-        "norwegen_senegal": {
-          "tip": "1:1",
-          "points": 0
-        },
-        "jordanien_algerien": {
-          "tip": "0:1",
-          "points": 3
-        },
-        "portugal_usbekistan": {
-          "tip": "3:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "4:0",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "1:2",
-          "points": 3
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "3:0",
-          "points": 2
-        },
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
@@ -4226,12 +4194,44 @@
         "neuseeland__gypten": {
           "tip": "0:2",
           "points": 3
+        },
+        "argentinien__sterreich": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 2
+        },
+        "norwegen_senegal": {
+          "tip": "1:1",
+          "points": 0
+        },
+        "jordanien_algerien": {
+          "tip": "0:1",
+          "points": 3
+        },
+        "portugal_usbekistan": {
+          "tip": "3:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "4:0",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "1:2",
+          "points": 3
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "3:0",
+          "points": 2
         }
       }
     },
     {
       "pos": 16,
-      "trend": 1,
+      "trend": 0,
       "name": "OnkelAlex",
       "points": 66,
       "exact": 3,
@@ -4315,38 +4315,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "frankreich_irak": {
-          "tip": "4:0",
-          "points": 2
-        },
-        "norwegen_senegal": {
-          "tip": "1:0",
-          "points": 3
-        },
-        "jordanien_algerien": {
-          "tip": "1:2",
-          "points": 4
-        },
-        "portugal_usbekistan": {
-          "tip": "3:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "4:0",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "0:3",
-          "points": 2
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "2:0",
-          "points": 2
-        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -4506,12 +4474,44 @@
         "neuseeland__gypten": {
           "tip": "1:1",
           "points": 0
+        },
+        "argentinien__sterreich": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "4:0",
+          "points": 2
+        },
+        "norwegen_senegal": {
+          "tip": "1:0",
+          "points": 3
+        },
+        "jordanien_algerien": {
+          "tip": "1:2",
+          "points": 4
+        },
+        "portugal_usbekistan": {
+          "tip": "3:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "4:0",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "0:3",
+          "points": 2
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "2:0",
+          "points": 2
         }
       }
     },
     {
       "pos": 17,
-      "trend": 1,
+      "trend": 0,
       "name": "Säulenmann",
       "points": 65,
       "exact": 3,
@@ -4590,38 +4590,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "0:1",
-          "points": 0
-        },
-        "frankreich_irak": {
-          "tip": "3:0",
-          "points": 4
-        },
-        "norwegen_senegal": {
-          "tip": "1:0",
-          "points": 3
-        },
-        "jordanien_algerien": {
-          "tip": "1:0",
-          "points": 0
-        },
-        "portugal_usbekistan": {
-          "tip": "1:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:0",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "1:2",
-          "points": 3
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "1:0",
-          "points": 4
-        },
         "mexiko_s_dafrika": {
           "tip": "1:1",
           "points": 0
@@ -4781,12 +4749,44 @@
         "neuseeland__gypten": {
           "tip": "1:2",
           "points": 2
+        },
+        "argentinien__sterreich": {
+          "tip": "0:1",
+          "points": 0
+        },
+        "frankreich_irak": {
+          "tip": "3:0",
+          "points": 4
+        },
+        "norwegen_senegal": {
+          "tip": "1:0",
+          "points": 3
+        },
+        "jordanien_algerien": {
+          "tip": "1:0",
+          "points": 0
+        },
+        "portugal_usbekistan": {
+          "tip": "1:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:0",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "1:2",
+          "points": 3
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "1:0",
+          "points": 4
         }
       }
     },
     {
       "pos": 18,
-      "trend": -1,
+      "trend": 0,
       "name": "Jacky",
       "points": 64,
       "exact": 2,
@@ -4863,38 +4863,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "frankreich_irak": {
-          "tip": "2:1",
-          "points": 2
-        },
-        "norwegen_senegal": {
-          "tip": "2:1",
-          "points": 3
-        },
-        "jordanien_algerien": {
-          "tip": "0:1",
-          "points": 3
-        },
-        "portugal_usbekistan": {
-          "tip": "2:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:1",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "2:2",
-          "points": 0
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "2:0",
-          "points": 2
-        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -5054,12 +5022,44 @@
         "neuseeland__gypten": {
           "tip": "2:1",
           "points": 0
+        },
+        "argentinien__sterreich": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "2:1",
+          "points": 2
+        },
+        "norwegen_senegal": {
+          "tip": "2:1",
+          "points": 3
+        },
+        "jordanien_algerien": {
+          "tip": "0:1",
+          "points": 3
+        },
+        "portugal_usbekistan": {
+          "tip": "2:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:1",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "2:2",
+          "points": 0
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "2:0",
+          "points": 2
         }
       }
     },
     {
       "pos": 19,
-      "trend": -1,
+      "trend": 0,
       "name": "Panu",
       "points": 63,
       "exact": 2,
@@ -5125,38 +5125,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "3:2",
-          "points": 2
-        },
-        "frankreich_irak": {
-          "tip": "1:2",
-          "points": 0
-        },
-        "norwegen_senegal": {
-          "tip": "0:1",
-          "points": 0
-        },
-        "jordanien_algerien": {
-          "tip": "3:1",
-          "points": 0
-        },
-        "portugal_usbekistan": {
-          "tip": "2:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "3:1",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "2:1",
-          "points": 0
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "2:4",
-          "points": 0
-        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -5316,6 +5284,38 @@
         "neuseeland__gypten": {
           "tip": "2:0",
           "points": 0
+        },
+        "argentinien__sterreich": {
+          "tip": "3:2",
+          "points": 2
+        },
+        "frankreich_irak": {
+          "tip": "1:2",
+          "points": 0
+        },
+        "norwegen_senegal": {
+          "tip": "0:1",
+          "points": 0
+        },
+        "jordanien_algerien": {
+          "tip": "3:1",
+          "points": 0
+        },
+        "portugal_usbekistan": {
+          "tip": "2:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "3:1",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "2:4",
+          "points": 0
         }
       }
     },
@@ -5401,38 +5401,6 @@
       ],
       "isHighlighted": false,
       "predictions": {
-        "argentinien__sterreich": {
-          "tip": "3:1",
-          "points": 3
-        },
-        "frankreich_irak": {
-          "tip": "3:0",
-          "points": 4
-        },
-        "norwegen_senegal": {
-          "tip": "1:0",
-          "points": 3
-        },
-        "jordanien_algerien": {
-          "tip": "1:1",
-          "points": 0
-        },
-        "portugal_usbekistan": {
-          "tip": "2:0",
-          "points": 2
-        },
-        "england_ghana": {
-          "tip": "4:0",
-          "points": 0
-        },
-        "panama_kroatien": {
-          "tip": "0:2",
-          "points": 2
-        },
-        "kolumbien_dr_kongo": {
-          "tip": "2:1",
-          "points": 3
-        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -5592,6 +5560,38 @@
         "neuseeland__gypten": {
           "tip": "3:3",
           "points": 0
+        },
+        "argentinien__sterreich": {
+          "tip": "3:1",
+          "points": 3
+        },
+        "frankreich_irak": {
+          "tip": "3:0",
+          "points": 4
+        },
+        "norwegen_senegal": {
+          "tip": "1:0",
+          "points": 3
+        },
+        "jordanien_algerien": {
+          "tip": "1:1",
+          "points": 0
+        },
+        "portugal_usbekistan": {
+          "tip": "2:0",
+          "points": 2
+        },
+        "england_ghana": {
+          "tip": "4:0",
+          "points": 0
+        },
+        "panama_kroatien": {
+          "tip": "0:2",
+          "points": 2
+        },
+        "kolumbien_dr_kongo": {
+          "tip": "2:1",
+          "points": 3
         }
       }
     }

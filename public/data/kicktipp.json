@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T21:02:11.581Z",
+  "lastUpdated": "2026-06-24T21:07:29.700Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -6616,6 +6616,16 @@
       "result": null,
       "played": false,
       "date": "2026-07-02T02:00:00+02:00"
+    },
+    {
+      "id": "schweiz_unbekannt",
+      "label": "Schweiz – unbekannt",
+      "homeTeam": "Schweiz",
+      "awayTeam": "unbekannt",
+      "group": null,
+      "result": null,
+      "played": false,
+      "date": "2026-07-03T05:00:00+02:00"
     },
     {
       "id": "argentinien_unbekannt",

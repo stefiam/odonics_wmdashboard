@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T03:01:28.709Z",
+  "lastUpdated": "2026-06-25T03:06:44.947Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -6944,10 +6944,10 @@
       "date": "2026-06-28T04:00:00+02:00"
     },
     {
-      "id": "unbekannt_unbekannt",
-      "label": "unbekannt – unbekannt",
-      "homeTeam": "unbekannt",
-      "awayTeam": "unbekannt",
+      "id": "s_dafrika_kanada",
+      "label": "Südafrika – Kanada",
+      "homeTeam": "Südafrika",
+      "awayTeam": "Kanada",
       "group": null,
       "result": null,
       "played": false,
@@ -6982,6 +6982,16 @@
       "result": null,
       "played": false,
       "date": "2026-06-30T03:00:00+02:00"
+    },
+    {
+      "id": "unbekannt_unbekannt",
+      "label": "unbekannt – unbekannt",
+      "homeTeam": "unbekannt",
+      "awayTeam": "unbekannt",
+      "group": null,
+      "result": null,
+      "played": false,
+      "date": "2026-06-30T19:00:00+02:00"
     },
     {
       "id": "mexiko_unbekannt",

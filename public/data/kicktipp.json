@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T22:00:45.638Z",
+  "lastUpdated": "2026-06-25T22:23:57.366Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -7171,6 +7171,16 @@
       "date": "2026-06-30T03:00:00+02:00"
     },
     {
+      "id": "elfenbeink_ste_unbekannt",
+      "label": "Elfenbeinküste – unbekannt",
+      "homeTeam": "Elfenbeinküste",
+      "awayTeam": "unbekannt",
+      "group": null,
+      "result": null,
+      "played": false,
+      "date": "2026-06-30T19:00:00+02:00"
+    },
+    {
       "id": "unbekannt_unbekannt",
       "label": "unbekannt – unbekannt",
       "homeTeam": "unbekannt",
@@ -7178,7 +7188,7 @@
       "group": null,
       "result": null,
       "played": false,
-      "date": "2026-06-30T19:00:00+02:00"
+      "date": "2026-06-30T23:00:00+02:00"
     },
     {
       "id": "mexiko_unbekannt",

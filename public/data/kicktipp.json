@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-06-26T03:56:34.204Z",
+  "lastUpdated": "2026-06-26T04:01:50.309Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
       "pos": 1,
       "trend": 0,
       "name": "WAC",
-      "points": 120,
+      "points": 118,
       "exact": 6,
       "diff": 6,
-      "tendency": 25,
-      "wrong": 23,
+      "tendency": 24,
+      "wrong": 24,
       "posPrev": 1,
       "pointsHistory": [
         0,
@@ -107,7 +107,8 @@
         110,
         112,
         118,
-        120
+        120,
+        118
       ],
       "isHighlighted": false,
       "predictions": {
@@ -133,7 +134,7 @@
         },
         "t_rkei_usa": {
           "tip": "1:1",
-          "points": 2
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1382,11 +1383,11 @@
       "pos": 5,
       "trend": 1,
       "name": "Raphi",
-      "points": 111,
+      "points": 114,
       "exact": 5,
-      "diff": 7,
+      "diff": 8,
       "tendency": 25,
-      "wrong": 23,
+      "wrong": 22,
       "posPrev": 6,
       "pointsHistory": [
         0,
@@ -1476,7 +1477,8 @@
         109,
         105,
         115,
-        111
+        111,
+        114
       ],
       "isHighlighted": false,
       "predictions": {
@@ -1502,7 +1504,7 @@
         },
         "t_rkei_usa": {
           "tip": "2:1",
-          "points": 0
+          "points": 3
         },
         "mexiko_s_dafrika": {
           "tip": "3:1",
@@ -1723,7 +1725,7 @@
       }
     },
     {
-      "pos": 5,
+      "pos": 6,
       "trend": 1,
       "name": "Phips",
       "points": 111,
@@ -2055,8 +2057,8 @@
       }
     },
     {
-      "pos": 5,
-      "trend": 0,
+      "pos": 6,
+      "trend": -1,
       "name": "Schneckerl",
       "points": 111,
       "exact": 6,
@@ -7332,7 +7334,7 @@
       "homeTeam": "Türkei",
       "awayTeam": "USA",
       "group": "Gruppe D",
-      "result": "2:2",
+      "result": "3:2",
       "played": true,
       "date": "2026-06-26T04:00:00+02:00"
     },

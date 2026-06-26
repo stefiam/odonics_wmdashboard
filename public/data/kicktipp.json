@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T03:30:13.174Z",
+  "lastUpdated": "2026-06-26T03:35:29.828Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -7527,10 +7527,10 @@
       "date": "2026-07-01T03:00:00+02:00"
     },
     {
-      "id": "usa_unbekannt",
-      "label": "USA – unbekannt",
+      "id": "usa_bosnien_herzegowina",
+      "label": "USA – Bosnien-Herzegowina",
       "homeTeam": "USA",
-      "awayTeam": "unbekannt",
+      "awayTeam": "Bosnien-Herzegowina",
       "group": null,
       "result": null,
       "played": false,

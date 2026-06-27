@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T15:19:52.190Z",
+  "lastUpdated": "2026-06-27T21:01:01.871Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -10,7 +10,7 @@
       "exact": 7,
       "diff": 4,
       "tendency": 32,
-      "wrong": 23,
+      "wrong": 24,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -121,6 +121,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:1",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "3:0",
           "points": 2
@@ -395,7 +403,7 @@
       "exact": 6,
       "diff": 9,
       "tendency": 28,
-      "wrong": 23,
+      "wrong": 24,
       "posPrev": 5,
       "pointsHistory": [
         0,
@@ -503,6 +511,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:1",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "3:1",
           "points": 3
@@ -777,7 +793,7 @@
       "exact": 6,
       "diff": 6,
       "tendency": 27,
-      "wrong": 27,
+      "wrong": 28,
       "posPrev": 1,
       "pointsHistory": [
         0,
@@ -892,6 +908,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:0",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -1166,7 +1190,7 @@
       "exact": 7,
       "diff": 6,
       "tendency": 26,
-      "wrong": 27,
+      "wrong": 28,
       "posPrev": 3,
       "pointsHistory": [
         0,
@@ -1274,6 +1298,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:1",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -1548,7 +1580,7 @@
       "exact": 6,
       "diff": 6,
       "tendency": 28,
-      "wrong": 26,
+      "wrong": 27,
       "posPrev": 4,
       "pointsHistory": [
         4,
@@ -1647,6 +1679,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:1",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:5",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -1921,7 +1961,7 @@
       "exact": 3,
       "diff": 8,
       "tendency": 30,
-      "wrong": 25,
+      "wrong": 26,
       "posPrev": 6,
       "pointsHistory": [
         0,
@@ -2014,6 +2054,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:1",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -2288,7 +2336,7 @@
       "exact": 8,
       "diff": 4,
       "tendency": 29,
-      "wrong": 25,
+      "wrong": 26,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -2389,6 +2437,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:0",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "3:0",
           "points": 2
@@ -2663,7 +2719,7 @@
       "exact": 7,
       "diff": 4,
       "tendency": 27,
-      "wrong": 28,
+      "wrong": 29,
       "posPrev": 8,
       "pointsHistory": [
         0,
@@ -2772,6 +2828,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:2",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "1:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
@@ -3046,7 +3110,7 @@
       "exact": 6,
       "diff": 7,
       "tendency": 24,
-      "wrong": 29,
+      "wrong": 30,
       "posPrev": 6,
       "pointsHistory": [
         0,
@@ -3157,6 +3221,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "1:0",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -3431,7 +3503,7 @@
       "exact": 11,
       "diff": 3,
       "tendency": 22,
-      "wrong": 27,
+      "wrong": 28,
       "posPrev": 9,
       "pointsHistory": [
         0,
@@ -3526,6 +3598,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:1",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "1:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "3:1",
           "points": 3
@@ -3788,7 +3868,7 @@
       "exact": 5,
       "diff": 9,
       "tendency": 26,
-      "wrong": 26,
+      "wrong": 27,
       "posPrev": 16,
       "pointsHistory": [
         0,
@@ -3896,6 +3976,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:0",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:2",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -4170,7 +4258,7 @@
       "exact": 5,
       "diff": 4,
       "tendency": 29,
-      "wrong": 28,
+      "wrong": 29,
       "posPrev": 14,
       "pointsHistory": [
         0,
@@ -4275,6 +4363,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:1",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -4925,7 +5021,7 @@
       "exact": 3,
       "diff": 5,
       "tendency": 29,
-      "wrong": 29,
+      "wrong": 30,
       "posPrev": 13,
       "pointsHistory": [
         0,
@@ -5032,6 +5128,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:0",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:4",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
@@ -5306,7 +5410,7 @@
       "exact": 4,
       "diff": 6,
       "tendency": 26,
-      "wrong": 30,
+      "wrong": 31,
       "posPrev": 12,
       "pointsHistory": [
         0,
@@ -5407,6 +5511,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:1",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "1:0",
           "points": 2
@@ -5681,7 +5793,7 @@
       "exact": 3,
       "diff": 2,
       "tendency": 32,
-      "wrong": 29,
+      "wrong": 30,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -5793,6 +5905,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:1",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -6066,7 +6186,7 @@
       "points": 110,
       "exact": 3,
       "diff": 6,
-      "tendency": 24,
+      "tendency": 25,
       "wrong": 32,
       "posPrev": 19,
       "pointsHistory": [
@@ -6157,6 +6277,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "2:0",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "1:1",
+          "points": 2
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -6427,7 +6555,7 @@
       "exact": 4,
       "diff": 6,
       "tendency": 22,
-      "wrong": 32,
+      "wrong": 33,
       "posPrev": 17,
       "pointsHistory": [
         0,
@@ -6514,6 +6642,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "1:1",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "1:1",
           "points": 0
@@ -6780,7 +6916,7 @@
       "exact": 3,
       "diff": 6,
       "tendency": 23,
-      "wrong": 34,
+      "wrong": 35,
       "posPrev": 18,
       "pointsHistory": [
         0,
@@ -6878,6 +7014,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "3:1",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "0:3",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:1",
           "points": 2
@@ -7152,7 +7296,7 @@
       "exact": 2,
       "diff": 5,
       "tendency": 14,
-      "wrong": 39,
+      "wrong": 40,
       "posPrev": 20,
       "pointsHistory": [
         0,
@@ -7220,6 +7364,14 @@
       ],
       "isHighlighted": false,
       "predictions": {
+        "kroatien_ghana": {
+          "tip": "1:3",
+          "points": null
+        },
+        "panama_england": {
+          "tip": "2:1",
+          "points": 0
+        },
         "mexiko_s_dafrika": {
           "tip": "2:0",
           "points": 4
@@ -8140,8 +8292,8 @@
       "homeTeam": "Panama",
       "awayTeam": "England",
       "group": "Gruppe L",
-      "result": null,
-      "played": false,
+      "result": "0:0",
+      "played": true,
       "date": "2026-06-27T23:00:00+02:00"
     },
     {

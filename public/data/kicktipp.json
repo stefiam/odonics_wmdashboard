@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T05:02:47.613Z",
+  "lastUpdated": "2026-06-27T05:08:05.710Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -8245,6 +8245,16 @@
       "date": "2026-07-01T18:00:00+02:00"
     },
     {
+      "id": "belgien_unbekannt",
+      "label": "Belgien – unbekannt",
+      "homeTeam": "Belgien",
+      "awayTeam": "unbekannt",
+      "group": null,
+      "result": null,
+      "played": false,
+      "date": "2026-07-01T22:00:00+02:00"
+    },
+    {
       "id": "usa_bosnien_herzegowina",
       "label": "USA – Bosnien-Herzegowina",
       "homeTeam": "USA",
@@ -8275,10 +8285,10 @@
       "date": "2026-07-03T05:00:00+02:00"
     },
     {
-      "id": "australien_unbekannt",
-      "label": "Australien – unbekannt",
+      "id": "australien__gypten",
+      "label": "Australien – Ägypten",
       "homeTeam": "Australien",
-      "awayTeam": "unbekannt",
+      "awayTeam": "Ägypten",
       "group": null,
       "result": null,
       "played": false,

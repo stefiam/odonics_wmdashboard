@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T19:14:32.342Z",
+  "lastUpdated": "2026-06-29T20:34:49.871Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -10,7 +10,7 @@
       "exact": 8,
       "diff": 5,
       "tendency": 36,
-      "wrong": 25,
+      "wrong": 26,
       "posPrev": 1,
       "pointsHistory": [
         0,
@@ -135,6 +135,10 @@
         "brasilien_japan": {
           "tip": "3:1",
           "points": 2
+        },
+        "deutschland_paraguay": {
+          "tip": "2:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -434,7 +438,7 @@
       "exact": 8,
       "diff": 9,
       "tendency": 33,
-      "wrong": 24,
+      "wrong": 25,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -558,6 +562,10 @@
         "brasilien_japan": {
           "tip": "2:1",
           "points": 4
+        },
+        "deutschland_paraguay": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:1",
@@ -857,7 +865,7 @@
       "exact": 8,
       "diff": 7,
       "tendency": 30,
-      "wrong": 29,
+      "wrong": 30,
       "posPrev": 3,
       "pointsHistory": [
         0,
@@ -979,6 +987,10 @@
         "brasilien_japan": {
           "tip": "3:1",
           "points": 2
+        },
+        "deutschland_paraguay": {
+          "tip": "2:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1278,7 +1290,7 @@
       "exact": 9,
       "diff": 5,
       "tendency": 30,
-      "wrong": 30,
+      "wrong": 31,
       "posPrev": 6,
       "pointsHistory": [
         0,
@@ -1402,6 +1414,10 @@
         "brasilien_japan": {
           "tip": "2:1",
           "points": 4
+        },
+        "deutschland_paraguay": {
+          "tip": "2:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -1701,7 +1717,7 @@
       "exact": 7,
       "diff": 6,
       "tendency": 32,
-      "wrong": 29,
+      "wrong": 30,
       "posPrev": 4,
       "pointsHistory": [
         4,
@@ -1814,6 +1830,10 @@
         "brasilien_japan": {
           "tip": "3:1",
           "points": 2
+        },
+        "deutschland_paraguay": {
+          "tip": "4:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -2113,7 +2133,7 @@
       "exact": 6,
       "diff": 6,
       "tendency": 32,
-      "wrong": 30,
+      "wrong": 31,
       "posPrev": 5,
       "pointsHistory": [
         0,
@@ -2242,6 +2262,10 @@
         "brasilien_japan": {
           "tip": "3:1",
           "points": 2
+        },
+        "deutschland_paraguay": {
+          "tip": "2:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -2541,7 +2565,7 @@
       "exact": 8,
       "diff": 4,
       "tendency": 36,
-      "wrong": 26,
+      "wrong": 27,
       "posPrev": 7,
       "pointsHistory": [
         0,
@@ -2658,6 +2682,10 @@
         "brasilien_japan": {
           "tip": "2:0",
           "points": 2
+        },
+        "deutschland_paraguay": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -2957,7 +2985,7 @@
       "exact": 5,
       "diff": 9,
       "tendency": 32,
-      "wrong": 28,
+      "wrong": 29,
       "posPrev": 8,
       "pointsHistory": [
         0,
@@ -3065,6 +3093,10 @@
         "brasilien_japan": {
           "tip": "3:1",
           "points": 2
+        },
+        "deutschland_paraguay": {
+          "tip": "2:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -3364,7 +3396,7 @@
       "exact": 7,
       "diff": 9,
       "tendency": 27,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 9,
       "pointsHistory": [
         0,
@@ -3490,6 +3522,10 @@
         "brasilien_japan": {
           "tip": "2:0",
           "points": 2
+        },
+        "deutschland_paraguay": {
+          "tip": "2:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -3789,7 +3825,7 @@
       "exact": 7,
       "diff": 6,
       "tendency": 31,
-      "wrong": 30,
+      "wrong": 31,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -3908,6 +3944,10 @@
         "brasilien_japan": {
           "tip": "2:1",
           "points": 4
+        },
+        "deutschland_paraguay": {
+          "tip": "2:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -4207,7 +4247,7 @@
       "exact": 4,
       "diff": 4,
       "tendency": 37,
-      "wrong": 29,
+      "wrong": 30,
       "posPrev": 11,
       "pointsHistory": [
         0,
@@ -4336,6 +4376,10 @@
         "brasilien_japan": {
           "tip": "7:6",
           "points": 3
+        },
+        "deutschland_paraguay": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -4635,7 +4679,7 @@
       "exact": 6,
       "diff": 9,
       "tendency": 27,
-      "wrong": 32,
+      "wrong": 33,
       "posPrev": 13,
       "pointsHistory": [
         0,
@@ -4751,6 +4795,10 @@
         "brasilien_japan": {
           "tip": "2:1",
           "points": 4
+        },
+        "deutschland_paraguay": {
+          "tip": "2:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -5050,7 +5098,7 @@
       "exact": 12,
       "diff": 5,
       "tendency": 23,
-      "wrong": 29,
+      "wrong": 30,
       "posPrev": 12,
       "pointsHistory": [
         0,
@@ -5154,6 +5202,10 @@
         "brasilien_japan": {
           "tip": "3:2",
           "points": 3
+        },
+        "deutschland_paraguay": {
+          "tip": "1:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:1",
@@ -5437,7 +5489,7 @@
       "exact": 6,
       "diff": 10,
       "tendency": 29,
-      "wrong": 29,
+      "wrong": 30,
       "posPrev": 14,
       "pointsHistory": [
         0,
@@ -5559,6 +5611,10 @@
         "brasilien_japan": {
           "tip": "3:1",
           "points": 2
+        },
+        "deutschland_paraguay": {
+          "tip": "2:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -5858,7 +5914,7 @@
       "exact": 3,
       "diff": 6,
       "tendency": 34,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -5980,6 +6036,10 @@
         "brasilien_japan": {
           "tip": "4:0",
           "points": 2
+        },
+        "deutschland_paraguay": {
+          "tip": "2:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -6279,7 +6339,7 @@
       "exact": 5,
       "diff": 8,
       "tendency": 25,
-      "wrong": 30,
+      "wrong": 31,
       "posPrev": 16,
       "pointsHistory": [
         0,
@@ -6391,6 +6451,10 @@
         "brasilien_japan": {
           "tip": "3:2",
           "points": 3
+        },
+        "deutschland_paraguay": {
+          "tip": "2:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "0:1",
@@ -6666,7 +6730,7 @@
       "exact": 4,
       "diff": 6,
       "tendency": 27,
-      "wrong": 35,
+      "wrong": 36,
       "posPrev": 16,
       "pointsHistory": [
         0,
@@ -6768,6 +6832,10 @@
         },
         "brasilien_japan": {
           "tip": "1:2",
+          "points": 0
+        },
+        "deutschland_paraguay": {
+          "tip": "2:0",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -7060,7 +7128,7 @@
       "exact": 3,
       "diff": 6,
       "tendency": 27,
-      "wrong": 38,
+      "wrong": 39,
       "posPrev": 18,
       "pointsHistory": [
         0,
@@ -7171,6 +7239,10 @@
         "brasilien_japan": {
           "tip": "3:0",
           "points": 2
+        },
+        "deutschland_paraguay": {
+          "tip": "1:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -7470,7 +7542,7 @@
       "exact": 3,
       "diff": 6,
       "tendency": 29,
-      "wrong": 35,
+      "wrong": 36,
       "posPrev": 19,
       "pointsHistory": [
         0,
@@ -7575,6 +7647,10 @@
         "brasilien_japan": {
           "tip": "4:2",
           "points": 2
+        },
+        "deutschland_paraguay": {
+          "tip": "2:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -8967,8 +9043,8 @@
       "homeTeam": "Deutschland",
       "awayTeam": "Paraguay",
       "group": null,
-      "result": null,
-      "played": false,
+      "result": "0:0",
+      "played": true,
       "date": "2026-06-29T22:30:00+02:00"
     },
     {

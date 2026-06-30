@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T22:12:48.974Z",
+  "lastUpdated": "2026-06-30T02:32:33.614Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -10,7 +10,7 @@
       "exact": 8,
       "diff": 5,
       "tendency": 36,
-      "wrong": 26,
+      "wrong": 27,
       "posPrev": 1,
       "pointsHistory": [
         0,
@@ -138,6 +138,10 @@
         },
         "deutschland_paraguay": {
           "tip": "2:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -438,7 +442,7 @@
       "exact": 8,
       "diff": 9,
       "tendency": 33,
-      "wrong": 25,
+      "wrong": 26,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -565,6 +569,10 @@
         },
         "deutschland_paraguay": {
           "tip": "3:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "1:0",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -865,7 +873,7 @@
       "exact": 8,
       "diff": 7,
       "tendency": 30,
-      "wrong": 30,
+      "wrong": 31,
       "posPrev": 3,
       "pointsHistory": [
         0,
@@ -990,6 +998,10 @@
         },
         "deutschland_paraguay": {
           "tip": "2:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1290,7 +1302,7 @@
       "exact": 9,
       "diff": 5,
       "tendency": 30,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 6,
       "pointsHistory": [
         0,
@@ -1417,6 +1429,10 @@
         },
         "deutschland_paraguay": {
           "tip": "2:1",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "6:5",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1717,7 +1733,7 @@
       "exact": 7,
       "diff": 6,
       "tendency": 32,
-      "wrong": 30,
+      "wrong": 31,
       "posPrev": 4,
       "pointsHistory": [
         4,
@@ -1833,6 +1849,10 @@
         },
         "deutschland_paraguay": {
           "tip": "4:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -2133,7 +2153,7 @@
       "exact": 6,
       "diff": 6,
       "tendency": 32,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 5,
       "pointsHistory": [
         0,
@@ -2265,6 +2285,10 @@
         },
         "deutschland_paraguay": {
           "tip": "2:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -2565,7 +2589,7 @@
       "exact": 8,
       "diff": 4,
       "tendency": 36,
-      "wrong": 27,
+      "wrong": 28,
       "posPrev": 7,
       "pointsHistory": [
         0,
@@ -2685,6 +2709,10 @@
         },
         "deutschland_paraguay": {
           "tip": "3:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -2985,7 +3013,7 @@
       "exact": 5,
       "diff": 9,
       "tendency": 32,
-      "wrong": 29,
+      "wrong": 30,
       "posPrev": 8,
       "pointsHistory": [
         0,
@@ -3096,6 +3124,10 @@
         },
         "deutschland_paraguay": {
           "tip": "2:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "1:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -3396,7 +3428,7 @@
       "exact": 7,
       "diff": 9,
       "tendency": 27,
-      "wrong": 32,
+      "wrong": 33,
       "posPrev": 9,
       "pointsHistory": [
         0,
@@ -3525,6 +3557,10 @@
         },
         "deutschland_paraguay": {
           "tip": "2:1",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "3:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -3825,7 +3861,7 @@
       "exact": 7,
       "diff": 6,
       "tendency": 31,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -3947,6 +3983,10 @@
         },
         "deutschland_paraguay": {
           "tip": "2:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -4247,7 +4287,7 @@
       "exact": 4,
       "diff": 4,
       "tendency": 37,
-      "wrong": 30,
+      "wrong": 31,
       "posPrev": 11,
       "pointsHistory": [
         0,
@@ -4379,6 +4419,10 @@
         },
         "deutschland_paraguay": {
           "tip": "3:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "3:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -4679,7 +4723,7 @@
       "exact": 6,
       "diff": 9,
       "tendency": 27,
-      "wrong": 33,
+      "wrong": 34,
       "posPrev": 13,
       "pointsHistory": [
         0,
@@ -4798,6 +4842,10 @@
         },
         "deutschland_paraguay": {
           "tip": "2:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -5098,7 +5146,7 @@
       "exact": 12,
       "diff": 5,
       "tendency": 23,
-      "wrong": 30,
+      "wrong": 31,
       "posPrev": 12,
       "pointsHistory": [
         0,
@@ -5205,6 +5253,10 @@
         },
         "deutschland_paraguay": {
           "tip": "1:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "3:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -5489,7 +5541,7 @@
       "exact": 6,
       "diff": 10,
       "tendency": 29,
-      "wrong": 30,
+      "wrong": 31,
       "posPrev": 14,
       "pointsHistory": [
         0,
@@ -5613,6 +5665,10 @@
           "points": 2
         },
         "deutschland_paraguay": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "niederlande_marokko": {
           "tip": "2:1",
           "points": 0
         },
@@ -5914,7 +5970,7 @@
       "exact": 3,
       "diff": 6,
       "tendency": 34,
-      "wrong": 32,
+      "wrong": 33,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -6039,6 +6095,10 @@
         },
         "deutschland_paraguay": {
           "tip": "2:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "0:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -6339,7 +6399,7 @@
       "exact": 5,
       "diff": 8,
       "tendency": 25,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 16,
       "pointsHistory": [
         0,
@@ -6454,6 +6514,10 @@
         },
         "deutschland_paraguay": {
           "tip": "2:1",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "3:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -6730,7 +6794,7 @@
       "exact": 4,
       "diff": 6,
       "tendency": 27,
-      "wrong": 36,
+      "wrong": 37,
       "posPrev": 16,
       "pointsHistory": [
         0,
@@ -6835,6 +6899,10 @@
           "points": 0
         },
         "deutschland_paraguay": {
+          "tip": "2:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
           "tip": "2:0",
           "points": 0
         },
@@ -7128,7 +7196,7 @@
       "exact": 3,
       "diff": 6,
       "tendency": 27,
-      "wrong": 39,
+      "wrong": 40,
       "posPrev": 18,
       "pointsHistory": [
         0,
@@ -7242,6 +7310,10 @@
         },
         "deutschland_paraguay": {
           "tip": "1:0",
+          "points": 0
+        },
+        "niederlande_marokko": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -7542,7 +7614,7 @@
       "exact": 3,
       "diff": 6,
       "tendency": 29,
-      "wrong": 36,
+      "wrong": 37,
       "posPrev": 19,
       "pointsHistory": [
         0,
@@ -7649,6 +7721,10 @@
           "points": 2
         },
         "deutschland_paraguay": {
+          "tip": "2:1",
+          "points": 0
+        },
+        "niederlande_marokko": {
           "tip": "2:1",
           "points": 0
         },
@@ -9043,7 +9119,7 @@
       "homeTeam": "Deutschland",
       "awayTeam": "Paraguay",
       "group": null,
-      "result": "1:1",
+      "result": "4:5n.E.",
       "played": true,
       "date": "2026-06-29T22:30:00+02:00"
     },
@@ -9053,8 +9129,8 @@
       "homeTeam": "Niederlande",
       "awayTeam": "Marokko",
       "group": null,
-      "result": null,
-      "played": false,
+      "result": "0:0",
+      "played": true,
       "date": "2026-06-30T03:00:00+02:00"
     },
     {
@@ -9188,6 +9264,16 @@
       "date": "2026-07-04T19:00:00+02:00"
     },
     {
+      "id": "paraguay_unbekannt",
+      "label": "Paraguay – unbekannt",
+      "homeTeam": "Paraguay",
+      "awayTeam": "unbekannt",
+      "group": null,
+      "result": null,
+      "played": false,
+      "date": "2026-07-04T23:00:00+02:00"
+    },
+    {
       "id": "unbekannt_unbekannt",
       "label": "unbekannt – unbekannt",
       "homeTeam": "unbekannt",
@@ -9195,7 +9281,7 @@
       "group": null,
       "result": null,
       "played": false,
-      "date": "2026-07-04T23:00:00+02:00"
+      "date": "2026-07-05T22:00:00+02:00"
     }
   ]
 }

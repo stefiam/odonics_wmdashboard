@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T18:56:43.985Z",
+  "lastUpdated": "2026-06-30T19:02:03.847Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -9431,6 +9431,16 @@
       "date": "2026-07-04T23:00:00+02:00"
     },
     {
+      "id": "brasilien_norwegen",
+      "label": "Brasilien – Norwegen",
+      "homeTeam": "Brasilien",
+      "awayTeam": "Norwegen",
+      "group": null,
+      "result": null,
+      "played": false,
+      "date": "2026-07-05T22:00:00+02:00"
+    },
+    {
       "id": "unbekannt_unbekannt",
       "label": "unbekannt – unbekannt",
       "homeTeam": "unbekannt",
@@ -9438,7 +9448,7 @@
       "group": null,
       "result": null,
       "played": false,
-      "date": "2026-07-05T22:00:00+02:00"
+      "date": "2026-07-06T02:00:00+02:00"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T22:49:58.116Z",
+  "lastUpdated": "2026-06-30T22:55:14.604Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -9545,10 +9545,10 @@
       "date": "2026-07-04T19:00:00+02:00"
     },
     {
-      "id": "paraguay_unbekannt",
-      "label": "Paraguay – unbekannt",
+      "id": "paraguay_frankreich",
+      "label": "Paraguay – Frankreich",
       "homeTeam": "Paraguay",
-      "awayTeam": "unbekannt",
+      "awayTeam": "Frankreich",
       "group": null,
       "result": null,
       "played": false,

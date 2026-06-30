@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T16:24:58.767Z",
+  "lastUpdated": "2026-06-30T17:04:56.595Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -10,7 +10,7 @@
       "exact": 8,
       "diff": 5,
       "tendency": 36,
-      "wrong": 27,
+      "wrong": 28,
       "posPrev": 1,
       "pointsHistory": [
         0,
@@ -144,6 +144,10 @@
         },
         "niederlande_marokko": {
           "tip": "2:1",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "0:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -444,7 +448,7 @@
       "exact": 8,
       "diff": 9,
       "tendency": 33,
-      "wrong": 26,
+      "wrong": 27,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -577,6 +581,10 @@
         },
         "niederlande_marokko": {
           "tip": "1:0",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -877,7 +885,7 @@
       "exact": 8,
       "diff": 7,
       "tendency": 30,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 3,
       "pointsHistory": [
         0,
@@ -1008,6 +1016,10 @@
         },
         "niederlande_marokko": {
           "tip": "2:1",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1308,7 +1320,7 @@
       "exact": 9,
       "diff": 5,
       "tendency": 30,
-      "wrong": 32,
+      "wrong": 33,
       "posPrev": 6,
       "pointsHistory": [
         0,
@@ -1441,6 +1453,10 @@
         },
         "niederlande_marokko": {
           "tip": "6:5",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:3",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -1741,7 +1757,7 @@
       "exact": 7,
       "diff": 6,
       "tendency": 32,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 4,
       "pointsHistory": [
         4,
@@ -1863,6 +1879,10 @@
         },
         "niederlande_marokko": {
           "tip": "2:1",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:3",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -2163,7 +2183,7 @@
       "exact": 5,
       "diff": 10,
       "tendency": 32,
-      "wrong": 29,
+      "wrong": 30,
       "posPrev": 8,
       "pointsHistory": [
         0,
@@ -2280,6 +2300,10 @@
         "niederlande_marokko": {
           "tip": "1:2",
           "points": 3
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "2:3",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -2579,7 +2603,7 @@
       "exact": 6,
       "diff": 6,
       "tendency": 32,
-      "wrong": 32,
+      "wrong": 33,
       "posPrev": 5,
       "pointsHistory": [
         0,
@@ -2717,6 +2741,10 @@
         },
         "niederlande_marokko": {
           "tip": "2:1",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:3",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -3017,7 +3045,7 @@
       "exact": 8,
       "diff": 4,
       "tendency": 36,
-      "wrong": 28,
+      "wrong": 29,
       "posPrev": 7,
       "pointsHistory": [
         0,
@@ -3143,6 +3171,10 @@
         },
         "niederlande_marokko": {
           "tip": "2:1",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:0",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -3443,7 +3475,7 @@
       "exact": 7,
       "diff": 9,
       "tendency": 27,
-      "wrong": 33,
+      "wrong": 34,
       "posPrev": 9,
       "pointsHistory": [
         0,
@@ -3578,6 +3610,10 @@
         },
         "niederlande_marokko": {
           "tip": "3:1",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -3878,7 +3914,7 @@
       "exact": 7,
       "diff": 6,
       "tendency": 31,
-      "wrong": 32,
+      "wrong": 33,
       "posPrev": 8,
       "pointsHistory": [
         0,
@@ -4006,6 +4042,10 @@
         },
         "niederlande_marokko": {
           "tip": "2:1",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -4306,7 +4346,7 @@
       "exact": 4,
       "diff": 4,
       "tendency": 37,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 11,
       "pointsHistory": [
         0,
@@ -4444,6 +4484,10 @@
         },
         "niederlande_marokko": {
           "tip": "3:2",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -4744,7 +4788,7 @@
       "exact": 6,
       "diff": 9,
       "tendency": 27,
-      "wrong": 34,
+      "wrong": 35,
       "posPrev": 13,
       "pointsHistory": [
         0,
@@ -4869,6 +4913,10 @@
         },
         "niederlande_marokko": {
           "tip": "2:1",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -5169,7 +5217,7 @@
       "exact": 12,
       "diff": 5,
       "tendency": 23,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 12,
       "pointsHistory": [
         0,
@@ -5282,6 +5330,10 @@
         },
         "niederlande_marokko": {
           "tip": "3:2",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -5566,7 +5618,7 @@
       "exact": 3,
       "diff": 7,
       "tendency": 34,
-      "wrong": 32,
+      "wrong": 33,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -5697,6 +5749,10 @@
         "niederlande_marokko": {
           "tip": "0:1",
           "points": 3
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -5996,7 +6052,7 @@
       "exact": 6,
       "diff": 10,
       "tendency": 29,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 14,
       "pointsHistory": [
         0,
@@ -6127,6 +6183,10 @@
         },
         "niederlande_marokko": {
           "tip": "2:1",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -6427,7 +6487,7 @@
       "exact": 5,
       "diff": 8,
       "tendency": 25,
-      "wrong": 32,
+      "wrong": 33,
       "posPrev": 16,
       "pointsHistory": [
         0,
@@ -6548,6 +6608,10 @@
         },
         "niederlande_marokko": {
           "tip": "3:2",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "2:1",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -6824,7 +6888,7 @@
       "exact": 4,
       "diff": 6,
       "tendency": 27,
-      "wrong": 37,
+      "wrong": 38,
       "posPrev": 17,
       "pointsHistory": [
         0,
@@ -6936,6 +7000,10 @@
         },
         "niederlande_marokko": {
           "tip": "2:0",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:2",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -7228,7 +7296,7 @@
       "exact": 3,
       "diff": 6,
       "tendency": 27,
-      "wrong": 40,
+      "wrong": 41,
       "posPrev": 18,
       "pointsHistory": [
         0,
@@ -7348,6 +7416,10 @@
         },
         "niederlande_marokko": {
           "tip": "2:1",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:3",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -7648,7 +7720,7 @@
       "exact": 3,
       "diff": 6,
       "tendency": 29,
-      "wrong": 37,
+      "wrong": 38,
       "posPrev": 19,
       "pointsHistory": [
         0,
@@ -7762,6 +7834,10 @@
         },
         "niederlande_marokko": {
           "tip": "2:1",
+          "points": 0
+        },
+        "elfenbeink_ste_norwegen": {
+          "tip": "1:3",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -9175,8 +9251,8 @@
       "homeTeam": "Elfenbeinküste",
       "awayTeam": "Norwegen",
       "group": null,
-      "result": null,
-      "played": false,
+      "result": "0:0",
+      "played": true,
       "date": "2026-06-30T19:00:00+02:00"
     },
     {

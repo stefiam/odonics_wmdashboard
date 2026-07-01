@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T03:10:31.805Z",
+  "lastUpdated": "2026-07-01T09:57:35.020Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -9669,6 +9669,16 @@
       "date": "2026-07-05T22:00:00+02:00"
     },
     {
+      "id": "mexiko_unbekannt",
+      "label": "Mexiko – unbekannt",
+      "homeTeam": "Mexiko",
+      "awayTeam": "unbekannt",
+      "group": null,
+      "result": null,
+      "played": false,
+      "date": "2026-07-06T02:00:00+02:00"
+    },
+    {
       "id": "unbekannt_unbekannt",
       "label": "unbekannt – unbekannt",
       "homeTeam": "unbekannt",
@@ -9676,7 +9686,7 @@
       "group": null,
       "result": null,
       "played": false,
-      "date": "2026-07-06T02:00:00+02:00"
+      "date": "2026-07-06T21:00:00+02:00"
     }
   ]
 }

@@ -76,10 +76,10 @@ jobs:
 
             if [ "$ST" = "active" ]; then
               (cd scraper && node scrape.js) || echo "Scrape fehlgeschlagen, weiter"
+              git pull --rebase --autostash origin main || true
               git add public/data/kicktipp.json
               if ! git diff --staged --quiet; then
                 git commit -m "chore: live update [$(date -u '+%H:%M UTC')]"
-                git pull --rebase --autostash origin main || true
                 git push || echo "Push fehlgeschlagen, nächster Durchlauf"
                 echo "→ Daten aktualisiert & gepusht"
               else

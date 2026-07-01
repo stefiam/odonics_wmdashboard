@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T18:01:13.106Z",
+  "lastUpdated": "2026-07-01T18:06:31.878Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -9759,10 +9759,10 @@
       "date": "2026-07-05T22:00:00+02:00"
     },
     {
-      "id": "mexiko_unbekannt",
-      "label": "Mexiko – unbekannt",
+      "id": "mexiko_england",
+      "label": "Mexiko – England",
       "homeTeam": "Mexiko",
-      "awayTeam": "unbekannt",
+      "awayTeam": "England",
       "group": null,
       "result": null,
       "played": false,

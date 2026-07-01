@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
   "lastUpdated": "2026-07-01T22:04:35.274Z",
+=======
+  "lastUpdated": "2026-07-01T22:10:20.789Z",
+>>>>>>> Stashed changes
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -5925,7 +5929,11 @@
       "diff": 10,
       "tendency": 32,
       "wrong": 32,
+<<<<<<< Updated upstream
       "posPrev": 14,
+=======
+      "posPrev": 13,
+>>>>>>> Stashed changes
       "pointsHistory": [
         0,
         2,
@@ -6385,7 +6393,11 @@
       "diff": 8,
       "tendency": 35,
       "wrong": 34,
+<<<<<<< Updated upstream
       "posPrev": 13,
+=======
+      "posPrev": 15,
+>>>>>>> Stashed changes
       "pointsHistory": [
         0,
         4,

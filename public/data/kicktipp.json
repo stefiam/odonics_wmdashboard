@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T15:46:57.392Z",
+  "lastUpdated": "2026-07-01T16:30:08.396Z",
   "communityName": "wm-2026-odonics",
   "standings": [
     {
@@ -10,7 +10,7 @@
       "exact": 10,
       "diff": 9,
       "tendency": 34,
-      "wrong": 26,
+      "wrong": 27,
       "posPrev": 2,
       "pointsHistory": [
         0,
@@ -163,6 +163,10 @@
         "mexiko_ecuador": {
           "tip": "3:2",
           "points": 2
+        },
+        "england_dr_kongo": {
+          "tip": "3:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:1",
@@ -462,7 +466,7 @@
       "exact": 8,
       "diff": 6,
       "tendency": 38,
-      "wrong": 27,
+      "wrong": 28,
       "posPrev": 1,
       "pointsHistory": [
         0,
@@ -617,6 +621,10 @@
         "mexiko_ecuador": {
           "tip": "2:1",
           "points": 2
+        },
+        "england_dr_kongo": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -916,7 +924,7 @@
       "exact": 9,
       "diff": 7,
       "tendency": 32,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 3,
       "pointsHistory": [
         0,
@@ -1068,6 +1076,10 @@
         "mexiko_ecuador": {
           "tip": "2:1",
           "points": 2
+        },
+        "england_dr_kongo": {
+          "tip": "2:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1367,7 +1379,7 @@
       "exact": 8,
       "diff": 7,
       "tendency": 33,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 4,
       "pointsHistory": [
         4,
@@ -1509,6 +1521,10 @@
         "mexiko_ecuador": {
           "tip": "2:0",
           "points": 4
+        },
+        "england_dr_kongo": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -1808,7 +1824,7 @@
       "exact": 9,
       "diff": 6,
       "tendency": 32,
-      "wrong": 32,
+      "wrong": 33,
       "posPrev": 6,
       "pointsHistory": [
         0,
@@ -1962,6 +1978,10 @@
         "mexiko_ecuador": {
           "tip": "3:1",
           "points": 3
+        },
+        "england_dr_kongo": {
+          "tip": "4:2",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -2261,7 +2281,7 @@
       "exact": 6,
       "diff": 6,
       "tendency": 35,
-      "wrong": 32,
+      "wrong": 33,
       "posPrev": 5,
       "pointsHistory": [
         0,
@@ -2420,6 +2440,10 @@
         "mexiko_ecuador": {
           "tip": "2:1",
           "points": 2
+        },
+        "england_dr_kongo": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -3152,7 +3176,7 @@
       "exact": 8,
       "diff": 4,
       "tendency": 38,
-      "wrong": 29,
+      "wrong": 30,
       "posPrev": 7,
       "pointsHistory": [
         0,
@@ -3296,6 +3320,10 @@
         "mexiko_ecuador": {
           "tip": "1:0",
           "points": 2
+        },
+        "england_dr_kongo": {
+          "tip": "2:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:0",
@@ -3595,7 +3623,7 @@
       "exact": 8,
       "diff": 6,
       "tendency": 33,
-      "wrong": 32,
+      "wrong": 33,
       "posPrev": 10,
       "pointsHistory": [
         0,
@@ -3744,6 +3772,10 @@
         "mexiko_ecuador": {
           "tip": "1:0",
           "points": 2
+        },
+        "england_dr_kongo": {
+          "tip": "2:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -4043,7 +4075,7 @@
       "exact": 5,
       "diff": 4,
       "tendency": 39,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 11,
       "pointsHistory": [
         0,
@@ -4202,6 +4234,10 @@
         "mexiko_ecuador": {
           "tip": "2:1",
           "points": 2
+        },
+        "england_dr_kongo": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -4501,7 +4537,7 @@
       "exact": 7,
       "diff": 9,
       "tendency": 29,
-      "wrong": 34,
+      "wrong": 35,
       "posPrev": 13,
       "pointsHistory": [
         0,
@@ -4647,6 +4683,10 @@
         "mexiko_ecuador": {
           "tip": "2:1",
           "points": 2
+        },
+        "england_dr_kongo": {
+          "tip": "2:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:0",
@@ -4946,7 +4986,7 @@
       "exact": 7,
       "diff": 10,
       "tendency": 27,
-      "wrong": 34,
+      "wrong": 35,
       "posPrev": 9,
       "pointsHistory": [
         0,
@@ -5092,6 +5132,10 @@
         "frankreich_schweden": {
           "tip": "4:1",
           "points": 3
+        },
+        "england_dr_kongo": {
+          "tip": "2:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -5391,7 +5435,7 @@
       "exact": 7,
       "diff": 10,
       "tendency": 31,
-      "wrong": 31,
+      "wrong": 32,
       "posPrev": 14,
       "pointsHistory": [
         0,
@@ -5543,6 +5587,10 @@
         "mexiko_ecuador": {
           "tip": "5:4",
           "points": 2
+        },
+        "england_dr_kongo": {
+          "tip": "3:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:0",
@@ -5842,7 +5890,7 @@
       "exact": 13,
       "diff": 5,
       "tendency": 24,
-      "wrong": 32,
+      "wrong": 33,
       "posPrev": 12,
       "pointsHistory": [
         0,
@@ -5972,6 +6020,10 @@
         "mexiko_ecuador": {
           "tip": "1:0",
           "points": 2
+        },
+        "england_dr_kongo": {
+          "tip": "2:1",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "3:1",
@@ -6255,7 +6307,7 @@
       "exact": 4,
       "diff": 7,
       "tendency": 35,
-      "wrong": 33,
+      "wrong": 34,
       "posPrev": 15,
       "pointsHistory": [
         0,
@@ -6401,6 +6453,10 @@
         },
         "mexiko_ecuador": {
           "tip": "0:1",
+          "points": 0
+        },
+        "england_dr_kongo": {
+          "tip": "1:0",
           "points": 0
         },
         "mexiko_s_dafrika": {
@@ -6701,7 +6757,7 @@
       "exact": 7,
       "diff": 6,
       "tendency": 27,
-      "wrong": 37,
+      "wrong": 38,
       "posPrev": 17,
       "pointsHistory": [
         0,
@@ -6833,6 +6889,10 @@
         "mexiko_ecuador": {
           "tip": "2:0",
           "points": 4
+        },
+        "england_dr_kongo": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "1:1",
@@ -7124,7 +7184,7 @@
       "exact": 5,
       "diff": 8,
       "tendency": 27,
-      "wrong": 33,
+      "wrong": 34,
       "posPrev": 16,
       "pointsHistory": [
         0,
@@ -7263,6 +7323,10 @@
         "mexiko_ecuador": {
           "tip": "3:2",
           "points": 2
+        },
+        "england_dr_kongo": {
+          "tip": "4:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "0:1",
@@ -7538,7 +7602,7 @@
       "exact": 3,
       "diff": 7,
       "tendency": 31,
-      "wrong": 37,
+      "wrong": 38,
       "posPrev": 19,
       "pointsHistory": [
         0,
@@ -7672,6 +7736,10 @@
         "mexiko_ecuador": {
           "tip": "3:1",
           "points": 3
+        },
+        "england_dr_kongo": {
+          "tip": "2:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -7967,7 +8035,7 @@
       "exact": 3,
       "diff": 6,
       "tendency": 30,
-      "wrong": 40,
+      "wrong": 41,
       "posPrev": 18,
       "pointsHistory": [
         0,
@@ -8108,6 +8176,10 @@
         "mexiko_ecuador": {
           "tip": "2:1",
           "points": 2
+        },
+        "england_dr_kongo": {
+          "tip": "3:0",
+          "points": 0
         },
         "mexiko_s_dafrika": {
           "tip": "2:1",
@@ -9554,8 +9626,8 @@
       "homeTeam": "England",
       "awayTeam": "DR Kongo",
       "group": null,
-      "result": null,
-      "played": false,
+      "result": "0:1",
+      "played": true,
       "date": "2026-07-01T18:00:00+02:00"
     },
     {
